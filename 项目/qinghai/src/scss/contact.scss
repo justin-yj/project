@@ -1,0 +1,54 @@
+#contact{
+    .BMap_Marker{
+        background: url(../images/biaoji.png) no-repeat center center !important;
+    }
+     background: url(../images/bodyBg.jpg) no-repeat center top;
+.contact{
+    background: #fff;
+    overflow: hidden;
+    .contactTop{
+        height: 50px;
+        background: url(../images/adress.png) no-repeat 25px center;
+        line-height: 50px;
+        padding-left: 46px;
+        box-sizing: border-box;
+        a{
+            color: #000;
+        }
+        i{
+            font-style: normal;
+            color: #1e5ca8;
+        }
+    }
+    .contactLeft{
+        width: 565px;
+        float: left;
+        margin-left: 25px;
+    }
+    .contactRight{
+        width: 400px;
+        float: left;
+        margin-left: 25px;
+        dl{
+            overflow: hidden;
+            dt{
+                font-weight: 600;
+               float: left;
+               height: 50px;
+               color: #0054A9;
+                line-height: 30px;
+            }
+            dd{
+                float: left;
+                line-height: 30px;
+                height: 30px;
+            }
+        }
+        p{  
+            width: 400px;
+            line-height: 30px;
+            height: 30px;
+        }
+    }
+}
+}

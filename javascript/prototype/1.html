@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<input type="button" id="btn" />
+		<ul id="ul">
+			<li>aaaaaaaa</li>
+			<li>bbbbbbbb</li>
+			<li>cccccccc</li>
+		</ul>
+		<script type="text/javascript">
+			window.onload = function() {
+				var oUl = document.getElementById("ul");
+				var aLi = oUl.getElementsByTagName("li");
+				var oBtn = document.getElementById("btn");
+				var iNow = 4;
+
+				oUl.onmouseover = function(ev) {
+					var ev = ev || window.event;
+					var target = ev.target || ev.srcElement;
+					console.log(target.innerHTML);
+					if(target.nodeName.toLowerCase() == "li") {
+						target.style.background = "red";
+					}
+				}
+				oUl.onmouseout = function(ev) {
+					var ev = ev || window.event;
+					var target = ev.target || ev.srcElement;
+					//alert(target.innerHTML);
+					if(target.nodeName.toLowerCase() == "li") {
+						target.style.background = "";
+					}
+				}
+				oBtn.onclick = function() {
+					iNow++;
+					var oLi = document.createElement("li");
+					oLi.innerHTML = 1111 * iNow;
+					oUl.appendChild(oLi);
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class='evaluate'>
+  <view class='title'>业务办理已完成</view>
+  <view class='tips'>为了更好的为您提供优质的服务，请您为我们的服务进行评价!</view>
+  <form bindsubmit="formSubmit" >
+    <view class="section">
+      <view class="section-title">服务评价：</view>
+      <radio-group name="reservationService" bindchange="radioChange1">
+        <label class='radio-item'><radio value="3" color="#548dfe" />不满意</label>
+        <label class='radio-item'><radio value="2" color="#548dfe" />一般</label>
+        <label class='radio-item'><radio value="1" color="#548dfe" />非常满意</label>
+      </radio-group>
+    </view>
+    <!-- <view class='message'>
+      <view class='ms-title'>评价留言</view>
+      <view class='ms-cont'>
+        <textarea placeholder='留言评价我们的服务'></textarea>
+      </view>
+    </view> -->
+    <button formType="submit" class='btn'>提交</button>
+  </form>
+</view>

@@ -1,0 +1,163 @@
+.address{
+    height: 50px;
+    line-height: 50px;  
+    font-size: 14px;
+    background: url(../images/address.png) no-repeat left center;
+    text-indent: 15px;
+    a{
+        color: #0576cd;
+    }
+    i{
+        color: #888;
+        font-style: normal;
+    }
+  }
+  .main{
+      background: #fff;
+      min-height: 720px;
+      border: 1px solid #e4e4e4;
+      .title{
+          height: 50px;
+          background: #f2f3f4;
+          line-height: 50px;
+          border-bottom: 1px solid #e4e4e4;
+          span{
+              display: inline-block;
+              height: 18px;
+              width: 3px;
+              background: #0576cd;
+              margin-left: 25px;
+              position: relative;
+              top: 3px;
+          }
+          h4{
+            display: inline-block;
+              font-size: 16px;
+              color: #0576cd;
+              font-weight: normal;
+              margin-left: 4px;
+          }
+      }
+      .content{
+        padding: 40px 50px;
+        h4{
+            font-size: 16px;
+            color: #0576cd;
+            line-height: 40px;
+            height: 40px;
+            font-weight: normal;
+        }
+        .top{
+            width: 100%;
+            height: 240px;
+            line-height: 30px;
+            background: #f1f8ff;
+            border: 1px solid #e4e4e4;
+            padding: 30px 30px;
+            margin-bottom: 20px;
+            span{
+                display: inline-block;
+                width: 250px;
+                height: 35px;
+                overflow: hidden;
+                label{
+                    font-size: 14px;
+                    color: #333;
+                    float: right;
+                    .canInput{
+                        width: 170px;
+                        height:30px;
+                        border: 1px solid #e4e4e4;
+                        text-indent: 10px;
+                    }
+                   
+                    
+                }
+                .alignLeft{
+                   float: left;
+                   margin-left: 33px;
+                   .canInput{
+                       margin-left: 15px;
+                   }
+                }
+            }
+            .topBtn{
+                label{
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 16px;
+                    margin: 5px auto;
+                    .btn{
+                        width: 120px;
+                        height: 40px;
+                        color: #fff;
+                        border: none;
+                        background: url(../images/checkmore.png) no-repeat left top;
+                        cursor: pointer;
+                        margin-left: 335px;
+                    } 
+                    .reset{
+                        width: 120px;
+                        height: 40px;
+                        color: #333;
+                        border: none;
+                        margin-left: 355px;
+                        background: url(../images/resetTwo.png) no-repeat left top;
+                        cursor: pointer;
+                    } 
+                }
+            }
+            
+        }
+        .table{
+            border: 1px solid #e4e4e4;
+            font-size: 14px;
+            .tableTitle{
+                height: 45px;
+                line-height: 45px;
+                background: #f1f8ff;
+                span{
+                    display: inline-block;
+                    text-align: center;
+                }
+                .serialNumber{
+                    width: 150px;
+                    border-right: 1px solid #e4e4e4;
+                }
+                .organization,.addres{
+                    width: 460px;
+                    border-right: 1px solid #e4e4e4;
+                }
+                .addres{
+                    border-right: none;
+                }
+            }
+            .tableContent{
+                line-height: 45px;
+                background: #fff;
+                li{
+                    border-top: 1px solid #e4e4e4;
+                    span{
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    .serialNumber{
+                        width: 150px;
+                    }
+                    .organization,.addres{
+                        width: 460px;
+                    }
+                }
+                .activeBg{
+                    background: #fbfbfb
+                }
+                
+            }
+        }
+      }
+      .paging{
+            margin-top: 20px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+    }

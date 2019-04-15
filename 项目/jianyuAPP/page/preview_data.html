@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>预览数据</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/preview_data.css">
+	</head>
+	<body>
+		<div id="preview_data">
+			<!-- <header class="header">
+				<a href="#" class="return pull-left">
+					<i class="icon iconfont">&#xe640;</i>
+				</a>
+				<h1 class="title">预览数据</h1>
+			</header> -->
+			<main class="main">
+				<div class="buttons-tab">
+					<ul>
+						<li class="tab-link active">标准字段包</li>
+						<li class="tab-link ">高级字段包</li>
+					</ul>
+				</div>
+				<div class="tabs">
+					<div class="tab active">
+						<table class="table" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>序号</td>
+								<td>项目名称</td>
+								<td>公告类型</td>
+								<td>预算（万元）</td>
+								<td>招标单位</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>03</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tab" style="display: none;">
+						<table class="table" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>序号</td>
+								<td>项目名称</td>
+								<td>公告类型</td>
+								<td>预算（万元）</td>
+								<td>招标单位</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>03</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>04</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+							<tr>
+								<td>05</td>
+								<td>高速压坏地方公路建设项目</td>
+								<td>招标公告</td>
+								<td>1000</td>
+								<td>高速公路管理处</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="../js/zepto.js"></script>
+		<script>
+			$(function() {
+				$(".buttons-tab .tab-link").each(function() {
+					var index = $(this).index();
+					$(".buttons-tab .tab-link").eq(0).addClass("active");
+
+					$(this).click(function() {
+						$(this).addClass("active").siblings().removeClass("active");
+						$(".tabs>.tab").eq(index).show().siblings().hide();
+					})
+
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,271 @@
+@import 'public.scss';
+#pay_order{
+	.main{
+		.progress{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding: .24rem 0;
+			background:$white;
+			border-bottom:1px solid $border_2;
+			.p-item{
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				.line{
+					position: absolute;
+					top: .2rem;
+					right:-0.92rem;
+					height: 0.04rem;
+					width:1.86rem;
+					background: #2CB7CA;
+				}
+				.p-item-icon{
+					width: .48rem;
+					height: .48rem;
+					line-height: .48rem;
+					text-align: center;
+					border-radius: 50%;
+					background: #2CB7CA;
+					i{
+						color: #fff;
+						font-size: .11rem;
+					}
+				}
+				.icon-gray{
+					background: $gray_2;
+				}
+				span{
+					margin-top: 0.06rem;
+				}
+			}
+			
+		}
+	
+		.form{
+			.form-item{
+				background: $white;
+				.label-title{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: .28rem .3rem;
+					.left{
+						font-size: .26rem;
+						color: $black;
+						strong{
+							color: $green_1;
+							font-size: .32rem;
+							margin: 0 0.08rem;
+						}
+					}
+					.right{
+						color: $green_1;
+						font-size: .3rem;
+					}
+				}
+				.choose{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 0 .3rem;
+					.choose-item{
+						position: relative;
+						width: 48%;
+						height: 1.25rem;
+						display: flex;
+						align-items: center;
+						flex-direction: column;
+						justify-content: center;
+						border-radius: .08rem;
+						border: 1px solid $border_2;
+						h2{
+							font-size: .3rem;
+							margin-bottom: 0.08rem;
+							.crown{
+								font-size: .24rem;
+								font-weight: normal;
+								color: $border_2;
+							}
+						}
+						p{
+							font-size: .24rem;
+							color: $gray_2;
+							letter-spacing: 0.02rem;
+						}
+						.initial{
+							text-decoration: line-through;
+						}
+						.mark{
+							position: absolute;
+							width: .48rem;
+							height: .36rem;
+							top: 0;
+							right: 0;
+							color: $green_1;
+							display: none;
+						}
+					}
+					.active{
+						border: 1px solid $green_1;
+					}
+					.active h2{
+						color: $green_1;
+					}
+					.active h2 .crown{
+						color: $yellow;
+					}
+					.active .mark{
+						display: block;
+					}
+				}
+				.tips{
+					display: flex;
+					align-items: center;
+					padding: .2rem .4rem;
+					color: $gray_2;
+					.tips-icon{
+						color: $green_1;
+						font-size: .32rem;
+						font-weight: bold;
+						margin-left: .1rem;
+					}
+				}
+				.form-control{
+					height: .88rem;
+					line-height: .88rem;
+					display: flex;
+					align-items: center;
+					font-size: .28rem;
+					color: $gray_2;
+					margin-left: .3rem;
+					border-bottom: 1px solid $border_2;
+					.on{
+						color: $gray_2;
+					}
+					.input{
+						flex: 1;
+						padding: 0 .3rem;
+						display: flex;
+						input[type='text']{
+							height: 100%;
+							width: 100%;
+						}
+						input[type='number']{
+							flex: 1;
+						}
+						button{
+							background: transparent;
+							color: $green_1;
+							font-size: .3rem;
+						}
+					}
+				}
+				.way{
+					height: .88rem;
+					line-height: .88rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					font-size: .3rem;
+					padding: 0 .3rem;
+					span:nth-child(1){
+						color: $gray_2;
+					}
+					span:nth-child(2){
+						color: $black;
+					}
+				}
+			}
+			.msg{
+				padding: .33rem .4rem .16rem;
+				color: $gray_2;
+			}
+			.radio-form{
+				background: transparent;
+				padding: .2rem .3rem;
+				border: 0;
+				margin: 0;
+				.weui-cell{
+					padding: 0;
+				}
+				.weui-cell__hd{
+					transform: scale(0.8);
+				}
+				.read{
+					font-size: .26rem;
+					a{
+						color: $green_1;
+					}
+				}
+			}
+			.price{
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				padding: .2rem .3rem;
+				span{
+					text-decoration: line-through;
+					font-size: .26rem;
+					color: $gray_2;
+					margin-right: .18rem;
+				}
+				strong{
+					font-size: .4rem;
+					color: $black;
+				}
+			}
+			.form-btn{
+				display: flex;
+				align-items: center;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 99;
+				.btn{
+					flex: 1;
+					height: .94rem;
+					line-height: .94rem;
+					text-align: center;
+					font-size: .36rem;
+				}
+				.prew{
+					background: $white;
+					color: $green_1;
+				}
+				.enter{
+					background: $border_2;
+					color: $white;
+				}
+			}
+		}
+	}
+	// weui组件样式
+	#tipDialog{
+		text-align: left;
+		.dialog-title{
+			font-size: .34rem;
+		}
+		.info{
+			li{
+				text-align: left!important;
+				font-size: .28rem;
+				label{
+					display: block;
+					font-weight: bold;
+					margin: .24rem 0; 
+				}
+				p{
+					font-size: .28rem;
+					line-height: 1.4;
+				}
+			}
+		}
+		.weui-dialog__btn_primary{
+			color: $green_1;
+		}
+	}
+}

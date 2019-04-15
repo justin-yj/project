@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>绘图</title>
+	</head>
+
+	<body>
+		<canvas id="drawImg" width="300" height="300"></canvas>
+		
+		<script type="text/javascript">
+			var drawImg = document.getElementById("drawImg");
+			console.log(drawImg.getContext)
+			if(drawImg.getContext){
+				var context = drawImg.getContext("2d");
+				context.fillStyle = "#FF0000";
+				context.fillRect(10,10,50,50);
+				//修改全局透明度
+				context.globalAlpha = 0.9;
+				//绘制蓝色矩形
+				context.fillStyle =  "rgba(0,0,255,1)";
+				context.fillRect(30,30,50,50);
+				//重置全局透明度
+				context.globalAlpha = 0; 
+			}
+		</script>
+	</body>
+
+</html>

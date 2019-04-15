@@ -1,0 +1,38 @@
+<!--pages/recordDetail/recordDetail.wxml-->
+<view class='content'>
+  <view class='info'>
+    <view class='i-name'>{{detail.latticeName}}</view>
+    <view class='i-address'>地址：{{detail.latticeAddress}}</view>
+  </view>
+   <block wx:if="{{detail.status == 3}}">
+    <view class='tips'>提示：您的爽约次数为{{detail.frequencyBreaking}}次，累计{{detail.breakappointmentnumb}}次{{detail.breakappointment}}天内不可再次预约</view>
+  </block> 
+  <block wx:if="{{detail.status == 1}}">
+      <view class='bills'>
+        <image src='../../images/bills.png'></image>
+        <view class='data'>
+          <view class='count'>{{detail.appoSerialNum}}</view>
+          <view class='lineup'>前方排队：{{detail.waitnumber}}人</view>
+        </view>
+      </view>
+  </block>
+  <view class='section'>
+    <view class='section-item'>预约状态：{{detail.statusname}}</view>
+    <view class='section-item'>预约时间：<text>{{detail.appoDate}}\t{{detail.startime}}-{{detail.endtime}}</text></view>
+    <view class='section-item'>办理业务：{{detail.businessName}}</view>
+    <view class='section-item'>身份证号：{{detail.idCard}}</view>
+  </view>
+  <view class='notice' bindtap='goNotice'>
+    <image src='../../images/notice.png' mode='aspectFit'></image>
+  </view>
+
+  <block>
+    <view class='align' data-latticeid="{{detail.latticeCode}}" wx:if="{{detail.status == 2 || detail.status == 3 }}" data-businessid="{{detail.businessTypesId}}" data-idcardss="{{detail.idCardss}}" data-sycount="{{detail.frequencyBreaking}}" data-cansycount="{{detail.breakappointmentnumb}}" data-syday="{{detail.breakappointment}}" bindtap='goAlign'>再次预约</view> 
+    <view class='cancel' wx:elif="{{detail.status == 1}}" bindtap='goCancel'>取消预约</view> 
+    <view class='evaluate' wx:elif="{{detail.status == 5}}">
+      <text data-businessid="{{detail.businessTypesId}}" data-idcardss="{{detail.idCardss}}" data-sycount="{{detail.frequencyBreaking}}" data-cansycount="{{detail.breakappointmentnumb}}" data-syday="{{detail.breakappointment}}"  bindtap='goAlign' >再次预约</text>
+      <text  wx:if="{{detail.evaluationStatus == false}}" data-id="{{detail.id}}" bindtap='goEvaluate'>立即评价</text>
+      <text  wx:else data-id="{{detail.id}}" bindtap='goEvaluateDetail'>已评价</text>
+    </view> 
+  </block>
+</view>

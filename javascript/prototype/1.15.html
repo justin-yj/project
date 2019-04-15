@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+			var book = {
+				title:"professional JAVASCRIPT",
+				authors:[
+					"Nicholas Ding"
+				],
+				edition:3,
+				year:2011,
+				releaseDate:new Date(2011,11,1)
+			};
+			var jsonText = JSON.stringify(book); 
+			var bookCopy = JSON.parse(jsonText,function(key,value){
+				if (key == "releaseDate"){
+				 	return new Date(value);
+				 } else {
+				 	return value;
+				 } 
+			});
+			alert(bookCopy.releaseDate.getFullYear()); 
+		</script>
+		
+	</body>
+
+</html>

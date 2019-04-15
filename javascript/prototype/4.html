@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Canvas绘图</title>
+	</head>
+
+	<body>
+		<canvas id="drawing" width="300" height="300"></canvas>
+
+		<script type="text/javascript">
+			var drawing = document.getElementById("drawing");
+
+			//判断浏览器支持<canvas>元素
+			if(drawing.getContext) {
+
+				var context = drawing.getContext("2d");
+
+				context.beginPath();
+				context.arc(100, 100, 99, 0, 2 * Math.PI, false);
+				context.moveTo(190, 100);
+				context.arc(100, 100, 90, 0, 2 * Math.PI, false);
+				
+				//添加文字
+				context.font = "bold 14px Arial";
+				context.textAlign = "center";
+				context.textBaseline = "middle";
+				context.fillText("12",100,20)
+				
+				context.translate(100, 100);
+				context.rotate(Math.PI/2);
+				//绘制分针
+				context.moveTo(0, 0);
+				context.lineTo(0, -85);
+				//绘制时针
+				context.moveTo(0, 0);
+				context.lineTo(-65, 0);
+				//描边路径
+				context.strokeStyle = "blue";
+				context.stroke();
+				
+
+				var gradient = context.createRadialGradient(55, 55, 10, 55, 55, 20); 
+				gradient.addColorStop(0,"green");
+				gradient.addColorStop(1,"red");
+
+				//绘制渐变矩形
+				context.fillStyle = gradient;
+				context.fillRect(30, 30, 50, 50); 
+			 }
+		</script>
+
+	</body>
+
+</html>

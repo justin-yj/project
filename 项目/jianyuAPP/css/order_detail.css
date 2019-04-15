@@ -1,0 +1,58 @@
+.main {
+  width: 100%;
+  overflow: scroll; }
+
+.main::-webkit-scrollbar {
+  display: none; }
+
+#order_detail .main .lists {
+  margin-bottom: 1.26rem; }
+  #order_detail .main .lists .card .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem .3rem; }
+    #order_detail .main .lists .card .card-header img {
+      width: 36%;
+      flex: 1; }
+    #order_detail .main .lists .card .card-header h3 {
+      font-size: .36rem;
+      color: #1d1d1d;
+      margin: 0 .2rem; }
+  #order_detail .main .lists .card .card-content .text {
+    padding: 0 .4rem;
+    font-size: .28rem;
+    margin-bottom: .12rem; }
+  #order_detail .main .lists .card .card-content .item-list {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 .4rem;
+    margin-bottom: .16rem; }
+    #order_detail .main .lists .card .card-content .item-list label {
+      font-weight: bold;
+      font-size: .28rem;
+      display: block;
+      white-space: nowrap; }
+    #order_detail .main .lists .card .card-content .item-list .item-list-parents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      #order_detail .main .lists .card .card-content .item-list .item-list-parents li {
+        margin-right: 0.1rem;
+        font-size: .28rem;
+        color: #686868; }
+  #order_detail .main .lists .button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    height: .94rem;
+    line-height: .94rem;
+    text-align: center;
+    font-size: .36rem;
+    margin-top: .4rem; }
+  #order_detail .main .lists .align {
+    background: #2cb7ca;
+    color: #fff; }

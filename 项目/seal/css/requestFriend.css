@@ -1,0 +1,77 @@
+#medal {
+  background: url(../images/bg.png) no-repeat left top;
+  background-size: 100% 100%; }
+  #medal .medal {
+    width: 100%;
+    height: auto; }
+    #medal .medal .medalBook {
+      text-align: center;
+      background: url(../images/medalBookBorder.png) no-repeat 0.2rem bottom;
+      background-size: 7.1rem 100%;
+      margin-top: 0.5rem;
+      position: relative;
+      z-index: 0; }
+      #medal .medal .medalBook .mdealContent {
+        width: 5.9rem;
+        margin-left: 0.8rem; }
+        #medal .medal .medalBook .mdealContent .zhengshu {
+          width: 3.6rem;
+          margin-top: 0.7rem; }
+        #medal .medal .medalBook .mdealContent dl {
+          padding-top: 0.4rem;
+          text-align: left; }
+          #medal .medal .medalBook .mdealContent dl dt {
+            font-size: 0.36rem;
+            color: #333;
+            font-weight: bold;
+            line-height: 0.6rem;
+            margin-bottom: 0.1rem; }
+          #medal .medal .medalBook .mdealContent dl dd {
+            font-size: 0.3rem;
+            line-height: 0.5rem; }
+        #medal .medal .medalBook .mdealContent .medalTitle {
+          color: #ce9f1f;
+          font-size: 0.3rem;
+          margin-top: 0.3rem; }
+          #medal .medal .medalBook .mdealContent .medalTitle img {
+            width: 0.3rem;
+            margin: 0 0.1rem; }
+        #medal .medal .medalBook .mdealContent .addMedalS {
+          position: relative; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal {
+            max-width: 5.8rem;
+            margin: 0.2rem auto; }
+            #medal .medal .medalBook .mdealContent .addMedalS .addMedal ul {
+              width: 100%;
+              overflow: hidden; }
+            #medal .medal .medalBook .mdealContent .addMedalS .addMedal li {
+              width: 1.68rem;
+              height: 1.68rem;
+              float: left;
+              margin: 0 0.1rem;
+              display: flex;
+              align-items: center; }
+        #medal .medal .medalBook .mdealContent .medalResult {
+          margin-top: 0.6rem;
+          position: relative;
+          padding-bottom: 1.3rem; }
+          #medal .medal .medalBook .mdealContent .medalResult p {
+            color: #333;
+            line-height: 0.5rem;
+            font-size: 0.3rem;
+            text-align: right; }
+          #medal .medal .medalBook .mdealContent .medalResult img {
+            width: 1.84rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1; }
+    #medal .medal .btn {
+      width: 100%;
+      text-align: center; }
+      #medal .medal .btn p {
+        color: #fff;
+        font-size: 0.28rem;
+        margin-top: 0.4rem; }
+      #medal .medal .btn a img {
+        width: 5.03rem; }

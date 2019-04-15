@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/selfanswerThree.css">
+</head>
+
+<body id="selfanswerFive">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;互动</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <ul>
+                <li class="onLight"> <a href="#">公众留言</a></li>
+                <li> <a href="#">合理化建议</a></li>
+                <li> <a href="#">问卷调查</a></li>
+                <li> <a href="#">问卷自答</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="top">
+                <ul>
+                    <li class="onActive"> <a href="#">列表</a></li>
+                    <li> <a href="#">我要提问</a></li>
+                    <li> <a href="#">我的提问</a></li>
+                    <li> <a href="#">我的积分</a></li>
+                    <li> <a href="#">知道达人榜</a></li>
+                </ul>
+            </div>
+            <div class="contentSom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="contentSomL">
+                                <span>2</span>
+                                <strong>回答</strong>
+                            </div>
+
+                            <div class="contentSomR">
+                                <p>九一八勿忘国耻，你认为今天哪些行为算得上爱国？</p>
+                                <span>2017-9-12</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="contentSomL">
+                                <span>2</span>
+                                <strong>回答</strong>
+                            </div>
+
+                            <div class="contentSomR">
+                                <p>九一八勿忘国耻，你认为今天哪些行为算得上爱国？</p>
+                                <span>2017-9-12</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script>
+        $(function () {
+            $("#listNum dd:odd").addClass("activeBg")
+
+        })
+    </script>
+
+</body>
+
+</html>

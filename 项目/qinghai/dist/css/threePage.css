@@ -1,0 +1,64 @@
+#threePage {
+  background: url(../images/bodyBg.jpg) no-repeat center top;
+}
+
+#threePage .businessNews {
+  background: #fff;
+  overflow: hidden;
+}
+
+#threePage .businessNews .contactTop {
+  height: 50px;
+  background: url(../images/adress.png) no-repeat 25px center;
+  line-height: 50px;
+  padding-left: 46px;
+  box-sizing: border-box;
+}
+
+#threePage .businessNews .contactTop a {
+  color: #000;
+}
+
+#threePage .businessNews .contactTop i {
+  font-style: normal;
+  color: #1e5ca8;
+}
+
+#threePage .businessNews .contactMain {
+  min-height: 600px;
+  padding: 10px 20px;
+}
+
+#threePage .businessNews .contactMain h2 {
+  text-align: center;
+  line-height: 50px;
+  min-height: 50px;
+  font-weight: normal;
+  color: #1e5ca8;
+  overflow: hidden;
+}
+
+#threePage .businessNews .contactMain .data {
+  text-align: center;
+  display: block;
+  height: 36px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+#threePage .businessNews .contactMain .data i {
+  font-size: 12px;
+  color: #484848;
+  padding: 0 20px;
+  font-style: normal;
+}
+
+#threePage .businessNews .contactMain p {
+  text-indent: 2em;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#threePage .businessNews .contactMain img {
+  width: 100%;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/investigationDetail.css">
+</head>
+
+<body id="investigationDetail">
+    <div id="header" class="w1200">
+    <div class="top">
+        <span>欢迎访问拉萨小微企业综合服务门户网站！</span>
+        <a href="javascript:;" id="login">登录</a>
+    </div>
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+    </div>
+    <div class="search">
+        <input type="text" placeholder="请输入关键词" class="caninput">
+        <input type="button" class="btn" value="全文搜索">
+    </div>
+</div>
+<div class="navigation w1200">
+    <ul>
+        <li><a href="javascript:;">首页</a></li>
+        <li class="naviactive"><a href="javascript:;">要闻</a></li>
+        <li><a href="javascript:;">政务</a></li>
+        <li><a href="javascript:;">服务</a></li>
+        <li><a href="javascript:;">互动</a></li>
+    </ul>
+</div>
+<!-- register start -->
+<div class="register">
+
+    <!-- 登录 -->
+    <div class="registerMain">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginList">
+            <label for=""><span>用户名</span> ：<input type="text" name="" id=""></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id=""></label>
+            <input type="button" value="登录 " class="longin">
+            <input type="button" value="注册 " class="zhuce">
+        </div>
+    </div>
+    <!-- 登录失败 -->
+    <div class="loginError">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginErrorMain">
+            <img src="./images/error.png" alt="">
+            <p><strong>登录失败！</strong>请检查您的用户和密码是否正确</p>
+            <a href="#" class="loginRight">确定</a>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div class="startRegister">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginList">
+            <p>公众用户注册：</p>
+            <label for=""><span>用户名</span> ：<input type="text" name="" id="" placeholder="请输入用户名"></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id="" placeholder="请输入字母、数字至少6位"></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id="" placeholder="请输入真实邮箱，以便修改和找回密码"></label>
+            <input type="button" value="注册 " class="zhuce" id="startRegister">
+        </div>
+    </div>
+    <!-- 注册成功 -->
+    <div class="successRegister">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginErrorMain">
+            <img src="./images/correct.png" alt="">
+            <p>注册成功，将为您自动登录跳转到首页...</p>
+
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="./js/register.js"></script>
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;互动</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="titles">
+            <ul>
+                <li> <a href="#">公众留言</a></li>
+                <li> <a href="#">合理化建议</a></li>
+                <li class="onLight"> <a href="#">问卷调查</a></li>
+                <li> <a href="#">问卷自答</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <div class="contentsTop">
+                <p>政府诚信建设是整个诚信体系建设的重中之重。为了解 XX 政府诚信状况， 加强政府诚信建设研究，推动政府诚信建设，优化经济发展环境，XX“诚信 XXX”建设工作 领导小组办公室开展此次政府诚信问卷调查
+                </p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <p>1、一年内您与政府服务部门的接触平均有多少次？</p>
+                        <label for="one1"><input type="radio" name="one" id="one1">10次内</label>
+                        <label for="one2"><input type="radio"  name="one" id="one2">20次内</label>
+                        <label for="one3"><input type="radio"  name="one" id="one3">30次内</label>
+                        <label for="one4"><input type="radio" name="one" id="one4">40次内</label>
+                    </li>
+                    <li>
+                        <p>2、您认为目前群众监督对于政府工作所起到的作用如何？</p>
+                        <label for="two1"><input type="radio"  name="two" id="two1">作用很大</label>
+                        <label for="two2"><input type="radio" name="two" id="two2">作用较大</label>
+                        <label for="two3"><input type="radio" name="two" id="two3">一般</label>
+                        <label for="two4"><input type="radio" name="two" id="two4">作用较小</label>
+                        <label for="two5"><input type="radio" name="two" id="two5">没有作用</label>
+                    </li>
+                    <li>
+                        <p>3、上级政府在工作检查方面是否能够做到秉公办事？</p>
+                        <label for="three1"><input type="radio" name="three" id="three1">能够做到</label>
+                        <label for="three2"><input type="radio" name="three" id="three2">基本能够做到</label>
+                        <label for="three3"><input type="radio" name="three" id="three3">有时不能做到 </label>
+                        <label for="three4"><input type="radio" name="three" id="three4">不能做到</label>
+                    </li>
+                    <li>
+                        <p>4、您对政府依法治市的水平评价如何？</p>
+                        <label for="four1"><input type="radio" name="four" id="four1">高</label>
+                        <label for="four2"><input type="radio" name="four" id="four2">较高</label>
+                        <label for="four3"><input type="radio" name="four" id="four3">不高 </label>
+                        <label for="four4"><input type="radio" name="four" id="four4">低</label>
+                    </li>
+                    <li>
+                        <p>5、您认为近几年政府关于公共设施和公共服务建设是否能够做到关注百姓的利益与需要？</p>
+                        <label for="five1"><input type="radio" name="five" id="five1">能做到</label>
+                        <label for="five2"><input type="radio" name="five" id="five2">基本能做到</label>
+                        <label for="five3"><input type="radio" name="five" id="five3">不能做到 </label>
+                    </li>
+                    <li>
+                        <p>6、通过以往与公务员的接触，您认为目前政府公务员的整体素质如何？</p>
+                        <label for="six1"><input type="radio" name="six" id="six1">高</label>
+                        <label for="six2"><input type="radio" name="six" id="six2">较高</label>
+                        <label for="six3"><input type="radio" name="six" id="six3">一般 </label>
+                        <label for="six4"><input type="radio" name="six" id="six4">不高</label>
+                        <label for="six5"><input type="radio" name="six" id="six5"> 较低 </label>
+                    </li>
+                    <li>
+                        <p>7、您认为 XX 在处理分配公平问题时是否能做到公正透明？</p>
+                        <label for="seven1"><input type="radio" name="seven" id="seven1">能做到</label>
+                        <label for="seven2"><input type="radio"  name="seven" id="seven2">基本能做到</label>
+                        <label for="seven3"><input type="radio"  name="seven" id="seven3">不能做到 </label>
+                        <label for="seven4"><input type="radio"  name="seven" id="seven4">不清楚</label>
+                    </li>
+                    <li>
+                        <p>8、您认为公务人员办理公务时的工作效率如何？</p>
+                        <label for="eight1"><input type="checkbox" name="eight" id="eight1">高</label>
+                        <label for="eight2"><input type="checkbox" name="eight" id="eight2">较高</label>
+                        <label for="eight3"><input type="checkbox" name="eight" id="eight3">不能不高做到 </label>
+                        <label for="eight4"><input type="checkbox" name="eight" id="eight4">低</label>
+                    </li>
+                    <li>
+                        <p>9、您身边是否有行政恣意和滥权行为的发生？</p>
+                        <label for="nine1">
+                            <textarea name="" id="" ></textarea>
+                        </label>
+                       
+                    </li>
+                </ul>
+                <input type="button" value="提交投票" class="btn">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+    <div class="footerContent w1200">
+        <img src="./images/red.png" alt="">
+        <p>洛阳市工商行政管理局 版权所有2009-2012 联系电话：0379-63196178</p>
+        <p> 豫ICP备15017748号</p>
+    </div>
+</div>
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/interaction.js"></script>
+
+</body>
+
+</html>

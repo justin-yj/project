@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+		<style type="text/css">
+			html, body{height: 100%;font-family: "微软雅黑";}
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			a {color: #428bca;text-decoration: none;}
+			a:hover,a:focus {color: #2a6496;text-decoration: underline;}
+			a:focus {outline: thin dotted;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+			
+			.padd_40{padding-top: 80px;background: #F5F5F5;overflow-x:hidden;}
+			.a{text-align:center;line-height: 40px;position: fixed;top: 0;left: 0;width: 100%;z-index: 10;border-bottom: 1px #ccc solid; background: #f50;color: #fff;}
+			.tab{display: flex;line-height: 40px;position: fixed;top: 40px;width: 100%;z-index: 10;border-bottom: 1px #ccc solid;}
+			.tab a{width: 50%;background: #fff;text-align: center;}
+			.tab .active{border-bottom: 1px #f50 solid; color: #f50;}
+			.panel{margin: 0;}
+			
+			.refreshtip {position: absolute;left: 0;width: 100%;margin: 10px 0;text-align: center;color: #999;}
+			.swiper-container{overflow: visible;}
+			.loadtip { display: block;width: 100%;line-height: 40px; height: 40px;text-align: center;color: #999;border-top: 1px solid #ddd;}
+			.swiper-container, .w{height: calc(100vh - 120px);}
+			.swiper-slide{height: auto;}
+			
+			.list-group {
+				padding-left: 0;
+				margin-bottom: 40px;
+			}
+			.list-group1{
+				margin-top: 40px;
+			}
+			.list-group p,
+			.list-group1 p {
+				width: 100%;
+				padding-left: 5%;
+				text-indent: 2em;
+				line-height: 30px;
+				background: #fff;
+				box-sizing: border-box;
+			}
+			
+			.list-group-item {
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+				margin-bottom: -1px;
+				background-color: #fff;
+				border: 1px solid #ddd;
+			}
+			
+			.list-group-item h2,
+			.list-group1 h2 {
+				text-align: center;
+			}
+			.swiper-container-vertical>.swiper-scrollbar{
+				width: 0px!important;
+			}
+		</style>
+	</head>
+
+	<body class="padd_40">
+		<div class="a">标题</div>
+		<div class="tab">
+			<a class="active tabOne" href="javascript:;">公告正文</a>
+			<a class="tabTwo" href="javascript:;">公告摘要</a>
+		</div>
+		<div class="swiper-container">
+			<div class="refreshtip" style="display: none;">下拉返回上一屏</div>
+			<div class="swiper-wrapper w">
+				<div class="swiper-slide d">
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide list-group tabList">
+								<div class="list-group-item">
+									<h2>你我的新时代，全面小康一个都不能少</h2></div>
+								<p>改革开放是决定当代中国命运的关键一招。 Reform and opening-up is a crucial move that is shaping China's future. 40年的改革开放使中国人民生活实现了小康逐步富裕起来了。 Forty years of reform and opening-up have made it possible for our people to lead decent and even comfortable lives； 我们将坚定不移深化各方面改革，坚定不移扩大开放。 We will make determined efforts to comprehensively deepen reform and open China still wider to the world. 使改革和开放相互促进，相得益彰。 We will see that reform and opening-up complement and reinforce each other. 我坚信，中华民族伟大复兴必将在改革开放的进程中得以实现。 It is my conviction that the great rejuvenation of the Chinese nation will become a reality in the course of reform and opening-up. 2019年我们将迎来中华人民共和国成立70周年。 In 2019, we will mark the 70th anniversary of the founding of the People's Republic of China. 我们将贯彻新发展理念，推动中国经济持续健康发展。 We will act on a new vision for development and strive for sustained and healthy economic growth. 把我们的人民共和国建设得更加繁荣富强。 These efforts will contribute towards a more prosperous and stronger People's Republic.
+
+								</p>
+								<div class="list-group-item">第一屏尾部</div>
+							</div>
+							<div class="swiper-slide list-group1 tabList" style="display: none;">
+								<div class="list-group-item">
+									<h2>中央军委向武警部队授旗仪式在北京举行 </h2></div>
+								<p>习近平强调，武警部队是党领导的人民武装力量的重要组成部分，在维护国家安全和社会稳定、保卫人民美好生活中肩负着重大职责，在维护政治安全特别是政权安全、制度安全中具有重要作用。要坚决听党指挥，全面贯彻新时代党的强军思想，坚持党的绝对领导，坚决听从党的号令，强化政治意识、大局意识、核心意识、看齐意识，永远做党和人民的忠诚卫士。要加快建设发展，全面贯彻总体国家安全观，按照多能一体、有效维稳的战略要求，加快融入全军联合作战体系，加快构建军地协调联动新格局，加大改革创新，提高质量效益，努力建设一支强大的现代化武装警察部队。要聚力练兵备战，全面贯彻新形势下军事战略方针，始终保持高度戒备，大抓实战化军事训练，扎实做好执勤处突、反恐维稳等各项工作，坚决完成党和人民赋予的新时代使命任务。要坚持依法从严，全面贯彻依法治军、从严治军要求，弘扬光荣传统和优良作风，狠抓正风肃纪、反腐惩恶，纯洁政治生态，凝聚强大正能量，努力在武警部队光荣历史上谱写新的时代篇章</p>
+								<p>习近平强调，武警部队是党领导的人民武装力量的重要组成部分，在维护国家安全和社会稳定、保卫人民美好生活中肩负着重大职责，在维护政治安全特别是政权安全、制度安全中具有重要作用。要坚决听党指挥，全面贯彻新时代党的强军思想，坚持党的绝对领导，坚决听从党的号令，强化政治意识、大局意识、核心意识、看齐意识，永远做党和人民的忠诚卫士。要加快建设发展，全面贯彻总体国家安全观，按照多能一体、有效维稳的战略要求，加快融入全军联合作战体系，加快构建军地协调联动新格局，加大改革创新，提高质量效益，努力建设一支强大的现代化武装警察部队。要聚力练兵备战，全面贯彻新形势下军事战略方针，始终保持高度戒备，大抓实战化军事训练，扎实做好执勤处突、反恐维稳等各项工作，坚决完成党和人民赋予的新时代使命任务。要坚持依法从严，全面贯彻依法治军、从严治军要求，弘扬光荣传统和优良作风，狠抓正风肃纪、反腐惩恶，纯洁政治生态，凝聚强大正能量，努力在武警部队光荣历史上谱写新的时代篇章</p>
+
+								<div class="list-group-item">列表尾部</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="loadtip">上拉进入下一屏</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				scrollbar: '.swiper-scrollbar',
+				slidesPerView: 'auto',
+				mousewheelControl: true,
+				freeMode: true,
+				onTouchMove: function(swiper) {
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+					judge = $(".list-group").is(":hidden");
+					judge1 = $(".list-group1").is(":hidden")
+					if(judge) {
+						if(mySwiper.translate < 80 && mySwiper.translate > 0) {
+							$(".refreshtip").html('下拉返回上一屏').show();
+						} else if(mySwiper.translate > 80) {
+							$(".refreshtip").html('释放返回上一屏').show();
+						}
+					}
+					if(mySwiper.translate <= _viewHeight - _contentHeight - 80 && mySwiper.translate < 0) {
+						$(".loadtip").html('释放进入下一屏');
+						$(".refreshtip").html('下拉返回上一屏').show();
+					} else if(mySwiper.translate > _viewHeight - _contentHeight - 80 && mySwiper.translate < 0) {
+						$(".loadtip").html('上拉进入下一屏');
+					}
+
+				},
+				onTouchEnd: function(swiper) {
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+					var fistHeight = _viewHeight - $(".list-group1").height() - 50;
+					if(mySwiper.translate <= _viewHeight - _contentHeight - 80 && mySwiper.translate < 0) {
+						setTimeout(function() {
+							$(".list-group1").show();
+							$(".list-group").hide();
+							if(judge1) {	
+								$(".w").css('transform', 'translate3d(0px, 0px, 0px)');
+							}
+							$(".loadtip").hide();
+							$(".tabTwo").addClass("active").siblings().removeClass("active")
+							mySwiper.update(); // 重新计算高度;
+						}, 0);
+					} 
+					if(mySwiper.translate >= 80) {
+						setTimeout(function() {
+							$(".list-group1").hide();
+							$(".list-group").show();
+							$(".loadtip").show();
+							$(".refreshtip").hide();
+							var dcsHeight = _viewHeight - $(".list-group").height() - 50;
+							if(judge) {
+								$(".w").css("transform", "translate3d(0px, " + dcsHeight + "px, 0px)");
+							}
+							$(".tabOne").addClass("active").siblings().removeClass("active")
+							 mySwiper.update(); // 重新计算高度;
+						}, 0);
+					}
+					return false;
+				}
+
+				
+			})
+			window.onload = function(){
+				mySwiper.update(); // 重新计算高度;
+			}
+			
+			$('.tab a').click(function(){
+				$(this).addClass('active').siblings('a').removeClass('active');
+				$(".tabList").hide();
+				$(".tabList").eq($(this).index()).show();
+				
+				if($(this).index()){
+					$(".refreshtip").html('下拉返回上一屏').show();	
+					$(".loadtip").hide();
+				}else{
+					$(".refreshtip").hide();
+					$(".loadtip").show();
+				}
+			
+				$('.w').css('transform', 'translate3d(0px, 0px, 0px)');
+				mySwiper.update();
+			});
+			
+		</script>
+	</body>
+
+</html>

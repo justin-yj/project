@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/industry.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+
+    <div class="industry">
+        <div class="all"><span>全部</span> </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>建筑工程</dt>
+                        <dd>勘察设计</dd>
+                        <dd class="active">工程施工</dd>
+                        <dd>工程监理</dd>
+                        <dd>材料设备</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt class="active">水利水电</dt>
+                        <dd class="active">水电工程</dd>
+                        <dd class="active">发电工程</dd>
+                        <dd class="active">航运工程</dd>
+                        <dd class="active">其他工程</dd>
+                        <dd class="active">航运工程</dd>
+                        <dd class="active">其他工程</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>建筑工程</dt>
+                        <dd>勘察设计</dd>
+                        <dd>工程施工</dd>
+                        <dd>工程监理</dd>
+                        <dd>材料设备</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="consfirm">
+            <button>确认</button>
+        </div>
+        <div class="resetOne">
+            <button class="reset">重置</button>
+            <button>确认</button>
+        </div>
+
+    </div>
+    <script src="../js/zepto.js"></script>
+    <script>
+           
+            function hasActive(){
+                var arr = [];
+                if( $(".list ul li dl dd").hasClass('active')||$(".list ul li dl dt").hasClass('active')){
+                    $(".consfirm").hide()
+                    $(".resetOne").show()
+                }else{
+                        $(".consfirm").show()
+                        $(".resetOne").hide()
+                }
+                
+                $(".list ul li dl dd").each(function(index){
+                        if($(this).hasClass('active')){
+                            arr.push('dcs')
+                        }else{
+                            arr.unshift()
+                        }
+                })
+            }
+            hasActive()
+            
+            $(".list ul li dl dt").on("click",function(){
+                if($(this).hasClass('active')){
+                    $(this).parent().find('dd').removeClass('active');
+                    $(this).removeClass('active');
+                }else{
+                    $(this).parent().find('dd').addClass('active');
+                    $(this).addClass('active');
+                }
+                hasActive()  
+            })
+            $(".list ul li dl dd").on('click',function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active');
+                }else{
+                    $(this).addClass('active');
+                }
+                hasActive()
+               
+            })
+            $('.all').on('click',function(){
+                $('.list ul li dl dt').addClass('active')
+                $('.list ul li dl dd').addClass('active')
+            })
+            
+            $('.reset').on('click',function(){
+                $('.list ul li dl dt').removeClass('active')
+                $('.list ul li dl dd').removeClass('active')
+            })
+           
+           
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style type="text/css">
+			meter {
+				background: red!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="file" id="file" onchange="showPreview(this);" />
+
+		<img src="" alt="" id="portrait" />
+
+		<script type="text/javascript">
+			function showPreview(This) {
+				//读取图片内容
+				var file = This.files[0],
+				
+					fileType = file.type,
+
+					reg = new RegExp(/jpg|jpeg|png|gif/);
+				//验证是否是一张图片
+
+				if(!reg.test(fileType.substr((fileType.lastIndexOf('/') + 1)))) {
+
+					alert('不是一张图片');
+
+					return;
+
+				}
+
+				//获取图片src
+
+				if(window.FileReader) {
+					var fr = new FileReader(),
+
+						portrait = document.getElementById('portrait');
+
+					fr.onload = function(e) {
+						console.log(e);
+
+						portrait.src = e.target.result;
+
+					}
+
+					//将文件读取为DataURl
+					fr.readAsDataURL(file);
+					portrait.style.display = 'block';
+
+				}
+
+			}
+		</script>
+	</body>
+
+</html>

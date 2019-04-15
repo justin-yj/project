@@ -1,0 +1,66 @@
+<!-- header  -->
+<view class='header'>
+  <view class='location'>
+    <view class='ellipsis'>{{currentCity}}</view>
+    <image src='../../images/selectArrow.png'></image>
+  </view> 
+  <view class='search' bindtap='goSearch'>
+    <image src='../../images/search.png'></image>
+    <input type='text' placeholder='搜索' disabled="true"></input>
+  </view>
+</view>
+<!--banner轮播图-->
+<view class='swiper-container'>
+  <swiper class='swiper' indicator-active-color="#fff" circular="true" autoplay="true" interval="5000" duration="1000" bindchange='swiperChange'>
+    <block wx:for="{{bannerImg}}" wx:fot-item="item" wx:key="{{item.id}}">
+      <swiper-item>
+        <navigator class='slide-image' url='{{item.url}}' hover-class='none'>
+          <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- //轮播 -->
+  <!-- <view class="dots">
+    <block wx:for="{{bannerImg}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view> -->
+</view>
+<!-- 附近网点  -->
+<view class="nearby">
+  <view class='nearbyAd'>预约网点</view>
+  <block  wx:if="{{showFlag}}">  
+  <view class='list' wx:for="{{list}}" wx:fot-item="item" wx:key="id" bindtap='goDetail' data-id="{{item.latticecode}}" data-dis="{{item.dis}}">
+    <block>
+      <view class='surplus gray' wx:if="{{item.appointmentSum >= item.canappointmentSum}}" catchtap='beFull'>预约已满</view>
+       <view class='surplus blue' wx:else data-latticeid="{{item.latticecode}}" catchtap='goOrder'>
+       <form bindsubmit="submit" report-submit='true' >
+            <button form-type="submit"> 立即预约</button>
+       </form>
+       </view>
+    </block>
+    <view class='listTitle'>{{item.latticename}}</view>
+    <view class='listAddres'>
+      <view class='ellipsis address'>地址：{{item.latticeaddress}}</view>
+      <view class='listDistance'>距离：{{ item.dis }}km</view>
+    </view>
+  </view>
+  </block>
+  <!-- <view wx:else  class='modal'>
+    <image src='../../images/norecord.png'></image>
+    <view class="tip" >小程序需要授权才能使用</view>
+    <button class='opensetting' open-type="openSetting" bindopensetting="handler">打开授权</button>
+  </view> -->
+  <view  class='dialog-container' wx:else>
+    <view class='dialog-mask'></view>
+    <view class='dialog-info'>
+        <view class='dialog-title'>授权提示</view>
+        <view class='dialog-content'>小程序需要您的授权才能提供更好的服务</view>
+        <view class='dialog-footer'>
+          <button class='dialog-btn' open-type="openSetting" bindopensetting="handler" >授权</button>
+        </view>
+    </view>
+</view>
+</view>
+ 

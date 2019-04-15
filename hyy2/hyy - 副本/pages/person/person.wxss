@@ -1,0 +1,100 @@
+/* pages/person/person.wxss */
+
+page {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.person {
+  border-top: 40rpx solid #5188e9;
+}
+
+.person .userinfo {
+  width: 100%;
+  height: 260rpx;
+  background: #5188e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-btn{
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx auto;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.headPortrait {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+   display: inline-block; 
+  overflow: hidden;
+  border: 3px solid #eee;
+  margin: 0  auto;
+}
+
+.nickName {
+  width: 100%;
+  height: 50rpx;
+  color: #fff;
+  display: inline-block;
+  line-height: 50rpx;
+}
+
+.evaluate {
+  width: 100%;
+  padding: 40rpx 0;
+  box-sizing: borderbox;
+}
+
+.moreUserMessage{
+  width:94%;
+  height: 100rpx;
+  margin-left:3%;
+  margin-top: 30rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  position: relative;
+}
+.moreUserMessage text{
+  font-size: 32rpx;
+  position: relative;
+  left: 100rpx;
+line-height: 100rpx;
+}
+
+.moreUserMessage .tibiao {
+  width: 54rpx;
+  height:54rpx;
+  position: relative;
+  top: 18rpx;
+  left: 48rpx;
+}
+.moreUserMessage .jiantou {
+  width: 28rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 38rpx;
+  right: 26rpx;
+}

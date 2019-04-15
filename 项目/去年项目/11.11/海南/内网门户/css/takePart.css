@@ -1,0 +1,94 @@
+/*个人邮箱样式*/
+.person{
+	width: 96%;
+	margin-left: 2%;
+	background: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	margin-top: 1.2rem;
+	box-sizing: border-box;
+}
+.person .listMain ol{
+	margin: 4% 0 ;
+	padding: 0%;
+	border-radius: 4px;
+}
+.person .listMain ol li{
+	width: 100%;
+	height: 1.2rem;
+	padding-right: 2%;
+	line-height: 1.2rem;
+	box-sizing: border-box;
+	background:#fff url(../img/arrowR.png) no-repeat 100% center;
+	background-size: 0.6rem;
+	border-bottom: 1px solid #eee;
+}
+.person .listMain ol li strong{
+	font-weight: 700;
+	padding: 0 0.1rem;
+	font-size: 0.5rem;
+	float: left;
+}
+.person .listMain ol li p{
+	width: 55%;
+	float: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-size: 0.4rem;
+}
+.person .listMain ol li span.ng{
+	display: block;
+	width: 1.3rem;
+	height: 0.6rem;
+	float: left;
+	background: #1568d0;
+	font-size: 0.36rem;
+	border-radius: 4px;
+	color: #f0f7f8;
+	text-align: center;
+	line-height: 0.6rem;
+	margin: 0.28rem 0.2rem 0 0.2rem;
+}
+.person .listMain ol li span.sp{
+	display: block;
+	width: 1.3rem;
+	height: 0.6rem;
+	float: left;
+	background: #5a9d02;
+	font-size: 0.36rem;
+	border-radius: 4px;
+	color: #f0f7f8;
+	text-align: center;
+	line-height: 0.6rem;
+	margin: 0.28rem 0.2rem 0 0.2rem;
+}
+.person .listMain ol li span.hg{
+	display: block;
+	width: 1.3rem;
+	height: 0.6rem;
+	float: left;
+	background: #ba1b18;
+	font-size: 0.36rem;
+	border-radius: 4px;
+	color: #f0f7f8;
+	text-align: center;
+	line-height: 0.6rem;
+	margin: 0.28rem 0.2rem 0 0.2rem;
+}
+.person .listMain ol li span.sh{
+	display: block;
+	width: 1.3rem;
+	height: 0.6rem;
+	float: left;
+	background: #ea8c12;
+	font-size: 0.36rem;
+	border-radius: 4px;
+	color: #f0f7f8;
+	text-align: center;
+	line-height: 0.6rem;
+	margin: 0.28rem 0.2rem 0 0.2rem;
+}
+.person .listMain ol li a{
+	color: #353535;
+}

@@ -1,0 +1,137 @@
+body {
+  background: #f4f4f9;
+}
+
+#main .core {
+  width: 100%;
+  height: 2.7rem;
+  background: url(../images/core.png) repeat-x left top;
+}
+
+#main .core h2 {
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  font-size: 0.36rem;
+}
+
+#main .core .coreLeft {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.3rem;
+  border-radius: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+#main .core .coreLeft img {
+  width: 100%;
+}
+
+#main .core .coreRight {
+  width: 5.6rem;
+  margin-top: 0.3rem;
+  float: left;
+}
+
+#main .core .coreRight a {
+  width: 1.75rem;
+  height: 0.6rem;
+  display: block;
+  border-radius: 0.04rem;
+  border: 1px solid #fff;
+  font-size: 0.28rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.6rem;
+}
+
+#main .notice {
+  width: 100%;
+  height: 1.1rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  padding-left: 0.36rem;
+}
+
+#main .notice span {
+  float: left;
+  font-size: 0.55rem;
+  color: #ffba00;
+  margin-top: 0.36rem;
+}
+
+#main .notice a {
+  display: block;
+  width: 100%;
+  height: 1.1rem;
+  color: #1d1d1d;
+  line-height: 1.1rem;
+  padding-left: 0.75rem;
+  font-size: 0.34rem;
+  background: url(../images/arrow_right.png) no-repeat 6.6rem center;
+  background-size: 0.2rem 0.33rem;
+}
+
+#main .notice a i {
+  float: right;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #f12c20;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.25rem;
+  color: #fff;
+  margin: 0.36rem 0.7rem;
+}
+
+#main .follow {
+  margin-top: 0.24rem;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#main .follow ul li {
+  padding-left: 0.3rem;
+}
+
+#main .follow ul li span {
+  float: left;
+  font-size: 0.6rem;
+  color: #9acd6b;
+  margin-top: 0.36rem;
+}
+
+#main .follow ul li a {
+  display: block;
+  width: 100%;
+  height: 1.1rem;
+  color: #1d1d1d;
+  line-height: 1.1rem;
+  padding-left: 0.75rem;
+  border-top: 1px solid #e0e0e0;
+  background: url(../images/arrow_right.png) no-repeat 6.6rem center;
+  background-size: 0.2rem 0.33rem;
+  font-size: 0.34rem;
+}
+
+#main .follow ul li.listOne a {
+  border-top: none;
+}
+
+#main .history {
+  margin-top: 0.24rem;
+  background: #fff url(../images/history.png) no-repeat 0.34rem center;
+  background-size: 0.6rem;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#main .install {
+  margin-top: 0.24rem;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}

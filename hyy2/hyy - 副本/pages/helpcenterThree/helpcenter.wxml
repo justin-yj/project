@@ -1,0 +1,6 @@
+<!--pages/helpcenterThree/helpcenter.wxml-->
+<view>
+
+<image src='../../images/evalaThree.png'></image>
+</view>
+

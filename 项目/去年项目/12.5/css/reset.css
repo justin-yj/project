@@ -1,0 +1,71 @@
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td { 
+margin: 0; 
+padding: 0; 
+border: 0; 
+outline: 0; 
+font-weight: inherit; 
+font-style: inherit; 
+font-size: 100%; 
+font-family: inherit; 
+vertical-align: baseline; 
+-webkit-tap-highlight-color: transparent;
+} 
+:focus { 
+outline: 0; 
+} 
+body { 
+line-height: 1; 
+/*color: black; 
+background: white; */
+font-family: "Microsoft YaHei",sans-serif;
+font-size: 16px;
+-webkit-font-smoothing: antialiased;
+} 
+input{
+	font-family: "Microsoft YaHei",sans-serif;
+	-webkit-appearance: none;
+}
+ol, ul { 
+list-style: none; 
+} 
+button{ 
+	outline: none;border: none;
+	}
+table { 
+border-collapse: separate; 
+border-spacing: 0; 
+} 
+caption, th, td { 
+text-align: left; 
+font-weight: normal; 
+} 
+textarea { resize:none;-webkit-appearance: none; }
+img{border:0;}
+a{
+	text-decoration:none;
+	
+	font-size: 14px;
+}
+/*selet 下拉三角改变*/
+/*select {border: none;border-radius: 0;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:#ffffff url(../images/public-img/pub-Xsj.png) no-repeat 95% center;}*/
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+/*select::-ms-expand { display: none;}
+html{-webkit-text-size-adjust: none;}	*/	
+	
+/*a:link {color:#606060;} 
+a:visited {color:#606060;} 
+a:hover{color:#8cb91e;	text-decoration: underline;}
+a:active {color:#606060;}*/
+address,caption,cite,code,dfn,em,th,b,i {font-weight: normal;font-style: normal;}
+.text-center{text-align: center;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix {*zoom:1; }
+.fl {float:left; }
+.fr {float: right; }

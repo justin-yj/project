@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>css樣式</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				width: 350px;
+				display: flex;
+				justify-content: space-between;
+				grid-area: main;
+			}
+			
+			.first {
+				width: 100px;
+				height: 100px;
+				background: linear-gradient(45deg, blue, red, green);
+				flex-shrink: 0;
+			}
+			
+			.second {
+				width: 100px;
+				height: 150px;
+				background: green;
+				background: radial-gradient(circle farthest-side at 45px 45px, red, blue);
+				line-height: 150px;
+			}
+			
+			.third {
+				width: 100px;
+				height: 100px;
+				background: red;
+				order: -1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="first">
+			1
+		</div>
+		<div class="second">
+			1
+		</div>
+		<div class="third">
+			1
+		</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				document.onhashchange = function() {
+					alert("點擊了郵件")
+				}
+				let dcs = Math.floor((Math.random() * 100) + 1);
+				console.log(dcs)
+				var str = "Visit RUnoob";
+				var patt1 = /runoob/i;
+				console.log(patt1)
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>js</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function foo(a,b,...rest){
+			console.log('a =' +a);
+			console.log('b =' +b);
+			console.log(rest);
+		}
+		foo(1,2,3,4,5);
+		
+		function foo1(){
+			var x = 1;
+			function bar(){
+				var x = 'A';
+				console.log('x in bar() = '+ x);
+			}
+			console.log(x);
+			bar()
+		}
+		foo1();
+		
+		//定义一个唯一的全局变量MYAPP
+		var MYAPP = {};
+		//在MYAPP中定义的其它变量
+		MYAPP.name = "myapp";
+		MYAPP.version = 1.0;
+		//在MYAPP中定义函数（方法）
+		MYAPP.foo = function(){
+			return 'foo';
+		}
+		
+	</script>
+</body>
+</html>

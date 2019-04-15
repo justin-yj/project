@@ -1,0 +1,53 @@
+<!--pages/evaluateDetail/evaluateDetail.wxml-->
+<view class='content'>
+  <view class='info'>
+    <view class='i-name'>{{obj.latticeName}}</view>
+    <view class='i-address'>地址：{{obj.latticeAddress}}</view>
+  </view>
+  <view class='pj-cont'>
+    <image class='bg' src="../../images/pingjia.png"></image>
+    <view class='pj-all'>
+      <block wx:if="{{obj.evaluationHierarchycode == '1'}}">
+        <image src='../../images/good.png'></image>
+        <text>{{obj.evaluationHierarchy}}</text>
+      </block>
+      <block wx:elif="{{obj.evaluationHierarchycode == '2'}}">
+        <image src='../../images/smile.png'></image>
+        <text>{{obj.evaluationHierarchy}}</text>
+      </block>
+      <block wx:elif="{{obj.evaluationHierarchycode == '3'}}">
+        <image src='../../images/no.png'></image>
+        <text>{{obj.evaluationHierarchy}}</text>
+      </block>
+    </view>
+    <!-- 具体评价  -->
+    <!-- <view class='pj-definite'>
+      <view>具体评价</view>
+      <view class='definite'>
+        <view class='item'>
+          <text wx:if="{{obj.reservationService == 1}}">很满意</text>
+          <text wx:elif="{{obj.reservationService == 2}}">一般</text>
+          <text wx:elif="{{obj.reservationService == 3}}">不满意</text>
+          <text>预约服务</text>
+        </view>
+        <view class='item'>
+          <text wx:if="{{obj.callService == 1}}">很满意</text>
+          <text wx:elif="{{obj.callService == 2}}">一般</text>
+          <text wx:elif="{{obj.callService == 3}}">不满意</text>
+          <text>叫号服务</text>
+        </view>
+        <view class='item'>
+          <text wx:if="{{obj.manualService == 1}}">很满意</text>
+          <text wx:elif="{{obj.manualService == 2}}">一般</text>
+          <text wx:elif="{{obj.manualService == 3}}">不满意</text>
+          <text>人工服务</text>
+        </view>
+      </view>
+    </view> -->
+    <!-- 留言内容 -->
+    <!-- <view class='pj-message'>
+        <view>评价内容</view>
+        <view>网上预约服务很方便，人工服务很贴切！</view>
+    </view> -->
+  </view>
+</view>

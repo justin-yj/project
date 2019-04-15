@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/trademark.css">
+</head>
+
+<body id="affairs">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;商标公告 </i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <span></span>
+            <h4>商标公告</h4>
+        </div>
+        <div class="content">
+            <div class="sm">
+                <p> 根据《商标法实施条例》第九十六条规定，商标局发布《商标公告》，刊发商标注册及其他有关事项。《商标公告》采用纸质或者电子形式发布。除送达公告外，公告内容自发布之日起视为社会公众已经知道或者应当知道。</p>
+                <p>   根据《商标法》第三十三条规定，对初步审定公告的商标，自公告之日起异议期为三个月。公告期满无异议的，予以核准注册，发给商标注册证，并予公告。</p>
+                <p>  现特此发布《商标公告》电子版。</p>
+            </div>
+            <div class="top">
+                <label for="">公告期号 ：<input type="text" class="canInput"></label>
+                <label for=""><input type="button" value="查询" class="btn"></label>
+                <a href="#">点击进入全部公告查询检索 <i> &nbsp;&gt;&gt;</i> </a>
+            </div>
+            <div class="table">
+                <div class="tableTitle">
+                    <span class="serialNumber">期号</span>
+                    <span class="organization">初步审定公告日期</span>
+                    <span class="addres">异议申请截至日期</span>
+                </div>
+                <div class="tableContent" id="tableContent">
+                    <ul>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li class="activeBg">
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">第1614期</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script>
+        $(function(){
+            $("#tableContent ul li:odd").addClass("activeBg")
+        })
+    </script>
+
+</body>
+
+</html>

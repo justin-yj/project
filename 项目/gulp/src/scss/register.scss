@@ -1,0 +1,87 @@
+.register{
+    margin-top: 0.5rem;
+    .tel {
+        margin-left: 0.5rem;
+        width: 6.5rem;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        color: #888888;
+        font-size: 0.32rem;
+        border: none; 
+        border-bottom: 1px solid #cecece;
+    }
+    .code{
+         margin-left: 0.5rem;
+         width: 6.5rem;
+         height: 0.9rem;
+        
+        border-bottom: 1px solid #cecece;
+        overflow: hidden;
+        input{
+            border: none;
+            width: 4rem;
+            height: 0.9rem;
+            float: left;
+         font-size: 0.32rem;
+            
+        }
+        input#btn{
+             font-size: 0.32rem;
+           float: right;
+            width: 2.4rem; 
+            height: 0.9rem;
+            border: none;
+            border-left: 1px solid #cecece;
+            text-align: right;
+            line-height: 0.9rem;
+            color: #888888;
+            background: #fff;
+            
+        }
+    }
+       a.again{
+         display: block;
+        width: 6.9rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        margin-left: 0.3rem;
+        background: #90d5e1;
+        color: #fff;
+        margin-top: 0.8rem;
+        border: none;
+        border-radius: 0.06rem;
+        text-align: center;
+        font-size: 0.34rem;
+    }
+    strong{
+        color: #686868;
+        font-size: 0.28rem;
+        margin-left: 0.5rem;
+        margin-top: 0.3rem;
+        a{
+            color: #0987ff;
+
+        }
+    }
+}
+/*手机号错误弹窗*/
+.errorTc{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 5rem;
+    height: 1rem;
+     position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.5rem;
+    margin-top: -0.5rem;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 0.2rem;
+    font-size: 0.34rem;
+    display: none;
+}

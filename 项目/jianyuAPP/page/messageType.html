@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/messageType.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+
+    <div class="industry">
+        <div class="all"><span>全部</span> </div>
+        <div class="list">
+            <ul>
+                    <li>
+                        <dl>
+                            <dt class="question">拟建项目 </dt><i class="iconfont icon-wenhao "></i>
+                        </dl>
+                    </li>
+                <li>
+                    <dl>
+                        <dt>招标预告</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>招标公告</dt>
+                        <dd>招标</dd>
+                        <dd class="active">邀标</dd>
+                        <dd>询价 </dd>
+                        <dd>竞谈</dd>
+                        <dd>单一</dd>
+                        <dd>竞价</dd>
+                        <dd>变更</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt class="active">招标结果</dt>
+                        <dd class="active">中标</dd>
+                        <dd class="active">成交</dd>
+                        <dd class="active">废标</dd>
+                        <dd class="active">流标</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="consfirm">
+            <button>确认</button>
+        </div>
+        <div class="resetOne">
+            <button class="reset">重置</button>
+            <button>确认</button>
+        </div>
+
+    </div>
+    <script src="../js/zepto.js"></script>
+    <script>
+           
+            function hasActive(){
+                var arr = [];
+                if( $(".list ul li dl dd").hasClass('active')||$(".list ul li dl dt").hasClass('active')){
+                    $(".consfirm").hide()
+                    $(".resetOne").show()
+                }else{
+                        $(".consfirm").show()
+                        $(".resetOne").hide()
+                }
+                
+                $(".list ul li dl dd").each(function(index){
+                        if($(this).hasClass('active')){
+                            arr.push('dcs')
+                        }else{
+                            arr.unshift()
+                        }
+                })
+            }
+            hasActive()
+            
+            $(".list ul li dl dt").on("click",function(){
+                if($(this).hasClass('active')){
+                    $(this).parent().find('dd').removeClass('active');
+                    $(this).removeClass('active');
+                }else{
+                    $(this).parent().find('dd').addClass('active');
+                    $(this).addClass('active');
+                }
+                hasActive()  
+            })
+            $(".list ul li dl dd").on('click',function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active');
+                }else{
+                    $(this).addClass('active');
+                }
+                hasActive()
+               
+            })
+            $('.all').on('click',function(){
+                $('.list ul li dl dt').addClass('active')
+                $('.list ul li dl dd').addClass('active')
+            })
+            
+            $('.reset').on('click',function(){
+                $('.list ul li dl dt').removeClass('active')
+                $('.list ul li dl dd').removeClass('active')
+            })
+           
+           
+
+    </script>
+</body>
+</html>

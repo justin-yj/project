@@ -1,0 +1,303 @@
+#header {
+  height: 254px;
+}
+
+#header .top {
+  line-height: 36px;
+  height: 36px;
+}
+
+#header .top span {
+  color: #222;
+}
+
+#header .top a {
+  color: #005fb8;
+}
+
+#header .logo {
+  margin-top: 60px;
+  float: left;
+}
+
+#header .search {
+  margin-top: 90px;
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+
+#header .search .caninput {
+  width: 310px;
+  height: 40px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  float: left;
+  text-indent: 10px;
+}
+
+#header .search .btn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  float: left;
+  background: #005fb8;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navigation {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navigation ul li {
+  width: 20%;
+  height: 50px;
+  float: left;
+  background: #0576cd;
+  border-right: 1px solid #54b1f8;
+}
+
+.navigation ul li a {
+  display: block;
+  color: #fff;
+}
+
+.navigation ul li:hover {
+  background: #ff9e04;
+}
+
+.navigation ul .naviactive {
+  background: #ff9e04;
+}
+
+.register {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.register .close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.register .registerMain {
+  width: 540px;
+  height: 330px;
+  background: url(../images/popup.png) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -270px;
+  margin-top: -115px;
+  padding: 35px 40px;
+}
+
+.register .registerMain .registerTop {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.register .registerMain .loginList {
+  padding-top: 10px;
+}
+
+.register .registerMain .loginList label {
+  font-size: 16px;
+  display: block;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.register .registerMain .loginList label span {
+  width: 60px;
+  display: inline-block;
+  text-align-last: justify;
+}
+
+.register .registerMain .loginList label input {
+  width: 350px;
+  height: 46px;
+  background: url(../images/input.png) no-repeat left top;
+  border: none;
+  text-indent: 10px;
+}
+
+.register .registerMain .loginList .longin {
+  width: 170px;
+  height: 45px;
+  background: url(../images/denglu.png) no-repeat left top;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  margin-left: 94px;
+  cursor: pointer;
+}
+
+.register .registerMain .loginList .zhuce {
+  width: 170px;
+  height: 45px;
+  background: url(../images/zhuce.png) no-repeat left top;
+  font-size: 16px;
+  color: #005fb8;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.register .loginError {
+  width: 545px;
+  height: 420px;
+  background: url(../images/loginError.png) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -270px;
+  margin-top: -115px;
+  padding: 35px 40px;
+  display: none;
+}
+
+.register .loginError .registerTop {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.register .loginError .loginErrorMain {
+  text-align: center;
+}
+
+.register .loginError .loginErrorMain img {
+  margin-top: 40px;
+}
+
+.register .loginError .loginErrorMain p {
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.register .loginError .loginErrorMain p strong {
+  color: #ff0000;
+}
+
+.register .loginError .loginErrorMain a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 48px;
+  display: block;
+  width: 350px;
+  height: 48px;
+  margin: 20px auto;
+  background: url(../images/eisterBg.png) no-repeat left top;
+}
+
+.register .startRegister {
+  width: 545px;
+  height: 420px;
+  background: url(../images/loginError.png) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -270px;
+  margin-top: -115px;
+  padding: 25px 40px;
+  display: none;
+}
+
+.register .startRegister .registerTop {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.register .startRegister .loginList {
+  padding-top: 10px;
+}
+
+.register .startRegister .loginList p {
+  color: #2e69a5;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.register .startRegister .loginList label {
+  font-size: 16px;
+  display: block;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.register .startRegister .loginList label span {
+  width: 60px;
+  display: inline-block;
+  text-align-last: justify;
+}
+
+.register .startRegister .loginList label input {
+  width: 350px;
+  height: 46px;
+  background: url(../images/input.png) no-repeat left top;
+  border: none;
+  text-indent: 10px;
+}
+
+.register .startRegister .loginList .zhuce {
+  font-size: 18px;
+  color: #fff;
+  line-height: 48px;
+  display: block;
+  width: 350px;
+  height: 48px;
+  margin: 20px 94px;
+  border: none;
+  cursor: pointer;
+  background: url(../images/eisterBg.png) no-repeat left top;
+}
+
+.register .successRegister {
+  width: 545px;
+  height: 420px;
+  background: url(../images/loginError.png) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -270px;
+  margin-top: -115px;
+  padding: 35px 40px;
+  display: none;
+}
+
+.register .successRegister .registerTop {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.register .successRegister .loginErrorMain {
+  text-align: center;
+}
+
+.register .successRegister .loginErrorMain img {
+  margin-top: 70px;
+}
+
+.register .successRegister .loginErrorMain p {
+  font-size: 18px;
+  line-height: 50px;
+  margin-top: 30px;
+}

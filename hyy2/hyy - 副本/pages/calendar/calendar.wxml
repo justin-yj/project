@@ -1,0 +1,61 @@
+<!--pages/calendar/calendar.wxml-->
+
+<view class='wrap'>
+  <view>
+    <view class='date-show'>
+      <view class='lt-arrow' bindtap='lastMonth'>
+        <image src='../../images/arrowS.png' mode='aspectFit'></image>
+
+      </view>
+      {{year}}年{{month}}月
+      <view class='rt-arrow' bindtap='nextMonth'>
+        <image src='../../images/arrowS.png' mode='aspectFit'></image>
+
+      </view>
+    </view>
+  </view>
+  <view class='header'>
+    <view wx:for='{{date}}' wx:key="item" class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+
+    </view>
+  </view>
+  <view class='date-box'>
+    <view wx:for='{{dateArr}}' wx:key="index" class='{{ item.dcs == color ? "nowDay" : ""}}'  data-date='{{item.isToday}}'>
+      <view class='{{ item.isToday < nowDay && isToday<= item.isToday && item.yue == nowyue ||   months==xmonth && item.dateNum <chaju  ? "chooseOn" : ""}}'>
+        <view class='date-head'>
+          <view data-value='{{ item.isToday }}' data-id=' {{ item.dcs}}' class='{{ item.weekDay == 0 ||  item.weekDay == 6 ? "sss" : "" }}'>{{item.dateNum}}</view>
+        </view>
+        <view wx:if="{{item.weekDay > 0 && item.weekDay < 6}}" bindtap='chooseDay' class='date-weight' data-year='{{ item.dataYear }}' data-month='{{ item.dataMonth }}' data-days='{{ item.dateNum }}'>
+          <view data-id=' {{ item.dcs}}' wx:if="{{ item.isToday < nowDay && isToday<= item.isToday && item.yue == nowyue  ||  months==xmonth && item.dateNum <chaju }}">
+            <view class='zw' data-id=' {{ item.dcs}}'></view>
+            <view class='date-value' data-id=' {{ item.dcs}}'>{{item.weight}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 时间段选择 -->
+  <view class='chooseTime'>
+    <view class='chooseTitle'>时间段选择</view>
+    <view class='classfiy'>
+      <view  wx:for="{{ timeDuan }}" class='chooseList'   wx:key="{{ index }}" wx:if='{{ item.appoDate == dataDays && item.businessTypeId==classId }}'>
+           <view  wx:if="{{ item.peoplecount >= item.number}}" class='isFull'>
+            <image src='../../images/isFull.png'></image>
+            <view class='isFulltime'>{{ item.time }}</view>
+            <view class='isFullState'>已满</view>
+          </view>
+          <view  wx:else class='canChoose {{ selectOne == index ? "actives":"" }}'  bindtap='slectChoose' data-index = '{{ index }}' data-time="{{ item.appoTimeId }}" data-value = "{{ item.startime }}-{{  item.endtime }}" >
+            <image src='{{ selectOne == index ? selectChoose:canChoose }}'></image>
+            <view class='isFulltime'>{{ item.startime }}-{{  item.endtime }}</view>
+            <view>剩余:{{item.number-item.peoplecount }} </view>
+          
+          </view> 
+       
+      </view>
+      
+    </view>
+  </view>
+  <button class='btn' bindtap='goOrder'>确定</button>
+   <text style="color:red;margin-left:5%;"  wx:if="{{hint}}">提示：请选择时间段</text>
+   
+</view>

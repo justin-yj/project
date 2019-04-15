@@ -1,0 +1,350 @@
+#index .header {
+  height: 160px;
+  padding: 0 160px; }
+  #index .header img {
+    float: left;
+    margin-top: 48px; }
+  #index .header .search {
+    float: right;
+    display: flex;
+    margin-top: 60px; }
+    #index .header .search .textSearch {
+      width: 380px;
+      height: 46px;
+      border: 2px solid #0861ad;
+      text-indent: 10px; }
+    #index .header .search .submit {
+      width: 80px;
+      height: 50px;
+      background: #0861ad url(../images/search.png) no-repeat center center;
+      cursor: pointer; }
+#index .navi {
+  height: 50px;
+  font-size: 18px; }
+  #index .navi ul li {
+    width: 320px;
+    background: #0861ad;
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; }
+    #index .navi ul li a {
+      color: #fff; }
+  #index .navi ul :hover {
+    background: #1082de; }
+  #index .navi ul .active {
+    background: #1082de; }
+#index .banner {
+  height: 600px;
+  background: url(../images/bg_pic.png) no-repeat left top;
+  overflow: hidden;
+  padding: 50px 38px; }
+  #index .banner .bannerLeft {
+    width: 1000px;
+    height: 500px;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    #index .banner .bannerLeft ul {
+      position: absolute;
+      width: 9999px; }
+      #index .banner .bannerLeft ul li {
+        float: left;
+        position: relative; }
+        #index .banner .bannerLeft ul li img {
+          width: 1000px;
+          height: 500px; }
+    #index .banner .bannerLeft .subscript {
+      margin-right: 20px;
+      height: 10px;
+      position: absolute;
+      right: 20px;
+      bottom: 22px; }
+      #index .banner .bannerLeft .subscript span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        margin-left: 6px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        cursor: pointer; }
+      #index .banner .bannerLeft .subscript .onLight {
+        background: #ffb317; }
+  #index .banner .bannerRight {
+    width: 820px;
+    height: 500px;
+    float: right;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    box-sizing: border-box; }
+    #index .banner .bannerRight .bannerRightTab {
+      display: flex;
+      font-size: 18px;
+      color: #fff; }
+      #index .banner .bannerRight .bannerRightTab ul {
+        flex: 1; }
+        #index .banner .bannerRight .bannerRightTab ul li {
+          float: left;
+          margin-right: 20px;
+          width: 100px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          cursor: pointer; }
+        #index .banner .bannerRight .bannerRightTab ul .active {
+          background: #1082de; }
+      #index .banner .bannerRight .bannerRightTab span {
+        display: inline-block;
+        width: 120px;
+        text-align: right; }
+        #index .banner .bannerRight .bannerRightTab span a {
+          color: #fff;
+          line-height: 40px; }
+    #index .banner .bannerRight .bannerRightList {
+      display: none; }
+      #index .banner .bannerRight .bannerRightList ul {
+        margin-top: 20px;
+        overflow: hidden; }
+        #index .banner .bannerRight .bannerRightList ul li {
+          line-height: 40px;
+          font-size: 16px;
+          text-indent: 14px;
+          overflow: hidden;
+          background: url(../images/listTitle.png) no-repeat left center; }
+          #index .banner .bannerRight .bannerRightList ul li a {
+            color: #fff;
+            float: left;
+            width: 520px; }
+          #index .banner .bannerRight .bannerRightList ul li i {
+            float: right;
+            color: #cccccc;
+            font-style: normal; }
+#index .goveMent {
+  margin: 30px auto;
+  height: 710px;
+  overflow: hidden; }
+  #index .goveMent .goveMentLeft {
+    width: 360px;
+    float: left; }
+    #index .goveMent .goveMentLeft h4 {
+      width: 300px;
+      margin-left: 36px;
+      border-bottom: 1px solid #e9f1f7; }
+      #index .goveMent .goveMentLeft h4 span {
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 40px;
+        border-bottom: 2px solid #0861ad; }
+    #index .goveMent .goveMentLeft .goberMentLeftList ul {
+      margin-top: 80px; }
+      #index .goveMent .goveMentLeft .goberMentLeftList ul li {
+        width: 120px;
+        height: 100px;
+        padding: 20px 0;
+        float: left;
+        overflow: hidden; }
+        #index .goveMent .goveMentLeft .goberMentLeftList ul li span {
+          display: block;
+          text-align: center;
+          margin-bottom: 16px; }
+  #index .goveMent .goveMentEnter {
+    width: 1200px;
+    float: left; }
+    #index .goveMent .goveMentEnter .goveMentEnterTop {
+      height: 290px;
+      padding: 30px 15px;
+      box-sizing: border-box;
+      background: #e9f1f7; }
+      #index .goveMent .goveMentEnter .goveMentEnterTop .left {
+        width: 670px;
+        float: left;
+        overflow: hidden; }
+        #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftTop ul {
+          display: flex;
+          justify-content: space-between; }
+          #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftTop ul li {
+            width: 160px;
+            height: 120px;
+            background: #fff;
+            padding-top: 24px;
+            box-sizing: border-box;
+            cursor: pointer; }
+            #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftTop ul li span {
+              display: block;
+              text-align: center;
+              margin-bottom: 6px;
+              color: #1082de; }
+        #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftBottom {
+          margin-top: 20px; }
+          #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftBottom ul {
+            display: flex;
+            justify-content: space-between; }
+            #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftBottom ul li {
+              width: 210px;
+              height: 80px;
+              font-size: 16px;
+              background: url(../images/listBG.png) no-repeat left top;
+              text-align: center;
+              line-height: 80px;
+              cursor: pointer; }
+              #index .goveMent .goveMentEnter .goveMentEnterTop .left .leftBottom ul li a {
+                color: #1082de; }
+      #index .goveMent .goveMentEnter .goveMentEnterTop .right {
+        width: 450px;
+        float: right;
+        margin-top: -10px;
+        margin-right: 20px; }
+        #index .goveMent .goveMentEnter .goveMentEnterTop .right h4 {
+          font-size: 18px;
+          display: flex;
+          line-height: 36px;
+          justify-content: space-between;
+          border-bottom: 1px solid #aad2fd; }
+          #index .goveMent .goveMentEnter .goveMentEnterTop .right h4 span {
+            font-weight: bold;
+            border-bottom: 2px solid #0861ad; }
+          #index .goveMent .goveMentEnter .goveMentEnterTop .right h4 a {
+            color: #0861ad;
+            font-size: 16px;
+            position: relative;
+            top: 4px; }
+        #index .goveMent .goveMentEnter .goveMentEnterTop .right .rightList ul {
+          margin-top: 12px; }
+          #index .goveMent .goveMentEnter .goveMentEnterTop .right .rightList ul li {
+            text-indent: 16px;
+            background: url(../images/rightList.png) no-repeat left center;
+            line-height: 36px; }
+    #index .goveMent .goveMentEnter .goveMentEnterCenter {
+      margin-top: 40px;
+      height: 140px;
+      border: 1px solid #aad2fd;
+      background: url(../images/daiban.png) no-repeat -2px center; }
+      #index .goveMent .goveMentEnter .goveMentEnterCenter .title {
+        width: 160px;
+        height: 140px;
+        padding-top: 16px;
+        box-sizing: border-box; }
+        #index .goveMent .goveMentEnter .goveMentEnterCenter .title span {
+          display: block;
+          line-height: 24px;
+          font-size: 22px;
+          color: #fff;
+          text-align: center;
+          font-weight: bold; }
+    #index .goveMent .goveMentEnter .goveMentEnterBottom {
+      margin-top: 20px;
+      height: 200px;
+      background: url(../images/tupian.png) no-repeat -2px center;
+      display: flex; }
+      #index .goveMent .goveMentEnter .goveMentEnterBottom .title {
+        width: 160px;
+        height: 200px;
+        padding-top: 46px;
+        box-sizing: border-box; }
+        #index .goveMent .goveMentEnter .goveMentEnterBottom .title span {
+          display: block;
+          line-height: 24px;
+          font-size: 22px;
+          color: #fff;
+          text-align: center;
+          font-weight: bold; }
+      #index .goveMent .goveMentEnter .goveMentEnterBottom .listImg ul li {
+        width: 324px;
+        height: 200px;
+        overflow: hidden;
+        float: left;
+        margin-left: 22px; }
+        #index .goveMent .goveMentEnter .goveMentEnterBottom .listImg ul li img {
+          width: 324px;
+          height: 200px; }
+  #index .goveMent .goverMentRight {
+    width: 300px;
+    float: left;
+    margin-left: 30px; }
+    #index .goveMent .goverMentRight .top {
+      margin-top: 18px;
+      height: 270px; }
+      #index .goveMent .goverMentRight .top h4 {
+        width: 300px;
+        border-bottom: 1px solid #aad2fd; }
+        #index .goveMent .goverMentRight .top h4 span {
+          font-size: 18px;
+          font-weight: bold;
+          display: inline-block;
+          line-height: 40px;
+          border-bottom: 2px solid #0861ad; }
+        #index .goveMent .goverMentRight .top h4 a {
+          float: right;
+          margin-top: 14px;
+          color: #1082de;
+          font-size: 16px; }
+      #index .goveMent .goverMentRight .top ul {
+        margin-top: 10px; }
+        #index .goveMent .goverMentRight .top ul li {
+          text-indent: 60px;
+          line-height: 36px;
+          background: url(../images/rightList.png) no-repeat left center, url(../images/new.png) no-repeat 10px center; }
+    #index .goveMent .goverMentRight .bottom {
+      margin-top: 42px; }
+      #index .goveMent .goverMentRight .bottom ul li {
+        height: 80px;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 12px;
+        box-sizing: border-box;
+        overflow: hidden; }
+        #index .goveMent .goverMentRight .bottom ul li img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1; }
+        #index .goveMent .goverMentRight .bottom ul li h4 {
+          font-size: 18px;
+          color: #fff;
+          line-height: 30px; }
+        #index .goveMent .goverMentRight .bottom ul li p {
+          font-size: 14px;
+          color: #fff; }
+#index .classfly {
+  height: 340px;
+  background: #aad2fd;
+  padding: 30px 40px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; }
+  #index .classfly .list {
+    width: 600px;
+    background: #fff; }
+    #index .classfly .list h4 {
+      font-size: 16px;
+      color: #0861ad;
+      font-weight: bold;
+      line-height: 50px;
+      border: 1px solid #eee;
+      text-indent: 30px; }
+      #index .classfly .list h4 img {
+        margin-right: 10px; }
+    #index .classfly .list ul {
+      margin-top: 22px; }
+      #index .classfly .list ul li {
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        float: left; }
+        #index .classfly .list ul li a {
+          color: #387fd9; }
+#index .footer {
+  height: 200px;
+  background: #0861ad; }
+  #index .footer .footerCenter {
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px; }
+    #index .footer .footerCenter div p {
+      line-height: 30px;
+      color: #fff; }

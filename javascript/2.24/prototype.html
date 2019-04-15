@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: square;
+            width: 100px;
+            height: 50px;
+            cursor: crosshair;
+            border: 3px ridge red;
+
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            line-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="" id="video"></video>
+
+    <ul>
+        <li style=" list-style-position: outside;">
+            <p>cd</p>
+        </li>
+
+    </ul>
+
+</body>
+
+
+
+<script>
+
+    var arr = ['A', 'B', 'C'];
+    for (let index of arr.keys()) { //遍历索引
+        console.log(index);
+    }//0 1 2
+    // for (let item of arr.values()) { //遍历元素
+    //     console.log(item);
+    // }//'A' 'B' 'C'
+    for (let x of arr.entries()) { //遍历索引和元素
+        console.log(x);
+    }//[0, 'A'] [1, 'B'] [2, 'C']
+    for (let [index, value] of arr.entries()) { //遍历索引和元素
+        console.log(index + ': ' + value);
+    }//0: 'A'  1: 'B'  2: 'C'
+</script>
+
+</html>

@@ -1,0 +1,176 @@
+#selfanswer .address {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: url(../images/address.png) no-repeat left center;
+  text-indent: 15px;
+}
+
+#selfanswer .address a {
+  color: #0576cd;
+}
+
+#selfanswer .address i {
+  color: #888;
+  font-style: normal;
+}
+
+#selfanswer .main {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  min-height: 700px;
+}
+
+#selfanswer .main .title {
+  background: #f2f3f4;
+  height: 54px;
+}
+
+#selfanswer .main .title li {
+  width: 240px;
+  border-right: 1px solid #e4e4e4;
+  border-top: solid #f2f3f4;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+
+#selfanswer .main .title li a {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+#selfanswer .main .title li:hover {
+  color: #0576cd;
+  background: #fff;
+  border-top: solid #0576cd;
+  box-sizing: border-box;
+}
+
+#selfanswer .main .title li:hover a {
+  color: #0576cd;
+}
+
+#selfanswer .main .title .onLight {
+  background: #fff;
+  color: #0576cd;
+  border-top: solid #0576cd;
+}
+
+#selfanswer .main .title .onLight a {
+  color: #0576cd;
+}
+
+#selfanswer .main .content {
+  padding: 40px 30px;
+}
+
+#selfanswer .main .content .top {
+  background: #f2f3f4;
+  height: 44px;
+}
+
+#selfanswer .main .content .top li {
+  width: 20%;
+  border-right: 1px solid #e4e4e4;
+  border-top: solid #f2f3f4;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+}
+
+#selfanswer .main .content .top li a {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+#selfanswer .main .content .top li:hover {
+  background: #0576cd;
+  border-top: solid #0576cd;
+  box-sizing: border-box;
+}
+
+#selfanswer .main .content .top li:hover a {
+  color: #fff;
+}
+
+#selfanswer .main .content .top .onActive {
+  background: #0576cd;
+  border-top: solid #0576cd;
+}
+
+#selfanswer .main .content .top .onActive a {
+  color: #fff;
+}
+
+#selfanswer .main .content .contentSom {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#selfanswer .main .content .contentSom label {
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+#selfanswer .main .content .contentSom label strong {
+  width: 100px;
+  height: 50px;
+  line-height: 35px;
+  float: left;
+  color: #0576cd;
+  font-weight: normal;
+}
+
+#selfanswer .main .content .contentSom label strong i {
+  color: red;
+  padding: 0 4px;
+  font-style: normal;
+}
+
+#selfanswer .main .content .contentSom label .texttitle {
+  width: 370px;
+  height: 35px;
+  border: 1px solid #e4e4e4;
+  text-indent: 10px;
+}
+
+#selfanswer .main .content .contentSom label textarea {
+  width: 700px;
+  height: 140px;
+  resize: none;
+  color: #888;
+  padding: 5px 10px;
+  outline: none;
+}
+
+#selfanswer .main .content .contentSom label select {
+  border: none;
+  outline: none;
+  height: 35px;
+}
+
+#selfanswer .main .content .contentSom .btn {
+  width: 120px;
+  height: 40px;
+  background: url(../images/checkmore.png) no-repeat left top;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+#selfanswer .main .content .contentSom .reset {
+  width: 120px;
+  height: 40px;
+  background: url(../images/resetTwo.png) no-repeat left top;
+  color: #000;
+  font-size: 16px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,270 @@
+#medal .medal {
+  padding-top: 0.4rem;
+  width: 100%;
+  height: auto;
+  background: #fd5245 url(../images/showBg.png) no-repeat left top;
+  background-size: 100% 50%;
+  background-attachment: initial; }
+  #medal .medal .medalBook {
+    text-align: center;
+    background: url(../images/medalBookBorder.png) no-repeat 0.2rem bottom;
+    background-size: 7.1rem 100%;
+    position: relative;
+    z-index: 0; }
+    #medal .medal .medalBook .mdealContent {
+      width: 5.9rem;
+      margin-left: 0.8rem; }
+      #medal .medal .medalBook .mdealContent .zhengshu {
+        width: 3.6rem;
+        margin-top: 0.7rem; }
+      #medal .medal .medalBook .mdealContent dl {
+        padding-top: 0.4rem;
+        text-align: left; }
+        #medal .medal .medalBook .mdealContent dl dt {
+          font-size: 0.36rem;
+          color: #333;
+          font-weight: bold;
+          line-height: 0.6rem;
+          margin-bottom: 0.1rem; }
+        #medal .medal .medalBook .mdealContent dl dd {
+          font-size: 0.3rem;
+          line-height: 0.5rem; }
+      #medal .medal .medalBook .mdealContent .medalTitle {
+        color: #ce9f1f;
+        font-size: 0.3rem;
+        margin-top: 0.3rem; }
+        #medal .medal .medalBook .mdealContent .medalTitle img {
+          width: 0.3rem;
+          margin: 0 0.1rem; }
+      #medal .medal .medalBook .mdealContent .addMedalS {
+        position: relative; }
+        #medal .medal .medalBook .mdealContent .addMedalS .addMedal {
+          max-width: 6.8rem;
+          margin: 0.2rem auto; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal ul {
+            width: 100%;
+            overflow: hidden; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal li {
+            width: 1.27rem;
+            height: 1.1rem;
+            float: left;
+            margin: 0 0.1rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            position: relative; }
+            #medal .medal .medalBook .mdealContent .addMedalS .addMedal li span {
+              padding: 0 0.1rem;
+              color: #fff;
+              border-radius: 0.15rem;
+              position: absolute;
+              right: -0.1rem;
+              top: 0rem;
+              font-size: 0.23rem; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal .btnYellow span {
+            background: #fdbf26; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal .btnPink span {
+            background: #b133e6; }
+          #medal .medal .medalBook .mdealContent .addMedalS .addMedal .btnBlue span {
+            background: #3190e9; }
+      #medal .medal .medalBook .mdealContent .medalResult {
+        margin-top: 0.6rem;
+        position: relative;
+        padding-bottom: 1.3rem; }
+        #medal .medal .medalBook .mdealContent .medalResult p {
+          color: #333;
+          line-height: 0.5rem;
+          font-size: 0.3rem;
+          text-align: right; }
+        #medal .medal .medalBook .mdealContent .medalResult img {
+          width: 1.84rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1; }
+    #medal .medal .medalBook .showShare {
+      height: 3.4rem;
+      background: #fd5245;
+      position: absolute;
+      width: 100%;
+      bottom: -1rem; }
+      #medal .medal .medalBook .showShare .btnShare {
+        width: 100%;
+        text-align: left;
+        margin-top: 0.4rem;
+        padding: 0 0.3rem 0.5rem;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        #medal .medal .medalBook .showShare .btnShare .code {
+          display: block;
+          margin: 0 auto;
+          width: 1.9rem;
+          height: 1.9rem;
+          background: url(../images/codeBg.png) no-repeat left top;
+          background-size: 100% 100%;
+          text-align: center;
+          line-height: 1.85rem; }
+          #medal .medal .medalBook .showShare .btnShare .code img {
+            width: 1.7rem; }
+      #medal .medal .medalBook .showShare .longBtn {
+        text-align: center;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        color: #ffe2e0;
+        background: rgba(60, 43, 43, 0.16);
+        width: 5.6rem;
+        border-radius: 0;
+        margin: 0.6rem auto 0rem;
+        border-radius: 0.5rem;
+        font-size: 0.3rem; }
+        #medal .medal .medalBook .showShare .longBtn span {
+          padding: 0 0.1rem; }
+          #medal .medal .medalBook .showShare .longBtn span img {
+            width: 0.42rem;
+            padding-right: 0.05rem;
+            position: relative;
+            top: -0.03rem; }
+  #medal .medal .topTen {
+    margin-top: 2rem; }
+    #medal .medal .topTen h4 {
+      width: 100%;
+      height: .6rem;
+      color: #fff;
+      font-size: 0.32rem;
+      font-weight: normal;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 0.4rem; }
+      #medal .medal .topTen h4 img {
+        width: 4.14rem; }
+    #medal .medal .topTen .titleMsg {
+      font-size: .26rem;
+      color: #fff;
+      text-align: center;
+      padding: 0rem 0 0rem; }
+    #medal .medal .topTen .topTenContent {
+      height: 9.56rem;
+      background: url(../images/makeRule.png) no-repeat center top;
+      background-size: 7.2rem 9.56rem; }
+      #medal .medal .topTen .topTenContent .three {
+        width: 7rem;
+        padding-top: 1.6rem;
+        margin: 0 auto;
+        overflow: hidden; }
+        #medal .medal .topTen .topTenContent .three li {
+          width: 2.33rem;
+          float: left;
+          text-align: center;
+          color: #fff; }
+          #medal .medal .topTen .topTenContent .three li strong {
+            display: block;
+            font-size: .26rem;
+            line-height: 0.4rem; }
+          #medal .medal .topTen .topTenContent .three li span {
+            font-size: .36rem;
+            font-weight: bold; }
+      #medal .medal .topTen .topTenContent .lastFour {
+        margin-top: 0.8rem; }
+        #medal .medal .topTen .topTenContent .lastFour li {
+          height: 0.84rem;
+          line-height: 0.84rem;
+          text-indent: 0.6rem;
+          font-size: 0.3rem; }
+          #medal .medal .topTen .topTenContent .lastFour li b {
+            font-size: 0.35rem;
+            font-weight: normal;
+            color: #666;
+            float: left;
+            width: 0.4rem; }
+          #medal .medal .topTen .topTenContent .lastFour li span {
+            float: right;
+            padding-right: 0.5rem;
+            color: #fd5245; }
+          #medal .medal .topTen .topTenContent .lastFour li strong {
+            padding-left: 0.2rem;
+            font-weight: normal;
+            color: #333;
+            float: left; }
+  #medal .medal .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    padding: 0 0.3rem 0.5rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative; }
+    #medal .medal .btn p {
+      color: #fff;
+      font-size: 0.28rem;
+      line-height: 0.5rem; }
+      #medal .medal .btn p i {
+        font-style: normal;
+        color: #fff229; }
+    #medal .medal .btn a img {
+      width: 5.03rem; }
+#medal .showPop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  font-size: .34rem;
+  text-align: center; }
+  #medal .showPop ul {
+    margin-top: 30%; }
+    #medal .showPop ul li {
+      color: #fff;
+      line-height: 1rem;
+      -webkit-transform: translateY(0rem);
+              transform: translateY(0rem);
+      display: none; }
+    #medal .showPop ul .active {
+      display: block;
+      -webkit-animation: moves 2s linear;
+              animation: moves 2s linear; }
+@-webkit-keyframes moves {
+  0% {
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+    opacity: 0; }
+  100% {
+    font-size: 0.34rem;
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem); } }
+@keyframes moves {
+  0% {
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+    opacity: 0; }
+  100% {
+    font-size: 0.34rem;
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem); } }
+  #medal .showPop a {
+    display: inline-block;
+    width: 4.5rem;
+    padding: 0.3rem 0.7rem;
+    border: 2px  solid #efefef;
+    text-align: center;
+    border-radius: 0.7rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    margin-left: -2.25rem; }

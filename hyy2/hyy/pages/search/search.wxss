@@ -1,0 +1,93 @@
+/* pages/search/search.wxss */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rpx 24rpx;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 24rpx;
+  height: 64rpx;
+ background: rgba(0,0,0,0.06);
+ color: rgba(0,0,0,0.25);
+  border-radius: 32rpx;
+}
+
+.search > image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.search > input {
+  background: transparent;
+  flex: 1;
+  height: 100%;
+}
+.cancel{
+  color: #4381ED;
+  margin-left: 24rpx;
+}
+.history-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  height: 100rpx;
+  padding: 0 26rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.del{
+  display: flex;
+  align-items: center;
+  color: #4381ED;
+}
+.del>image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.history-info{
+  background: #fff;
+}
+.history-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 26rpx;
+  padding: 24rpx 0;
+  border-bottom: 1px solid #eee;
+  font-size: 32rpx;
+}
+.history-list>text{
+  width: 80%;
+  display: inline-block;
+}
+.history-list>image{
+  margin-right: 40rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 搜索列表 */
+.search-info{
+  padding: 0 26rpx;
+  background: #fff;
+}
+.search-list{
+  display: flex;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.search-list>image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 20rpx;
+}
+.search-list>text{
+  flex: 1;
+}

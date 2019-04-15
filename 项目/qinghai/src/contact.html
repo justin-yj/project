@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="lib/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/publickHeaderFooter.css" />
+		<link rel="stylesheet" type="text/css" href="css/contact.css" />
+		<title>联系我们</title>
+	</head>
+
+	<body id="contact">
+		@@include('include/header.html')
+
+		<div class="contact w1200 clearfix">
+			<div class="contactTop">
+				<span>您现在所在的位置:</span>
+				<a href="index.html">首页</a> <i>>> 联系我们</i>
+			</div>
+			<!--地图-->
+			<div class="contactLeft">
+				<div style="width:565px;height:420px;border:#ccc solid 1px;" id="dituContent"></div>
+			</div>
+			
+
+			<!--联系电话-->
+			<div class="contactRight">
+				<dl class="clearfix">
+					<dt>联系电话：</dt>
+					<dd><strong>办公室：</strong>0971 —8213060 </dd>
+					<dd><strong>网站技术支持：</strong>0971—8271072</dd>
+				</dl>
+				<p><strong>通信地址：</strong>青海省西宁市昆仑中路79号</p>
+				<p><strong>邮政编码：</strong>810000</p>
+			</div>
+
+		</div>
+
+		@@include('include/footer.html')
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+		<script src="js/contact.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+
+</html>

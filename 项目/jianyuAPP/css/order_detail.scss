@@ -1,0 +1,71 @@
+@import 'public.scss';
+#order_detail{
+	.main{
+		.lists{
+			margin-bottom:1.26rem;
+			.card{
+				.card-header{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: .4rem .3rem;
+					img{
+						width:36%;
+						flex:1;
+					}
+					h3{
+						font-size: .36rem;
+						color: $black;
+						margin: 0 .2rem;
+					}
+				}
+				.card-content{
+					.text{
+						padding: 0 .4rem;
+						font-size: .28rem;
+						margin-bottom: .12rem;
+					}
+					.item-list{
+						display: flex;
+						justify-content: flex-start;
+						padding: 0 .4rem;
+						margin-bottom: .16rem;
+						label{
+							font-weight: bold;
+							font-size: .28rem;
+							display: block;
+							white-space: nowrap;
+						}
+						.item-list-parents{
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: flex-start;
+							li{
+								margin-right: 0.1rem;
+								font-size: .28rem;
+								color: $gray_1;
+							}
+						}
+					}
+				}
+			}
+			.button{
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 99;
+				width: 100%;
+				height: .94rem;
+				line-height: .94rem;
+				text-align: center;
+				font-size: .36rem;
+				margin-top: .4rem;
+			}
+			.align{
+				background: $green_1;
+				color: $white;
+			}
+		}
+	}
+}

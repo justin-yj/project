@@ -1,0 +1,39 @@
+#nr .content {
+  width: 100%;
+  height: 100%; }
+  #nr .content .content_con {
+    width: 792px;
+    padding: 0 110px;
+    height: auto;
+    border: 1px solid #CCCCCC;
+    background-color: #fff; }
+    #nr .content .content_con img {
+      display: block;
+      margin: 0 auto; }
+    #nr .content .content_con .con_title {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 55px;
+      font-size: 34px;
+      color: #333333;
+      text-align: center; }
+    #nr .content .content_con .zhushi {
+      margin-top: 24px;
+      margin-bottom: 30px;
+      font-size: 13px;
+      color: #666;
+      text-align: center; }
+    #nr .content .content_con .line {
+      width: 100%;
+      height: 1px;
+      margin-bottom: 40px;
+      background-color: #D1D1D1; }
+    #nr .content .content_con .con {
+      padding-bottom: 65px; }
+      #nr .content .content_con .con p {
+        margin-bottom: 24px;
+        font-size: 15px;
+        color: #333333;
+        text-align: left;
+        line-height: 1.5;
+        text-indent: 2em; }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/focusnews.css">
+</head>
+
+<body>
+    <div id="header" class="w1200">
+    <div class="top">
+        <span>欢迎访问拉萨小微企业综合服务门户网站！</span>
+        <a href="javascript:;" id="login">登录</a>
+    </div>
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+    </div>
+    <div class="search">
+        <input type="text" placeholder="请输入关键词" class="caninput">
+        <input type="button" class="btn" value="全文搜索">
+    </div>
+</div>
+<div class="navigation w1200">
+    <ul>
+        <li><a href="javascript:;">首页</a></li>
+        <li class="naviactive"><a href="javascript:;">要闻</a></li>
+        <li><a href="javascript:;">政务</a></li>
+        <li><a href="javascript:;">服务</a></li>
+        <li><a href="javascript:;">互动</a></li>
+    </ul>
+</div>
+<!-- register start -->
+<div class="register">
+
+    <!-- 登录 -->
+    <div class="registerMain">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginList">
+            <label for=""><span>用户名</span> ：<input type="text" name="" id=""></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id=""></label>
+            <input type="button" value="登录 " class="longin">
+            <input type="button" value="注册 " class="zhuce">
+        </div>
+    </div>
+    <!-- 登录失败 -->
+    <div class="loginError">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginErrorMain">
+            <img src="./images/error.png" alt="">
+            <p><strong>登录失败！</strong>请检查您的用户和密码是否正确</p>
+            <a href="#" class="loginRight">确定</a>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div class="startRegister">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginList">
+            <p>公众用户注册：</p>
+            <label for=""><span>用户名</span> ：<input type="text" name="" id="" placeholder="请输入用户名"></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id="" placeholder="请输入字母、数字至少6位"></label>
+            <label for=""><span>密码</span> ：<input type="text" name="" id="" placeholder="请输入真实邮箱，以便修改和找回密码"></label>
+            <input type="button" value="注册 " class="zhuce" id="startRegister">
+        </div>
+    </div>
+    <!-- 注册成功 -->
+    <div class="successRegister">
+        <div class="registerTop">
+            <img src="./images/biaoti.png" alt="">
+        </div>
+        <!-- 关闭按钮 -->
+        <div class="close">
+            <img src="./images/close.png" alt="">
+        </div>
+        <div class="loginErrorMain">
+            <img src="./images/correct.png" alt="">
+            <p>注册成功，将为您自动登录跳转到首页...</p>
+
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="./js/register.js"></script>
+
+    <!-- banner轮播 -->
+    <div class="banner w1200">
+
+        <div class="left">
+            <ul style=" left: 0px;" id="imgs">
+                <li>
+                    <img src="./images/2.jpg" alt="">
+                    <p>航拍重启“诗画田园1111”</p>
+                </li>
+                <li>
+                    <img src="./images/newsbanner.jpg" alt="">
+                    <p>航拍重启“诗画田园222”</p>
+                </li>
+                <li>
+                    <img src="./images/newsbanner.jpg" alt="">
+                    <p>航拍重启“诗画田园3333”</p>
+                </li>
+                <li>
+                    <img src="./images/2.jpg" alt="">
+                    <p>航拍重启“诗画田园”</p>
+                </li>
+            </ul>
+            <div class="switch">
+                <img src="./images/arrowLeft.png" alt="" class="prepage">
+                <img src="./images/arrowRight.png" alt="" class="nextpage">
+            </div>
+            <div class="subscript">
+                <span class="onLight"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>图片新闻</strong>
+                    <span>Photo News</span>
+                    <img src="./images/moreDown.png" alt="">
+                </a>
+            </div>
+            <h4>航拍重庆“诗画田园” 勾勒美丽乡村 </h4>
+            <p>
+                五月，重庆梁平的多彩丘陵间、平川田园里， 处处是生机勃勃的景象，一幅幅美丽乡村图画铺展大地。 图为无人机航拍梁平区明达镇新益村的水
+            </p>
+        </div>
+    </div>
+    <!-- news -->
+    <div class="news w1200">
+        <div class="left">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>要闻</strong>
+                    <span>News</span>
+                    <img src="./images/moreDown.png" alt="" class="imgOne">
+                    <img src="./images/more.png" alt="更多" class="imgTwo">
+                </a>
+            </div>
+            <div class="top">
+                <img src="./images/1.jpg" alt="">
+                <div class="topRight">
+                    <h4>习近平与德国总理默克尔举行会晤</h4>
+                    <p>5月24日，国家主席习近平在北京人民大会堂与德国总理默克尔举行会晤。<br/> 习近平欢迎默克尔第11次访华，赞赏默克尔对中德关系的高度习近平欢迎默克尔第11次访华，赞赏默克尔对中德关系的高度
+                    </p>
+                    <span>2018-05-24</span>
+                </div>
+
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="javascript:;">
+                        <div class="listLeft">
+                            <strong>24</strong>
+                            <p>2018-05</p>
+                        </div>
+                        <div class="listRight">
+                            <h4>工商精准施策 破解群众办事堵点</h4>
+                            <p>近期，国家发展和改革委确定了第一季（4 月）有关教育、身份证明类的20 项群众反映最强烈的办事堵点问题。其项群众反映最强烈的办事堵点问题</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="listLeft">
+                            <strong>24</strong>
+                            <p>2018-05</p>
+                        </div>
+                        <div class="listRight">
+                            <h4>工商精准施策 破解群众办事堵点</h4>
+                            <p>近期，国家发展和改革委确定了第一季（4 月）有关教育、身份证明类的20 项群众反映最强烈的办事堵点问题。其项群众反映最强烈的办事堵点问题</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="listLeft">
+                            <strong>24</strong>
+                            <p>2018-05</p>
+                        </div>
+                        <div class="listRight">
+                            <h4>工商精准施策 破解群众办事堵点</h4>
+                            <p>近期，国家发展和改革委确定了第一季（4 月）有关教育、身份证明类的20 项群众反映最强烈的办事堵点问题。其项群众反映最强烈的办事堵点问题</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>动态</strong>
+                    <span></span>
+                </a>
+                <a href="javascript:;" class="more"><img src="./images/more.png" alt="更多"></a>
+            </div>
+            <ul>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;"> 市工商局优化“互联网</a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;"> 市工商局优化“互联网</a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 地方政府文件 -->
+    <div class="papers w1200">
+        <div class="papersOne">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>地方政府文件</strong>
+                    <span>Local government documents</span>
+                    <img src="./images/moreDown.png" alt="" class="imgOne">
+                    <img src="./images/more.png" alt="更多" class="imgTwo">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="papersTwo">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>通知公告</strong>
+                    <span></span>
+                </a>
+                <a href="javascript:;" class="more"><img src="./images/more.png" alt="更多"></a>
+            </div>
+            <ul>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;"> 市工商局优化“互联网</a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;"> 市工商局优化“互联网</a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+                <li><a href="javascript:;"> 全省商标受理工作座谈会在洛阳召开全省商标受理工作座谈会在洛阳召开 </a></li>
+                <li><a href="javascript:;"> 市工商局优化“互联网</a></li>
+                <li><a href="javascript:;">拉萨市工商局召开3·15消费维权记者座谈会 </a></li>
+            </ul>
+        </div>
+        <div class="papersThree papersOne">
+            <div class="title">
+                <a href="javascript:;">
+                    <strong>省级文件</strong>
+                    <span>Provincial documents</span>
+                    <img src="./images/moreDown.png" alt="" class="imgOne">
+                    <img src="./images/more.png" alt="更多" class="imgTwo">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p>拉萨市工商局召开3·15消费维权记者座谈会</p>
+                        <span>2018-04-25</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer">
+    <div class="footerContent w1200">
+        <img src="./images/red.png" alt="">
+        <p>洛阳市工商行政管理局 版权所有2009-2012 联系电话：0379-63196178</p>
+        <p> 豫ICP备15017748号</p>
+    </div>
+</div>
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/focusnews.js"></script>
+</body>
+
+</html>

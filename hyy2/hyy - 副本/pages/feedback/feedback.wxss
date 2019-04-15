@@ -1,0 +1,67 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background: #f9f9f9;
+}
+textarea {
+  width: 96%;
+  margin-left: 2%;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+.chooseImage {
+  width: 144rpx;
+  height: 144rpx;
+  margin-left:10rpx;
+  float: left;
+}
+.imagesLisr{
+  width: 100%;
+  overflow: hidden;
+
+}
+.chooseImage image {
+  width: 160rpx;
+  height: 160rpx;
+  position: relative;
+  left: 0;
+  top: 5rpx;
+}
+.imagesLisrOne{
+  display: inline-block;
+  width: 150rpx;
+  height: 144rpx;
+  margin:15rpx;
+  float: left;
+  position: relative;
+}
+.imagesLisrOne .imagesLisrOne1{
+  width: 144rpx;
+  height: 144rpx;
+}
+.imagesLisrOne2{
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+}
+.imagesLisrOne2 image{
+  width: 60rpx;
+  height: 60rpx;
+}
+button{
+  margin-top: 40rpx;
+  width: 94%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+ background: #4381ed;
+ border-radius: 8rpx;
+}
+.max{
+  font-size: 30rpx;
+  color: #999;
+  float: right;
+  margin-right: 20rpx;
+}

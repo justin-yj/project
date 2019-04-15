@@ -1,0 +1,67 @@
+/* pages/noticeContent/noticeContent.wxss */
+page{
+  padding-bottom: 120rpx;
+}
+.notice{
+  border: 1px solid #8a8a8a;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.banner{
+  width: 100%;
+  height: 250rpx;
+}
+.banner > image{
+  width: 100%;
+  height: 100%;
+}
+.p{
+  padding: 0 24rpx 124rpx;
+}
+.noticeTitle{
+  text-align: center;
+  line-height: 72rpx;
+  height:72rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.noticeContent{
+  height: 800rpx;
+  font-size: 32rpx;
+  text-indent: 56rpx;
+  text-align: left;
+  margin-top: 20rpx;
+}
+.check{
+  font-size: 32rpx;
+}
+.checkbox{
+  margin-bottom: 20rpx;
+  margin-left: 35rpx;
+  position: relative;
+  top: -4rpx;
+}
+.finishReading{
+  width: 100%;
+  height:100rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+button{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  border-radius: 0rpx;
+  border: none;
+}
+.btnClass{
+  background: #4381ed;
+  color: #fff;
+}
+

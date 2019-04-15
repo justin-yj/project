@@ -1,0 +1,90 @@
+#affairs{
+    .address{
+      height: 50px;
+      line-height: 50px;  
+      font-size: 14px;
+      background: url(../images/address.png) no-repeat left center;
+      text-indent: 15px;
+      a{
+          color: #0576cd;
+      }
+      i{
+          color: #888;
+          font-style: normal;
+      }
+    }
+    .main{
+        background: #fff;
+        border: 1px solid #e4e4e4;
+        min-height: 700px;
+      .title{
+          background: #f2f3f4;
+          height: 54px;
+          li{
+              width: 240px;
+              border-right: 1px solid #e4e4e4;
+              border-top: solid #f2f3f4;
+              text-align: center;
+              line-height: 50px;
+              float: left;
+              a{
+                  display: block;
+                  font-size: 16px;
+                  color: #222;
+              } 
+              &:hover{
+                color: #0576cd;
+                background: #fff;
+                border-top: solid #0576cd;
+                box-sizing: border-box;
+                a{
+                    color: #0576cd;
+                }
+              }
+          }
+          .onLight{
+                background: #fff;
+              color: #0576cd;
+              border-top: solid #0576cd;
+              a{
+                  color: #0576cd;
+              }
+          }
+      }  
+      .content{
+        .list{
+            font-size: 16px;
+            margin-top: 10px;
+            li{
+                padding: 0 30px;
+                line-height: 48px;
+                height: 48px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                text-indent: 15px;
+                background: url(../images/preList.png) no-repeat 30px center ;
+                a{
+                    color:#252525;
+                    p{
+                        width: 650px;
+                        float: left;
+                        &:hover{
+                            color: #0576cd;
+                        }
+                    }
+                    span{
+                        float: right;
+                        color: #888;
+                    }
+                }
+            }
+        }
+        .paging{
+            margin-top: 20px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+      }
+    }
+}

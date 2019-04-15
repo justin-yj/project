@@ -1,0 +1,62 @@
+<view class='order'>
+  <!-- 身份证号  -->
+  <view class='userMessgion'>
+    <view>身份证号</view>
+    <input type='idcard' placeholder="请填写你的身份证号" bindfocus='getFocus' bindblur='hideFocus' bindinput='userIdcar' value='{{ arrinput }}' maxlength='18'></input>
+  </view>
+  <view class='warning' style="padding-top:{{warningMsg== ''?0:20  }}rpx" wx:if="{{ warning }}" >注意 ：{{ warningMsg }}</view>
+  <view class='warning' wx:if="{{ isBacks }}"  style="padding-top:{{blackOrde.breaknumber == 0?0:20  }}rpx">
+    <view class='warning' wx:if="{{ blackOrde.breaknumber == 0  }}"></view>
+    <view class='warning' wx:elif="{{ blackOrde.breaknumber >= blackOrde.breakappointmentnumb  }}">您的爽约次数已达{{ blackOrde.breaknumber }}次,{{blackOrde.breakappointment}}天内不能再次预约</view>
+    <view class='warning' wx:elif="{{ blackOrde.breaknumber>0 && blackOrde.breaknumber<3  }}">您的爽约次数已达{{ blackOrde.breaknumber }}次</view>
+  </view>
+
+
+  <view class="mengban" wx:if="{{ isShow }}" catchtap='isHide'></view>
+  <view class='history' wx:if="{{ isShow }}" style='height:{{ arr.length>4 ?  380:arr.length*100 }}rpx'>
+    <view catchtap='chooseId' data-id="{{ index }}" wx:for="{{  arr }}" wx:key="{{ index }}"> {{ item }}</view>
+  </view>
+
+  <!-- 业务类型选择 -->
+  <view class='select_box'>
+    <view class='select'>
+      <view class='leixings'>业务类型</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{classfiy}}" class='select_text' data-id=' {{classfiy[index]}}'>
+        <view class="picker">
+          {{classfiy[index]}}
+        </view>
+      </picker>
+      <image class='select_img ' src='../../images/arrowRight.png'></image>
+    </view>
+    <view class='option_box' style='height:{{show?(classfiy.length>3?250:150):0}}rpx;padding-bottom:{{show?0:10}}rpx;'>
+    </view>
+  </view>
+  <!-- 日期选择 -->
+  <view class="calendar">
+    <view class='title'>预约时间</view>
+    <view class='calendar_content'>
+
+      <image src="../../images/calendar.png"></image>
+     <view wx:if="{{ warnings }}" class='warnings'>预约已满</view>
+      <view class='calendarNum' wx:else>
+        <view class="section">
+         
+          <picker mode="multiSelector" class='chooseRiqi' bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+            <view class="picker">
+              {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}}
+            </view>
+          </picker>
+        </view>
+        <image src='../../images/arrowRight.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="identifying ">
+    <view class='changeOne'>验证码</view>
+    <input placeholder='请输入右侧验证码' disabled='{{ canInput }}' bindinput='tijiao' maxlength='4' value='{{yzmValue}}'></input>
+    <image src='{{imgSrc}}' catchtap='changeOne'></image>
+  </view>
+  <form bindsubmit="submit" report-submit='true'>
+    <button class='btn' form-type="submit" disabled='{{ disable }}'>提交</button>
+  </form>
+</view>

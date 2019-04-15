@@ -1,0 +1,94 @@
+body {
+    background: #f4f4f9;
+}
+.zhengyan{
+    font-size: 0.3rem!important;
+    color: #2cb7ca!important;
+}
+.header {
+    height: 0.9rem;
+    background: #fff;
+    position: relative;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #cecece;
+    a {
+        position: absolute;
+        left: 0.2rem;
+        top: 0;
+        span {
+            font-size: 0.36rem;
+            color: #656565;
+        }
+    }
+    h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 0.36rem;
+    }
+}
+
+.takeIn{
+    margin-top: 0.2rem;
+    border-top: 1px solid #cecece;
+    div.pass{
+            width: 100%;
+            position: relative;
+            background: #fff;
+        input{
+            width: 7.2rem;
+            height: 0.9rem;
+            margin-left: 0.3rem;
+            border: none;
+            border-bottom: 1px solid #cecece;
+            font-size: 0.32rem;
+            background: #fff;
+        }
+        span{
+            width: 0.5rem;
+            height: 0.9rem;
+            line-height: 0.9rem;
+            position: absolute;
+            right: 0.3rem;
+            top: 0.1rem;
+            font-size: 0.2rem;
+            color: #c2c2c2;
+        }
+       
+    }
+    div.againPass{
+        border-bottom: 1px solid #cecece;
+        input{
+          border-bottom: none;   
+        }
+    }
+    #btn{
+        margin-left: 0.3rem;
+        width: 6.9rem;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        font-size: 0.32rem;
+        border: none; 
+        border-bottom: 1px solid #cecece;
+         background: #95dbe4;
+        color: #fff;
+        margin-top: 0.8rem;
+        border: none;
+        border-radius: 0.06rem;
+    }
+    .hint{
+        width: 3.4rem;
+        height: 0.96rem;
+        background: #4c4c4c;
+        color: #fff;
+        text-align: center;
+        line-height: 0.96rem;
+        position: fixed;
+        left: 2rem;
+        bottom: 4rem;
+        z-index: 99;
+        border-radius: 0.1rem;
+        font-size: 0.3rem;
+        display: none;
+    }
+    
+}

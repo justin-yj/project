@@ -1,0 +1,213 @@
+.main {
+  width: 100%;
+  overflow: scroll; }
+
+.main::-webkit-scrollbar {
+  display: none; }
+
+#pay_order .main .progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .24rem 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0; }
+  #pay_order .main .progress .p-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    #pay_order .main .progress .p-item .line {
+      position: absolute;
+      top: .2rem;
+      right: -0.92rem;
+      height: 0.04rem;
+      width: 1.86rem;
+      background: #2CB7CA; }
+    #pay_order .main .progress .p-item .p-item-icon {
+      width: .48rem;
+      height: .48rem;
+      line-height: .48rem;
+      text-align: center;
+      border-radius: 50%;
+      background: #2CB7CA; }
+      #pay_order .main .progress .p-item .p-item-icon i {
+        color: #fff;
+        font-size: .11rem; }
+    #pay_order .main .progress .p-item .icon-gray {
+      background: #888; }
+    #pay_order .main .progress .p-item span {
+      margin-top: 0.06rem; }
+#pay_order .main .form .form-item {
+  background: #fff; }
+  #pay_order .main .form .form-item .label-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .28rem .3rem; }
+    #pay_order .main .form .form-item .label-title .left {
+      font-size: .26rem;
+      color: #1d1d1d; }
+      #pay_order .main .form .form-item .label-title .left strong {
+        color: #2cb7ca;
+        font-size: .32rem;
+        margin: 0 0.08rem; }
+    #pay_order .main .form .form-item .label-title .right {
+      color: #2cb7ca;
+      font-size: .3rem; }
+  #pay_order .main .form .form-item .choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .3rem; }
+    #pay_order .main .form .form-item .choose .choose-item {
+      position: relative;
+      width: 48%;
+      height: 1.25rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: .08rem;
+      border: 1px solid #e0e0e0; }
+      #pay_order .main .form .form-item .choose .choose-item h2 {
+        font-size: .3rem;
+        margin-bottom: 0.08rem; }
+        #pay_order .main .form .form-item .choose .choose-item h2 .crown {
+          font-size: .24rem;
+          font-weight: normal;
+          color: #e0e0e0; }
+      #pay_order .main .form .form-item .choose .choose-item p {
+        font-size: .24rem;
+        color: #888;
+        letter-spacing: 0.02rem; }
+      #pay_order .main .form .form-item .choose .choose-item .initial {
+        text-decoration: line-through; }
+      #pay_order .main .form .form-item .choose .choose-item .mark {
+        position: absolute;
+        width: .48rem;
+        height: .36rem;
+        top: 0;
+        right: 0;
+        color: #2cb7ca;
+        display: none; }
+    #pay_order .main .form .form-item .choose .active {
+      border: 1px solid #2cb7ca; }
+    #pay_order .main .form .form-item .choose .active h2 {
+      color: #2cb7ca; }
+    #pay_order .main .form .form-item .choose .active h2 .crown {
+      color: #ffb900; }
+    #pay_order .main .form .form-item .choose .active .mark {
+      display: block; }
+  #pay_order .main .form .form-item .tips {
+    display: flex;
+    align-items: center;
+    padding: .2rem .4rem;
+    color: #888; }
+    #pay_order .main .form .form-item .tips .tips-icon {
+      color: #2cb7ca;
+      font-size: .32rem;
+      font-weight: bold;
+      margin-left: .1rem; }
+  #pay_order .main .form .form-item .form-control {
+    height: .88rem;
+    line-height: .88rem;
+    display: flex;
+    align-items: center;
+    font-size: .28rem;
+    color: #888;
+    margin-left: .3rem;
+    border-bottom: 1px solid #e0e0e0; }
+    #pay_order .main .form .form-item .form-control .on {
+      color: #888; }
+    #pay_order .main .form .form-item .form-control .input {
+      flex: 1;
+      padding: 0 .3rem;
+      display: flex; }
+      #pay_order .main .form .form-item .form-control .input input[type='text'] {
+        height: 100%;
+        width: 100%; }
+      #pay_order .main .form .form-item .form-control .input input[type='number'] {
+        flex: 1; }
+      #pay_order .main .form .form-item .form-control .input button {
+        background: transparent;
+        color: #2cb7ca;
+        font-size: .3rem; }
+  #pay_order .main .form .form-item .way {
+    height: .88rem;
+    line-height: .88rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .3rem;
+    padding: 0 .3rem; }
+    #pay_order .main .form .form-item .way span:nth-child(1) {
+      color: #888; }
+    #pay_order .main .form .form-item .way span:nth-child(2) {
+      color: #1d1d1d; }
+#pay_order .main .form .msg {
+  padding: .33rem .4rem .16rem;
+  color: #888; }
+#pay_order .main .form .radio-form {
+  background: transparent;
+  padding: .2rem .3rem;
+  border: 0;
+  margin: 0; }
+  #pay_order .main .form .radio-form .weui-cell {
+    padding: 0; }
+  #pay_order .main .form .radio-form .weui-cell__hd {
+    transform: scale(0.8); }
+  #pay_order .main .form .radio-form .read {
+    font-size: .26rem; }
+    #pay_order .main .form .radio-form .read a {
+      color: #2cb7ca; }
+#pay_order .main .form .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .2rem .3rem; }
+  #pay_order .main .form .price span {
+    text-decoration: line-through;
+    font-size: .26rem;
+    color: #888;
+    margin-right: .18rem; }
+  #pay_order .main .form .price strong {
+    font-size: .4rem;
+    color: #1d1d1d; }
+#pay_order .main .form .form-btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  #pay_order .main .form .form-btn .btn {
+    flex: 1;
+    height: .94rem;
+    line-height: .94rem;
+    text-align: center;
+    font-size: .36rem; }
+  #pay_order .main .form .form-btn .prew {
+    background: #fff;
+    color: #2cb7ca; }
+  #pay_order .main .form .form-btn .enter {
+    background: #e0e0e0;
+    color: #fff; }
+#pay_order #tipDialog {
+  text-align: left; }
+  #pay_order #tipDialog .dialog-title {
+    font-size: .34rem; }
+  #pay_order #tipDialog .info li {
+    text-align: left !important;
+    font-size: .28rem; }
+    #pay_order #tipDialog .info li label {
+      display: block;
+      font-weight: bold;
+      margin: .24rem 0; }
+    #pay_order #tipDialog .info li p {
+      font-size: .28rem;
+      line-height: 1.4; }
+  #pay_order #tipDialog .weui-dialog__btn_primary {
+    color: #2cb7ca; }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/selfanswerFive.css">
+</head>
+
+<body id="selfanswerFive">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;互动</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <ul>
+                <li class="onLight"> <a href="#">公众留言</a></li>
+                <li> <a href="#">合理化建议</a></li>
+                <li> <a href="#">问卷调查</a></li>
+                <li> <a href="#">问卷自答</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="top">
+                <ul>
+                    <li class="onActive"> <a href="#">列表</a></li>
+                    <li> <a href="#">我要提问</a></li>
+                    <li> <a href="#">我的提问</a></li>
+                    <li> <a href="#">我的积分</a></li>
+                    <li> <a href="#">知道达人榜</a></li>
+                </ul>
+            </div>
+            <div class="contentSom">
+                <dl id="listNum">
+                    <dt><h4>知道达人榜</h4></dt>
+                    <dd>
+                        <span class="left"><img src="./images/first.png" alt=""></span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left"><img src="./images/second.png" alt=""></span>
+                        <span class="right">第ering</span>
+                    </dd>
+                    <dd>
+                        <span class="left"><img src="./images/third.png" alt=""></span>
+                        <span class="right">第ssing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">4</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">5</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">6</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">7</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">8</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">9</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                    <dd>
+                        <span class="left">10</span>
+                        <span class="right">第一ing</span>
+                    </dd>
+                </dl>
+            </div>
+
+
+        </div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script>
+        $(function () {
+            $("#listNum dd:odd").addClass("activeBg")
+            
+        })
+    </script>
+
+</body>
+
+</html>

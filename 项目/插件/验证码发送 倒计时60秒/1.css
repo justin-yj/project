@@ -1,0 +1,50 @@
+table{
+	border: none;
+	border-bottom: 1px solid #DEDEDE;
+	border-right: 1px solid #DEDEDE;
+	width: 135px;
+	float: left;
+}
+.tableOne{
+	border-right: none;
+	margin-left: 10px;
+}
+table tr{
+	height: 26px!important;
+	border: none;
+}
+table tr td{
+	height: 26px;
+	width: 140px;
+	line-height: 26px;
+	border: 1px solid #DEDEDE;
+	border-bottom: none;
+	border-right: none;
+}
+table tr td strong{
+	width: 26px;
+	height: 28px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #DEDEDE;
+	font-weight: normal;
+	font-size: 14px;
+	color: #1c1c1c;
+}
+table tr td span{
+	font-size: 14px;
+	padding-left: 5px;
+	color: #1c1c1c;
+}
+.dcsOne strong{
+	background: #fe7200;
+	color: #fff;
+}
+.dcsThree strong{
+	background: #d5c67d;
+	color: #fff;
+}
+.dcsTwo strong{
+	background: #fea600;
+	color: #fff;
+}

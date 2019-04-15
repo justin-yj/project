@@ -1,0 +1,19 @@
+<!--pages/information/information.wxml-->
+
+<view class='tishi'>提示：每个账号最多添加10条个人信息</view>
+<view class=" information">
+  <view class=" informationList" data-index="{{index}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend='touchEnd' wx:for="{{list}}" wx:key="index" style="left:{{informationList.offsetX}}rpx">
+    <image src='../../images/idCard.png' class='imageBg'></image>
+    <text>身份证</text>
+    <view>{{ item.idcard }}</view>
+    <view class='moveLong'>
+      <!-- <image src='../../images/arrowID.png' class='imageArrow'></image> -->
+    </view>
+
+
+    <view class="del" catchtap="del" data-index="{{index}}">
+      <text>删除</text>
+    </view>
+  </view>
+</view>
+<button bindtap='gomessageEdit'>添加 </button>

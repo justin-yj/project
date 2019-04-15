@@ -1,0 +1,237 @@
+page {
+  background: #f9f9f9;
+}
+
+.date-show {
+  position: relative;
+  width: 250rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 40rpx;
+  color: #282828;
+  text-align: center;
+  margin: 59rpx auto 10rpx;
+}
+
+.lt-arrow, .rt-arrow {
+  position: absolute;
+  top: 1rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.lt-arrow image, .rt-arrow image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.lt-arrow image {
+  transform: rotate(180deg);
+}
+
+.lt-arrow {
+  left: -110rpx;
+  transform: rotate(360deg);
+}
+
+.rt-arrow {
+  right: -100rpx;
+}
+
+.header {
+  font-size: 0;
+  padding: 0 24rpx;
+}
+
+.header>view {
+  display: inline-block;
+  width: 14.285%;
+  color: #333;
+  font-size: 30rpx;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 39rpx 0;
+}
+
+.weekMark {
+  position: relative;
+}
+
+.weekMark view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #22a7f6;
+}
+
+.date-box {
+  font-size: 0;
+  padding: 10rpx 0;
+  position: relative;
+  background: #fff;
+}
+
+.date-box>view {
+  position: relative;
+  display: inline-block;
+  width: 14.285%;
+  height: 100rpx;
+  color: #bbb;
+  font-size: 40rpx;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.date-head {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.nowDay .date-head {
+  width: 60rpx;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #22a7f6;
+  margin: 0 auto;
+}
+
+.date-weight {
+  font-size: 24rpx;
+  font-weight: bold;
+  position: absolute;
+  top: -0rpx;
+  width: 100%;
+}
+
+.date-value {
+  padding: 0rpx 0 10rpx;
+}
+
+.zw {
+  height: 60rpx;
+}
+
+.nowDay .date-weight {
+  color: #22a7f6;
+}
+
+.one {
+  position: absolute;
+  bottom: 0;
+  right: 5rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.two {
+  position: absolute;
+  bottom: 30rpx;
+  right: 5rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.map {
+  font-size: 30rpx;
+  text-align: center;
+  color: green;
+}
+
+.chooseOn {
+  color: #000;
+  font-weight: 600;
+}
+
+.sss {
+  color: #bbb;
+}
+
+.chooseTime {
+  font-size: 28rpx;
+  padding: 0 4%;
+  width: 92%;
+}
+
+.chooseTitle {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-top: 10rpx;
+}
+
+.classfiy {
+  display: flex;
+}
+
+.chooseList {
+  width: 33.3%;
+  height: 200rpx;
+  position: relative;
+}
+
+.chooseList image {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+  left: -2rpx;
+  top: 0;
+}
+
+.isFull view {
+  text-align: center;
+}
+
+ .isFull .isFulltime {
+  margin-top: 40rpx;
+  line-height: 60rpx;
+}
+
+.isFull .isFullState {
+  color: #ff8383;
+}
+
+.canChoose image {
+  width: 100%;
+  height: 90%;
+}
+
+.canChoose view {
+  text-align: center;
+}
+
+.selectChoose image {
+  width: 100%;
+  height: 90%;
+}
+
+.canChoose .isFulltime {
+  margin-top: 40rpx;
+  line-height: 60rpx;
+}
+
+.selectChoose view {
+  text-align: center;
+  color: #fff;
+}
+.actives{
+  color: #fff;
+}
+.selectChoosetime {
+  margin-top: 40rpx;
+  line-height: 60rpx;
+  color: #fff;
+}
+
+.btn {
+  width: 90%;
+  color: #fff;
+  background: #3448f0;
+}

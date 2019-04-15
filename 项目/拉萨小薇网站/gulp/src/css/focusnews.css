@@ -1,0 +1,460 @@
+.banner {
+  margin-top: 20px;
+  height: 380px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .left {
+  width: 880px;
+  height: 380px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .left ul {
+  position: absolute;
+  width: 100000px;
+}
+
+.banner .left ul li {
+  float: left;
+  position: relative;
+}
+
+.banner .left ul li img {
+  width: 880px;
+  height: 380px;
+}
+
+.banner .left ul li p {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  left: 0px;
+  bottom: 2px;
+  text-indent: 20px;
+  background: url(../images/newbannerBg.png) no-repeat top;
+}
+
+.banner .left .switch {
+  height: 50px;
+}
+
+.banner .left .switch .prepage {
+  position: absolute;
+  left: 20px;
+  top: 46%;
+  cursor: pointer;
+}
+
+.banner .left .switch .nextpage {
+  position: absolute;
+  right: 20px;
+  top: 46%;
+  cursor: pointer;
+}
+
+.banner .left .subscript {
+  margin-right: 20px;
+  height: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+}
+
+.banner .left .subscript span {
+  display: inline-block;
+  width: 36px;
+  height: 6px;
+  background: #fff;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.banner .left .subscript .onLight {
+  background: #0576cd;
+}
+
+.banner .right {
+  width: 320px;
+  float: right;
+  padding: 20px;
+}
+
+.banner .right .title a {
+  display: block;
+}
+
+.banner .right .title a strong {
+  font-size: 18px;
+  color: #0576cd;
+}
+
+.banner .right .title a span {
+  color: #888;
+  font-size: 10px;
+  padding: 0 4px;
+}
+
+.banner .right .title a img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.banner .right h4 {
+  font-size: 18px;
+  color: #222;
+  font-weight: normal;
+  padding: 15px 0;
+}
+
+.banner .right p {
+  font-size: 14px;
+  color: #686868;
+  line-height: 26px;
+}
+
+.news {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.news .left {
+  width: 830px;
+  height: 380px;
+  border: 1px solid  #e4e4e4;
+  border-top: solid #0576cd;
+  float: left;
+  padding: 12px 20px;
+  background: url(../images/newsBg.png) no-repeat left top;
+}
+
+.news .left .title a {
+  display: block;
+}
+
+.news .left .title a strong {
+  font-size: 18px;
+  color: #0576cd;
+}
+
+.news .left .title a span {
+  color: #888;
+  font-size: 10px;
+  padding: 0 4px;
+}
+
+.news .left .title a .imgOne {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.news .left .title a .imgTwo {
+  float: right;
+}
+
+.news .left .top {
+  margin-top: 20px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.news .left .top img {
+  width: 140px;
+  height: 90px;
+  float: left;
+}
+
+.news .left .top .topRight {
+  width: 630px;
+  float: right;
+}
+
+.news .left .top .topRight h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+}
+
+.news .left .top .topRight p {
+  font-size: 14px;
+  color: #686868;
+  line-height: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news .left .top .topRight span {
+  font-size: 14px;
+  color: #888;
+}
+
+.news .left .list li {
+  height: 56px;
+  margin-top: 14px;
+}
+
+.news .left .list li a {
+  display: block;
+}
+
+.news .left .list li a .listLeft {
+  float: left;
+  width: 56px;
+}
+
+.news .left .list li a .listLeft strong {
+  display: block;
+  height: 44px;
+  font-size: 40px;
+  color: #888;
+  font-weight: normal;
+  text-align: center;
+}
+
+.news .left .list li a .listLeft p {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+}
+
+.news .left .list li a .listRight {
+  float: right;
+  width: 720px;
+  margin-top: 10px;
+}
+
+.news .left .list li a .listRight h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: initial;
+}
+
+.news .left .list li a .listRight p {
+  font-size: 14px;
+  color: #686868;
+  line-height: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news .left .list li a .listRight p:hover {
+  color: #0576cd;
+}
+
+.news .right {
+  width: 350px;
+  height: 380px;
+  border: 1px solid  #e4e4e4;
+  float: right;
+}
+
+.news .right .title {
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 20px;
+}
+
+.news .right .title a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.news .right .title a strong {
+  padding: 10px 0 9px;
+  font-size: 16px;
+  color: #0576cd;
+}
+
+.news .right .title a span {
+  padding: 1px 16px;
+  border-bottom: 2px solid #0576cd;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -16px;
+}
+
+.news .right .title .more {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+
+.news .right ul {
+  font-size: 14px;
+}
+
+.news .right ul li {
+  padding: 0 20px;
+  line-height: 36px;
+  height: 36x;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 13px;
+  background: url(../images/preList.png) no-repeat 20px center;
+}
+
+.news .right ul li a {
+  color: #222;
+}
+
+.news .right ul li a:hover {
+  color: #0576cd;
+}
+
+.papers {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.papers .papersOne {
+  width: 830px;
+  height: 250px;
+  border: 1px solid  #e4e4e4;
+  border-top: 3px solid #0576cd;
+  float: left;
+  padding: 12px 20px;
+  background: url(../images/newsBg.png) no-repeat left top;
+}
+
+.papers .papersOne .title a {
+  display: block;
+}
+
+.papers .papersOne .title a strong {
+  font-size: 18px;
+  color: #0576cd;
+}
+
+.papers .papersOne .title a span {
+  color: #888;
+  font-size: 10px;
+  padding: 0 4px;
+}
+
+.papers .papersOne .title a .imgOne {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.papers .papersOne .title a .imgTwo {
+  float: right;
+}
+
+.papers .papersOne ul {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.papers .papersOne ul li {
+  padding: 0 0 0 20px;
+  line-height: 38px;
+  height: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: url(../images/preList.png) no-repeat left center;
+}
+
+.papers .papersOne ul li a {
+  color: #222;
+}
+
+.papers .papersOne ul li a p {
+  width: 650px;
+  float: left;
+}
+
+.papers .papersOne ul li a p:hover {
+  color: #0576cd;
+}
+
+.papers .papersOne ul li a span {
+  float: right;
+  color: #888;
+}
+
+.papers .papersTwo {
+  width: 350px;
+  height: 520px;
+  float: right;
+  border: 1px solid  #e4e4e4;
+}
+
+.papers .papersTwo .title {
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 20px;
+}
+
+.papers .papersTwo .title a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.papers .papersTwo .title a strong {
+  padding: 10px 0 9px;
+  font-size: 16px;
+  color: #0576cd;
+}
+
+.papers .papersTwo .title a span {
+  padding: 1px 16px;
+  border-bottom: 2px solid #0576cd;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -16px;
+}
+
+.papers .papersTwo .title .more {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+
+.papers .papersTwo ul {
+  font-size: 14px;
+}
+
+.papers .papersTwo ul li {
+  padding: 0 20px;
+  line-height: 36px;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 13px;
+  background: url(../images/preList.png) no-repeat 20px center;
+}
+
+.papers .papersTwo ul li a {
+  color: #222;
+}
+
+.papers .papersTwo ul li a:hover {
+  color: #0576cd;
+}
+
+.papers .papersThree {
+  margin-top: 20px;
+}

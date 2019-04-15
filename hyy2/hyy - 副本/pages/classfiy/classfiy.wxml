@@ -1,0 +1,23 @@
+<!--pages/classfiy/classfiy.wxml-->
+<view>
+    <view class='classTitle'>{{ details }}</view>
+    <view class='classfly'>
+        <view class='classflyTitle'><text></text> 业务包含</view>
+        <view class='classContent'>
+        <view> 业务1 </view>
+        <view> 业务2 </view>
+         <view>业务3 </view>
+         <view>业务4 </view>
+        <view> 业务5 </view>
+         <view>业务6 </view>
+         <view>业务7 </view>
+        </view>
+    </view>
+    <view class='datum classfly'>
+       <view class='classflyTitle'><text></text> 所需材料</view>
+       <view class='datumContent' wx:for="{{ content }}" wx:key="{{ index }}">
+         <view> {{item}}</view>
+       </view>
+    </view>
+    <view class='btn' bindtap='btn'>开始预约</view>
+</view>

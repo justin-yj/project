@@ -1,0 +1,81 @@
+<!--pages/inLine/inLine.wxml-->
+<view class='inline'>
+  <view class='inlineTitle'>
+    <view class='inLineListName'>{{listValue[0].latticename}}</view>
+    <view class='inlineaddress'>
+      <image src='../../images/addres_inline.png'></image>
+      {{ listValue[0].latticeaddress }}  <text> {{ juli }}km</text>
+    </view>
+    <view class='comeHere' bindtap='comeHere'>
+      <image src='../../images/comeHere.png'></image>
+      <text>到这去</text>
+    </view>
+  </view>
+  <view class='inLineFc'>
+    <view class="renshu">
+      <view class='inlineContent'>
+        {{ numberPerson.appointmentSum }}
+        <text>/{{ numberPerson.canappointmentSum }}人 </text>
+      </view>
+      <view class='inLineList'>
+        <text class='inlineName'>当前已预约人数</text>
+      </view>
+    </view>
+  </view>
+  <view class=' listTop'>
+    <view class='canOrder'> 预约时间</view>
+    <view class='detailTime'>
+      <text>周一至周五,每天 </text>
+      <view wx:for="{{timeDuan}}" wx:key="{{ index }}" class='timeContent'>
+        <text wx:if="{{ index == timeDuanLength }}">{{ item.startime }}~{{ item.endtime }}</text>
+        <text wx:else>{{ item.startime }}~{{ item.endtime }},</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='lerixing'>
+    <view class='classflyTitle'>业务类型</view>
+    <view class='classflys' style='margin-left:20rpx;'>
+      <view class='classfly' wx:for="{{ classfiy }}" wx:key='{{ index }}'>
+        <navigator url='../classfiy/classfiy?dcs={{indexNum}}&id={{ item.id }}&classfly={{index}}&details={{item.businessname}}'>
+          <text>{{item.businessname}}</text>
+          <view class='ziyewu'>业务包含：{{item.childBusiness}}</view>
+          <image src="../../images/arrowRight.png"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 联系方式 -->
+  <view class=' contact'>
+    <view class='canOrder'> 联系方式</view>
+    <view class='detailTime'>
+      <image src='../../images/phone.png'></image>
+      <text bindtap='calluser'>0892-8822787</text>
+    </view>
+  </view>
+
+  <view class='pageNotes'>
+      <view>如果你有任何关于预约相关的问题 </view>
+      <view class='pageNotesContent'> 请认真阅读 <text bindtap='orderNotice'>《预约须知》</text></view>
+  </view>
+
+  <form bindsubmit="submit" report-submit='true' wx:if="{{numberPerson.appointmentSum<numberPerson.canappointmentSum}}">
+    <button form-type="submit">开始预约</button>
+  </form>
+</view>
+<!-- 预约须知弹窗 -->
+<scroll-view scroll-y="true" wx:if="{{ showNotice }}" class=' noticeContent {{showNotice?"noticemove": "" }}'>
+  <view>
+
+    <view class='p'>
+      <text class='titleNotice'> 预约须知 </text>
+      <text wx:for="{{ contenta }}" wx:key="{{ index }}">
+  {{ item }}
+  </text>
+    </view>
+
+  </view>
+</scroll-view>
+<button bindtap='btnBack' class=' btnClass' wx:if="{{ showNotice }}">我已阅读</button>

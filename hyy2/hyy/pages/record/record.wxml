@@ -1,0 +1,176 @@
+<!--pages/record/record.wxml-->
+<!--预约记录导航  -->
+<view class='record-nav'>
+  <view class='nav-txt'>
+    <block>
+      <text wx:if="{{currentTab == 0}}">全部</text>
+      <text wx:elif="{{currentTab == 1}}">未赴约</text>
+      <!-- <text wx:elif="{{currentTab == 2}}">办理中</text> -->
+      <text wx:elif="{{currentTab == 3}}">已赴约</text>
+      <text wx:elif="{{currentTab == 4}}">已取消</text>
+      <text wx:elif="{{currentTab == 5}}">爽约</text>
+    </block>
+    <image src='../../images/classify.png' bindtap='toggleHandle'></image>
+  </view>
+  <view class='modal-screen {{showModal}}' bindtap='hideModal'></view>
+  <view class='nav-tabs {{typeShow}}'>
+    <view class='triangle'></view>
+    <view class="classify">
+      <view class="classify-list {{currentTab==0 ? 'active' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+      <view class="classify-list {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">未赴约</view>
+      <!-- <view class="classify-list {{currentTab==2 ? 'active' : ''}}" data-current="2" bindtap="swichNav">办理中</view> -->
+      <view class="classify-list {{currentTab==3 ? 'active' : ''}}" data-current="3" bindtap="swichNav">已赴约</view>
+      <view class="classify-list {{currentTab==4 ? 'active' : ''}}" data-current="4" bindtap="swichNav">已取消</view>
+      <view class="classify-list {{currentTab==5 ? 'active' : ''}}" data-current="5" bindtap="swichNav">爽约</view>
+    </view>
+  </view>
+</view>
+<!-- 预约记录内容 -->
+<view class='record-cont'>
+  <!-- 全部 -->
+  <view class="all {{currentTab == 0 ? '' : 'hide'}}">
+    <view wx:if="{{recordList.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list " wx:for="{{recordList}}" wx:key="this">
+      <view catchtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+      </view>
+      <block>
+        <view class='status wfy-status' wx:if="{{ item.status == 1 }}">未赴约</view>
+        <view class='status sy-status' wx:elif="{{ item.status == 3 }}">爽约</view>
+        <view class='status yfy-status' wx:elif="{{ item.status == 5 }}">已赴约</view>
+        <view class='status blz-status' wx:elif="{{ item.status == 4 }}">办理中</view>
+        <view class='status qx-status' wx:elif="{{ item.status == 2 }}">已取消</view>
+      </block>
+      <block wx:if="{{item.status == 3}}">
+        <view class='tips'>提示：您有{{item.frequencyBreaking}}次爽约，累计{{item.breakappointmentnumb}}次{{item.breakappointment}}天内不可再次预约</view>
+      </block>
+      <block>
+        <view class='btn cancel' data-status="{{item.status}}" data-id="{{item.id}}" wx:if="{{item.status == 1}}" catchtap='cancelHandle'>取消预约</view>
+
+        <form bindsubmit="submit" report-submit='true' class='formids' wx:elif="{{item.status == 2 || item.status == 3}}" data-latticeid="{{item.lacctieid}}" data-businessid="{{item.businessTypesId}}" data-idcardss="{{item.idCardss}}" data-sycount="{{item.frequencyBreaking}}"
+          data-cansycount="{{item.breakappointmentnumb}}" data-syday="{{item.breakappointment}}">
+          <button form-type="submit" class='btn align'>再次预约</button>
+        </form>
+        <view class='btn evaluate' wx:elif="{{item.status == 5}}">
+
+          <form bindsubmit="submit" report-submit='true' data-latticeid="{{item.lacctieid}}" data-businessid="{{item.businessTypesId}}" data-idcardss="{{item.idCardss}}" data-sycount="{{item.frequencyBreaking}}" data-cansycount="{{item.breakappointmentnumb}}" data-syday="{{item.breakappointment}}">
+            <button form-type="submit" class='align'>再次预约</button>
+          </form>
+          <text wx:if="{{item.evaluationStatus == false}}" data-id="{{item.id}}" catchtap='goEvaluate'>立即评价</text>
+          <text wx:else data-id="{{item.id}}" catchtap='goEvaluateDetail'>已评价</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 未赴约 -->
+  <view class="notAppointment {{currentTab == 1 ? '' : 'hide'}}">
+    <view wx:if="{{notAppointment.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list " wx:for="{{notAppointment}}" wx:key="this" bindtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+      <block>
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+        <view class='status wfy-status'>未赴约</view>
+        <view class='btn cancel' data-status="{{item.status}}" data-id="{{item.id}}" catchtap='cancelHandle'>取消预约</view>
+      </block>
+
+    </view>
+  </view>
+  <!-- 办理中 -->
+  <view class="processing {{currentTab == 2 ? '' : 'hide'}}">
+    <view wx:if="{{processing.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list " wx:for="{{processing}}" wx:key="this" bindtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+      <block>
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+        <view class='status blz-status'>办理中</view>
+      </block>
+    </view>
+  </view>
+  <!-- 已赴约 -->
+  <view class="haveAppointment {{currentTab == 3 ? '' : 'hide'}}">
+    <view wx:if="{{haveAppointment.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list" wx:for="{{haveAppointment}}" wx:key="this">
+      <view bindtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+        <view class='status yfy-status'>已赴约</view>
+      </view>
+      <view class='btn evaluate'>
+        <form bindsubmit="submit" report-submit='true' data-latticeid="{{item.lacctieid}}" data-businessid="{{item.businessTypesId}}" data-idcardss="{{item.idCardss}}" data-sycount="{{item.frequencyBreaking}}" data-cansycount="{{item.breakappointmentnumb}}" data-syday="{{item.breakappointment}}">
+          <button form-type="submit" class='align'>再次预约</button>
+        </form>
+        <text wx:if="{{item.evaluationStatus == false}}" data-id="{{item.id}}" catchtap='goEvaluate'>立即评价</text>
+        <text wx:else data-id="{{item.id}}" catchtap='goEvaluateDetail'>已评价</text>
+      </view>
+    </view>
+  </view>
+  <!-- 已取消 -->
+  <view class="canceList {{currentTab == 4 ? '' : 'hide'}}">
+    <view wx:if="{{canceList.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list" wx:for="{{canceList}}" wx:key="this">
+      <view catchtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+        <view class='status qx-status'>已取消</view>
+
+
+      </view>
+      <form bindsubmit="submit" report-submit='true' class='formids' data-latticeid="{{item.lacctieid}}" data-businessid="{{item.businessTypesId}}" data-idcardss="{{item.idCardss}}" data-sycount="{{item.frequencyBreaking}}" data-cansycount="{{item.breakappointmentnumb}}"
+        data-syday="{{item.breakappointment}}">
+        <button form-type="submit" class='btn align'>再次预约</button>
+      </form>
+    </view>
+  </view>
+  <!-- 爽约 -->
+  <view class="breakAppointment  {{currentTab == 5 ? '' : 'hide'}}">
+    <view wx:if="{{breakAppointment.length == 0}}" class='no-record'>
+      <image src='../../images/norecord.png'></image>
+      <view>暂无预约记录</view>
+    </view>
+    <view class="record-list" wx:for="{{breakAppointment}}" wx:key="this">
+      <view bindtap='goDetail' data-status="{{item.status}}" data-id="{{item.id}}" data-latticeid="{{item.lacctieid}}">
+        <view class='name'>{{item.latticeName}}</view>
+        <view class='time'>时间：{{item.appoDate}} {{item.startime}}~{{item.endtime}}</view>
+        <view class='address'>地址：{{item.latticeAddress}}</view>
+        <view class='type'>业务类型：{{item.businessName}}</view>
+        <view class='card'>身份证号：{{item.idCard}}</view>
+        <view class='tips'>提示：您有{{item.frequencyBreaking}}次爽约，累计{{item.breakappointmentnumb}}次{{item.breakappointment}}天内不可再次预约</view>
+        <view class='status sy-status'>爽约</view>
+      </view>
+      <form bindsubmit="submit" report-submit='true' data-latticeid="{{item.lacctieid}}" data-businessid="{{item.businessTypesId}}" data-idcardss="{{item.idCardss}}" data-sycount="{{item.frequencyBreaking}}" data-cansycount="{{item.breakappointmentnumb}}" data-syday="{{item.breakappointment}}">
+        <button form-type="submit" class='btn align'>再次预约</button>
+      </form>
+    </view>
+  </view>
+</view>

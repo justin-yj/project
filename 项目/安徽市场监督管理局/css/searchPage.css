@@ -1,0 +1,54 @@
+.naviTips{
+    width: 100%;
+    background: #ddd;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+}
+.naviTipsContent{
+    width: 1014px;
+    margin: 0 auto;
+   
+}
+.naviTipsContent i{
+    font-style: normal;
+    color: red;
+    text-decoration: underline;
+}
+.naviTips p a{
+    color: #666;
+}
+
+.government{
+    width: 1014px;
+    margin: 10px auto 50px;
+}
+.government .top{
+    font-size: 16px;
+    color: #444;
+    line-height: 40px;
+}
+.government ul li{
+    padding: 0 20px;
+    margin-top: 0px;
+}
+.government ul li a{
+    color: #107bc0;
+    display: block;
+    text-indent: 15px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 6px;
+    background: url(../images/list.png) no-repeat left center;
+}
+.government ul li p{
+    padding:0 15px;
+    margin-top: 5px;
+    color: #333;
+}
+.government ul li span{
+    display: block;
+    margin-top: 10px;
+    padding:0 15px;
+}

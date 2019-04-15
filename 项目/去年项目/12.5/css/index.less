@@ -1,0 +1,148 @@
+@charset "utf-8";  
+body{
+    background: url(../images/bg.png) no-repeat top center;
+}
+.w{
+    width: 1000px;
+    margin: 0 auto ;
+    background: #fff;
+    padding-bottom: 200px;
+}
+.w760{
+    width: 760px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+@fontcolor : #0076c8;
+@bodycolor: #111;
+.title{
+    padding-top: 5px;
+    h2{
+        text-align: center;
+        font-size: 16px;
+        color: @fontcolor;
+        height: 50px;
+        line-height: 50px;
+    }
+    div{
+        .w760;
+        height: 166px;
+        padding: 10px 30px;
+        background: url(../images/3.png) no-repeat left top;
+        h4{
+            font-size: 14px;
+            color: @fontcolor;
+            line-height: 30px;
+            height: 30px;
+            margin-bottom: 6px;
+        }
+        p{
+            color: @bodycolor;
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding-left: 32px;
+            input{
+                width: 190px;
+                height: 20px;
+                border: 1px solid #707070;
+                text-indent: 10px;
+            }
+            select{
+                width: 192px;
+                height: 24px;
+                border: 1px solid #707070;
+                outline: none;
+                text-indent: 10px;
+            }
+        }
+        input.btn{
+            width: 62px;
+            height: 26px;
+            border: none;
+            cursor: pointer;
+            background: url(../images/button.png) no-repeat center center;
+            margin-left: 100px;
+            color: #0b5474;
+            &:hover{
+                color: @fontcolor;
+            }
+        }
+    }
+   
+}
+.classBorder{
+    border-right: 1px solid #fff;
+}
+
+.main{
+    .w760;
+    margin-top: 10px;
+    
+    dl{
+        border: 1px solid #abccdc;
+        dt{
+            color: @fontcolor;
+            font-size: 14px;
+            line-height: 34px;
+            background: url(../images/smallTitle.png) no-repeat center -4px;
+            text-align: center;
+            span{
+                display: block;
+                float: left;
+            }
+            span.classOne{
+               .classBorder;
+               text-align: center; 
+               width: 54px;
+            }
+            span.classTwo{
+               .classBorder;
+               text-align: center; 
+               width: 400px;
+            }
+            span.classThree{
+                .classBorder;
+               text-align: center; 
+               width: 170px;
+            }
+            span.classFour{
+               text-align: center; 
+               width: 120px;
+            }
+        }
+        dd{
+            height: 30px;
+            line-height: 30px;
+            border-top: 1px solid #fff;
+            font-size: 14px;
+            color: @bodycolor;
+            cursor: pointer;
+            &:hover{
+                color: @fontcolor;
+            }
+            span{
+                display: block;
+                float: left;
+            }
+            span.classOne{
+               .classBorder;
+               text-align: center; 
+               width: 54px;
+            }
+            span.classTwo{
+               .classBorder;
+               text-align: center; 
+               width: 400px;
+            }
+            span.classThree{
+                .classBorder;
+               text-align: center; 
+               width: 170px;
+            }
+            span.classFour{
+               text-align: center; 
+               width: 120px;
+            }
+        }
+    }
+}

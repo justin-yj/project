@@ -1,0 +1,6 @@
+<!--pages/helpcenterFour/helpcenter.wxml-->
+<view>
+
+<image src='../../images/evalaFour.png'></image>
+</view>
+

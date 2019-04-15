@@ -1,0 +1,72 @@
+	/*字体图标*/
+	
+	@font-face {
+		font-family: 'jyapp';
+		src: url('jyAPP.eot');
+		src: url('jyAPP.eot?#iefix') format('embedded-opentype'),
+		 url('jyAPP.woff') format('woff'), 
+		 url('jyAPP.ttf') format('truetype'),
+		  url('jyAPP.svg') format('svg');
+	}
+	
+	.jy-app {
+		position: relative;
+		top: 0px;
+		display: inline-block;
+		font-family: 'jyapp';
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		text-align: center;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	
+	.youjiantou:before {
+		content: "\A3";
+	}
+	.qq:before {
+		content: "\A5";
+	}
+	.biyan:before {
+		content: "\A6";
+	}
+	.zuojiantou:before {
+		content: "\A7";
+	}
+	.pengyouquan:before {
+		content: "\A8";
+	}
+	.shiyanshi:before {
+		content: "\A9";
+	}
+	.shoucang:before {
+		content: "\AA";
+	}
+	.sousuo:before {
+		content: "\AB";
+	}
+	.weixin:before {
+		content: "\AC";
+	}
+	.wodeme:before {
+		content: "\AD";
+	}
+	.shezhi:before {
+		content: "\AE";
+	}
+	.tongzhi:before {
+		content: "\AF";
+	}
+	.guanzhuqiye:before {
+		content: "\B3";
+	}
+	.guanzhuxiangmu:before {
+		content: "\B4";
+	}
+	.zhengyan:before {
+		content: "\B5";
+	}
+	.wodewode:before {
+		content: "\B6";
+	}

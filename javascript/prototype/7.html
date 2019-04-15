@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test_Scroll_Bar_js</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    <div id="part1" style="height:1000px;overflow: auto;background: lightyellow;"></div>
+    <div id="part2" style="height:1000px;overflow: auto;background:lightgreen;"></div>
+    <script>
+        
+        window.addEventListener("scroll", function(event) {
+            var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+            console.log(scrollTop);    
+            if(document.documentElement.scrollHeight == document.documentElement.clientHeight + scrollTop ) {
+                alert("Touch_Buttom!");
+            }        
+        });
+    </script>
+</body>
+</html>

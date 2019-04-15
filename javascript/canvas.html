@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .page{
+            margin: 50px;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .paging{
+            /* width: 300px; */
+            /* overflow: hidden; */
+        }
+        .paging ul{
+            display: flex;
+        }
+        .paging ul li{
+            width: 30px;
+            margin: 0 5px;
+            float: left;
+            text-align: center;
+        }
+        .page{
+            display: flex;
+        }
+        .startPage ,.endPage{
+            padding: 0 10px;
+            background: rgb(0, 195, 255);
+        }
+        .active{
+            background: #0099ff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+        <div class="page">
+                <button class="prePage">上一页</button>
+                <div class="startPage">1</div>
+                <div class="preRows">...</div>
+                <div class="paging">
+                    <ul>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="nextRows">...</div>
+                <div class="endPage"></div>
+                <button class="nextPage">下一页</button>
+        </div> 
+       
+
+        <script>
+        
+            let paging = document.querySelector('.paging ul');
+            let prePage = document.querySelector('.prePage');
+            let nextPage = document.querySelector('.nextPage');
+            let endPageEl = document.querySelector('.endPage');
+            let startPageEl = document.querySelector('.startPage');
+            let preRowsEl = document.querySelector('.preRows');
+            let nextRowsEl = document.querySelector('.nextRows');
+            
+            class Page{
+                constructor(x, y) {
+                    this.page = x;
+                    this.count = y;
+                    this.z = 0;
+                    this.rows = x+y+1;
+                }
+                prePage(){
+                    let list = '';
+                    if( this.z>1){
+                        this.z  = this.z-1;
+                        console.log(this.z)
+                        this.rows = this.z+this.page;
+                        
+                    }else{
+                        this.z = 1;
+                        this.rows  = this.page+1;
+                    }
+                    this.shows();
+                    
+                    for(let i = this.z;i<this.rows;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    paging.innerHTML = list;
+                }
+                nextPage(dcs){
+                    let list = '';
+                    this.shows();
+                    if( this.z+this.page>this.count){
+                        this.z = this.z 
+                    }else{
+                        this.z  = this.z+1;
+                    }
+                    this.rows = this.z+this.page;
+                    for(let i = this.z;i<this.rows;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    paging.innerHTML = list;
+                    endPageEl.innerHTML = this.count;
+                    return 'haha'
+                }
+                startPage(){
+                    let list = '';
+                    this.z  = 1;
+                    this.rows = this.page;
+                    this.shows();
+                    for(let i = this.z;i<=this.rows;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    paging.innerHTML = list
+                }
+                endPage(){
+                    let list = '';
+                    
+                    this.z  = this.count-this.page+1;
+                    this.shows();
+                    for(let i = this.z;i<=this.count;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    paging.innerHTML = list
+                }
+                preRows(){
+                    let list = '';
+                    if( this.z>this.page){
+                        this.z  = this.z-this.page;
+                        this.rows = this.z+this.page;
+                    }else{
+                        this.z = 1;
+                        this.rows = this.page;
+                    }
+                    this.shows();
+                    
+                    for(let i = this.z;i<this.rows;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    console.log(this.z, this.page,this.count,this.rows)
+                    paging.innerHTML = list
+                }
+                nextRows(){
+                    let list = '';
+                    if( this.z+this.page>this.count){
+                        this.z = this.z ;
+                    }else{
+                        this.z  = this.z+this.page;
+                    }
+                   
+                    this.rows = this.z+this.page;
+                    if(this.rows>this.count){
+                        this.rows = this.count;
+                    }
+                    this.shows();
+                    for(let i = this.z;i<this.rows;i++){
+                        list += '<li>'+ i +'</li>'
+                    }
+                    paging.innerHTML = list;
+                }
+                shows(){
+                    console.log(this.z,this.count,this.page)
+                    if(this.z >= this.page){
+                        preRowsEl.style.display = 'block';
+                        startPageEl.style.display = 'block';
+                    }
+                    else{
+                        preRowsEl.style.display = 'none';
+                        startPageEl.style.display = 'none';
+                    }
+                    if(this.z<=(this.count-this.page)){
+                        nextRowsEl.style.display = 'block';
+                        endPageEl.style.display = 'block';
+                    }else{
+                        nextRowsEl.style.display = 'none';
+                        endPageEl.style.display = 'none';
+                    }
+                }
+
+            }
+
+            let page = new Page(5,100);
+           
+            page.nextPage();
+            
+            let firstElements = document.querySelector('.paging ul li');
+            firstElements.classList.add('active')
+            let elements = document.querySelectorAll('.paging ul li');
+            elements.forEach((element,x) => {
+                element.onclick = function(v){
+                    console.log(v.target.innerText)
+                }
+            });
+            
+            prePage.onclick = function(){
+                page.prePage();
+            }
+            nextPage.onclick = function(){
+                page.nextPage(2);
+                console.log(page.nextPage(2))
+            }
+            endPageEl.onclick = function(){
+                page.endPage();
+            }
+            startPageEl.onclick = function(){
+                page.startPage();
+            }
+            preRowsEl.onclick = function(){
+                page.preRows();
+            }
+            nextRowsEl.onclick = function(){
+                page.nextRows();
+            }
+        </script>
+
+
+</body>
+</html>

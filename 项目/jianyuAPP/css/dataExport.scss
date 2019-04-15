@@ -1,0 +1,172 @@
+html{
+    .page{
+        background: #F5F4F9;
+        .bar{
+            font-size:.26rem;
+            height: 1.65rem;
+            background: #fff;
+            ul{
+                padding:0  0.93rem;
+                li{ 
+                    width: 2.5rem;
+                    float: left;
+                    position: relative;
+                    div{
+                        float: right;
+                        text-align: right;
+                        span{
+                            display:  inline-block;
+                            width: .64rem;
+                            height: .64rem;
+                            background: #DCDADD;
+                            border-radius: 100%;
+                            color: #fff;
+                            text-align: center;
+                            line-height: .64rem;
+                            margin-top: .28rem;
+                        }
+                        strong{
+                            width: 1.04rem;
+                            display: block;
+                            text-align: center;
+                            position: relative;
+                            left: .2rem;
+                            line-height: .46rem;
+                            color: #888888;
+                            font-weight: normal;
+                        }
+                    }
+                    .border-right{
+                        position: absolute;
+                        left:0;
+                        top: .6rem;
+                        width: 1.8rem;
+                        border-top: 1px solid #DCDADD;
+                        margin: 0 .03rem;
+                       
+                    }
+                }
+                .one{
+                    width: .64rem;
+                }
+                .active{
+                    color: #2cb7ca;
+                    strong{
+                        color: #2cb7ca;
+                    }
+                    span{
+                        background: #2cb7ca;
+                    }
+                    .border-right{
+                        border-top: 1px solid #2cb7ca;
+                    }
+                }
+            }
+        }
+        
+        .chooseTime{
+            margin-top: .32rem;
+            ul{
+                display: flex;
+                padding:0 .32rem;
+                justify-content: space-between;
+                li{
+                    width: 1.64rem;
+                    height: .64rem;
+                    background: #fff;
+                    border-radius: 3px;
+                    text-align: center;
+                    line-height: .64rem;
+                    a{
+                        font-size: .28rem;
+                        color: #1d1d1d;
+                        display: block;
+                        font-weight: bold;
+                    }
+                }
+                .active{
+                    background: #2cb7ca;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+            .dateMake{
+                height: 1.08rem;
+                line-height: 1.08rem;
+                background: #fff;
+                margin-top: .16rem;
+                padding: 0 .3rem;
+                color: #888888;
+                span{
+                    display: inline-block;
+                    width: 2.9rem;
+                    height: .72rem;
+                    line-height: .72rem;
+                    font-size: .3rem;
+                    border: 1px solid #CECECE;
+                    margin: .16rem .2rem;
+                    border-radius: 0.02rem;
+                    i{
+                        padding: 0 .3rem
+                    }
+                }
+            }
+        }
+        .elseChoose{
+            margin-top: 0.3rem;
+            p{
+             font-size: .24rem;
+             color: #888;
+             line-height: .36rem; 
+             padding:0 .4rem;  
+            }
+            .elseChooseList{
+                margin-top: .16rem;
+                ul{
+                    li{
+                        padding:0 .4rem;  
+                        height: .88rem;
+                        line-height: .88rem;
+                        background: #fff;
+                        font-size: 0.3rem;
+                        color: #1d1d1d;
+                        margin-bottom: .24rem;
+                        a{
+                            display: block;
+                            strong{
+                                width: 1.5rem;
+                                font-weight: normal;
+                                float: left;
+                            }
+                            span{
+                                float: left;
+                                width: 4.5rem;
+                                height: .88rem;
+                                color: #686868;
+                                font-size: .26rem;
+                                overflow:hidden;
+                                text-overflow:ellipsis;
+                                white-space:nowrap;
+                                text-align: right;
+                            }
+                            i{
+                                float: right;
+                                color: #707070;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            width: 100%;
+            height: 0.94rem;
+            background: #2cb7ca;
+            font-size: .36rem;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}

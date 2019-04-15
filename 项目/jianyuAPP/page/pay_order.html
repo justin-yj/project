@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>支付订单</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/pay_order.css">
+	</head>
+	<body>
+		<div id="pay_order">
+			<!-- <header class="header">
+				<a href="#" class="return pull-left">
+					<i class="icon iconfont">&#xe640;</i>
+				</a>
+				<h1 class="title">支付订单</h1>
+			</header> -->
+			<main class="main">
+				<div class="progress">
+					<div class="p-item">
+						<p class="p-item-icon">
+							<i class="icon iconfont">&#xe606;</i>
+						</p>
+						<span>条件筛选</span>
+						<div class="line"></div>
+					</div>
+
+					<div class="p-item">
+						<p class="p-item-icon">
+							<i class="icon iconfont">&#xe617;</i>
+						</p>
+						<span>支付订单</span>
+						<div class="line"></div>
+					</div>
+
+					<div class="p-item">
+						<p class="p-item-icon icon-gray">
+							<i class="icon iconfont">&#xe616;</i>
+						</p>
+						<span>数据导出</span>
+					</div>
+				</div>
+				<div class="form">
+					<div class="form-item">
+						<div class="label-title">
+							<span class="left">已为您筛选 <strong>16300</strong>条数据</span>
+							<a href="#" class="right">返回筛选</a>
+						</div>
+						<!-- 选择字段包 -->
+						<div class="choose">
+							<div class="choose-item">
+								<h2>标准字段包</h2>
+								<p>
+									<span class="initial">1元/条</span>
+									<span class="current">0.5元/条</span>
+								</p>
+								<!-- <i class="icon iconfont mark">&#xe611;</i> -->
+								<img class="mark" src="../image/mark.png" >
+							</div>
+							<div class="choose-item active">
+								<h2>
+									<i class="icon iconfont crown">&#xe604;</i>
+									<span>高级字段包</span>
+								</h2>
+								<p>
+									<span class="initial">1元/条</span>
+									<span class="current">0.5元/条</span>
+								</p>
+								<!-- <i class="icon iconfont mark">&#xe611;</i> -->
+								<img class="mark" src="../image/mark.png" >
+							</div>
+						</div>
+						<!-- 字段包提示 -->
+						<div class="tips">
+							<span>标准字段包、高级字段包</span>
+							<i class="icon iconfont tips-icon" data-id="dialog">&#xe63b;</i>
+						</div>
+					</div>
+					<p class="msg">*数据导出将发送至邮箱</p>
+					<div class="form-item">
+						<div class="form-control">
+							<label for="">邮箱：</label>
+							<div class="input">
+								<input type="text">
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="">验证码：</label>
+							<div class="input ">
+								<input type="number" value="" id="code">
+								<button type="button" id="sendCode">发送验证码</button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item" style="margin-top: .2rem;">
+						<div class="way">
+							<span>支付方式</span>
+							<span>微信支付</span>
+						</div>
+					</div>
+					<p class="msg">购买须知：限额：20000条；标准字段包：原价1元/条，5折价0.5元/条计费；高级字段包：原价2元/价1元/条原价2元;</p>
+					<div class="weui-cells weui-cells_checkbox radio-form">
+						<label class="weui-cell weui-check__label" for="s11">
+							<div class="weui-cell__hd">
+								<input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked" />
+								<i class="weui-icon-checked"></i>
+							</div>
+							<div class="weui-cell__bd read">
+								<p>我已阅读，理解并接受 <a href="#">《剑鱼服务条款》</a></p>
+							</div>
+						</label>
+					</div>
+					<div class="price">
+						<span>原价：￥20,000</span>
+						<strong>￥16,300</strong>
+					</div>
+					<div class="form-btn">
+						<button class="btn prew">预览数据</button>
+						<button class="btn enter">确认支付</button>
+					</div>
+				</div>
+			</main>
+			<!-- 引用weui Dialog组件 -->
+			<div class="js_dialog" id="tipDialog" style="display: none;">
+				<div class="weui-mask"></div>
+				<div class="weui-dialog">
+					<div class="weui-dialog__bd">
+						<h1 class="dialog-title">字段包说明</h1>
+						<ul class="info">
+							<li>
+								<label>·标准字段包</label>
+								<p>公告标题、公告内容、剑鱼地址、省份城市、发布时间、项目名称、采购单位中标单位、中标价、币种、公告类别</p>
+							</li>
+							<li>
+								<label>·高级字段包</label>
+								<p>公告标题、公告内容、公告地址、剑鱼地址、省份、城市、发布时间、项目名称、项目编号、采购单位、采购单位联系人、采购单位联系电话、预算、开标日期、中标单位、中标单位联系方式、中标价、招标机构、项目范围、币种、公告类别</p>
+							</li>
+						</ul>
+					</div>
+					<div class="weui-dialog__ft">
+						<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">我知道了</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/zepto.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script>
+			$(function() {
+				$('.choose .choose-item').each(function() {
+					var index = $(this).index();
+					// $(".choose .choose-item").eq(0).addClass("active");
+					$(this).click(function() {
+						$(this).addClass("active").siblings().removeClass("active");
+					})
+				})
+				$('.tips-icon').on('click', function() {
+					$('#tipDialog').show(200);
+					$('.weui-dialog__btn_primary').click(function() {
+						$('#tipDialog').hide(200);
+					})
+				});
+				$("#sendCode").click(function() {
+					time(this);
+				})
+
+			})
+			var wait = 60;
+			function time(o) {
+				if (wait == 0) {
+					o.removeAttribute("disabled");
+					o.innerHTML = "输入验证码";
+					o.style.color = "#2cb7ca";
+					o.style.fontSize = "0.28rem";
+					wait = 60;
+				} else {
+					o.setAttribute("disabled", true);
+					o.innerHTML = wait + "s后重新获取";
+					o.style.color = "#c0c0c0";
+					o.style.fontSize = "0.26rem";
+					wait--;
+					setTimeout(function() {
+						time(o)
+					}, 1000)
+				}
+			}
+		</script>
+	</body>
+</html>

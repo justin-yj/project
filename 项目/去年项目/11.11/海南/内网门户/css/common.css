@@ -1,0 +1,126 @@
+body{
+	background: #fff;
+}
+/*头部样式*/
+.title{
+	width: 100%;
+	height: 1.2rem;
+	background: #F7F7FA;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 500;
+}
+.title h4  a{
+	display: block;
+	float: left;
+	margin: 0.3rem;
+}
+.title h4  a img{
+	width: 0.6rem;
+}
+.title h4 strong{
+	display: block;
+	line-height: 1.2rem;
+	color: #666;
+	font-weight: 700;
+	float: left;
+	text-indent: 2.8rem;
+}
+
+
+
+.weui_tab{
+	width: 100%;
+	height: 1.6rem;
+	padding-top: 0.15rem;
+	background: #F7F7FA;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 500;
+	border-top: 1px solid #ccc;
+}
+.weui_tabbar a{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.weui_tabbar a:hover .weui_tabbar_label{
+	color: #1287F9;
+}
+.weui_tabbar_item img{
+	width: 0.8rem;
+}
+.weui_tabbar .weui_tabbar_item p{
+	color: #000;
+	font-size: 0.4rem;
+	line-height: 0.8rem;
+}
+.weui_tabbar .weui_bar_item_on p{
+	color: #286eb7;;
+}
+.weui_tabbar_icon{
+	height: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	color: #353535;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 501;
+	display: none;
+}
+.menu div{
+	height: 100%;
+	box-sizing: border-box;
+}
+.menu  h2 img{
+	width: 100%;
+}
+.menu ul{
+	width: 90%;
+	margin-left: 5%;
+	position: absolute;
+	left: 0;
+	bottom: 0.4rem;
+	text-align: center;
+	border-radius: 7px;
+	background: #fff;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px 5px #666;
+}
+.menu ul li{
+	width: 100%;
+	height: 1.4rem;
+	background-size: 0.8rem;
+	line-height: 1.4rem;
+	text-indent: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.menu ul li a{
+	display: block;
+	color: #707070;
+}
+.menu ul li.qX{
+	border-bottom: none;
+}
+.menu ul li.qX a{
+	color: #333;
+	font-weight: 700;
+}

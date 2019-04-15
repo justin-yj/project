@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/startOrder/order",
+    "pages/information/information",
+    "pages/record/record",
+    "pages/logs/logs",
+    "pages/recordDetail/recordDetail",
+    "pages/evaluateDetail/evaluateDetail",
+    "pages/evaluate/evaluate",
+    "pages/noticeContent/noticeContent",
+    "pages/person/person",
+    "pages/myevaluate/myevaluate",
+    "pages/inLine/inLine",
+    "pages/classfiy/classfiy",
+    "pages/search/search",
+    "pages/out/out"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云慧约",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#4381ED",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "云慧约",
+        "iconPath": "./images/index.png",
+        "selectedIconPath": "./images/selectindex.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "预约记录",
+        "iconPath": "./images/record.png",
+        "selectedIconPath": "./images/selectrecord.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "./images/person.png",
+        "selectedIconPath": "./images/selectperson.png"
+      }
+    ]
+  }
+}

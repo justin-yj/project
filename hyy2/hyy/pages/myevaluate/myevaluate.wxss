@@ -1,0 +1,60 @@
+/* pages/myevaluate/myevaluate.wxss */
+page{
+  background: #f5f5f5;
+}
+.listOrder{
+  width: 94%;
+  margin-left: 3%;
+  height: 164rpx;
+  background: #fff;
+  margin-top: 20rpx;
+   padding:20rpx;
+   box-sizing: border-box;
+   position: relative;
+   box-shadow: 0rpx 8rpx 12rpx 4rpx rgba(12,24,139,.08);
+}
+.title{
+  font-size: 34rpx;
+  line-height: 50rpx;
+  font-weight: bold;
+}
+.orderAddres{
+  font-size: 30rpx;
+  color: rgba(0,0,0,0.65);
+  line-height: 70rpx;
+}
+.orderAddres image{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 15rpx;
+}
+.pingjia{
+  position: absolute;
+  right: 40rpx;
+  top: 30rpx;
+  width:120rpx;
+  height:164rpx; 
+  text-align: center;
+}
+.pingjia text{
+  display: block;
+  font-size: 30rpx;
+}
+.pingjiaImage{
+  width:56rpx;
+  height: 56rpx; 
+}
+.no-record{
+  margin: 300rpx auto;
+  text-align: center;
+}
+.no-record > image{
+  width: 342rpx;
+  height: 194rpx;
+}
+.no-record>view{
+  font-size: 36rpx;
+  margin-top: 32rpx;
+  color: #b7b7b7
+}

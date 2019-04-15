@@ -1,0 +1,8 @@
+<!--pages/messageEdit/messageEdit.wxml-->
+
+<view class='tishi'>提示：每个账号最多添加10条个人信息</view>
+<view class='addClass'>
+  <view>身份证1</view>
+  <input type="idcard" class="idInput" bindinput='getID' value='{{ idCrd }}' maxlength='18'></input>
+</view>
+<button bindtap='baocun' class='baocun'> 保存</button>

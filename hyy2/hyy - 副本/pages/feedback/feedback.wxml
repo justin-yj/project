@@ -1,0 +1,18 @@
+<!--pages/feedback/feedback.wxml-->
+<textarea placeholder='提示：至少输入10个汉字' maxlength="200" bindinput="listenMax">
+
+</textarea>
+<view class='max'>{{max}}/200</view>
+<view class='imagesLisr'>
+  <view wx:for='{{ lisrSrc }}' wx:key="{{ indexx }}" class='imagesLisrOne' >
+    <image src='{{item}}' class='imagesLisrOne1'></image>
+    <view class='imagesLisrOne2' bindtap='deleteImg' data-index="{{ index }}">
+      <image src='../../images/bangzhu_shanchu.png'></image>
+    </view>
+  </view>
+  <view bindtap='choose' class='chooseImage'>
+    <image src='../../images/bangzhu_tianjia.png'></image>
+  </view>
+
+</view>
+<button bindtap='tijiao' disabled='{{ canbind }}'>提交反馈</button>

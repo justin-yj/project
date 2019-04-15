@@ -1,0 +1,50 @@
+.footer{
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    border-top: 1px solid #c3c3c7;
+    ul{
+        width: 100%;
+        height: 1rem; 
+        li{ 
+            width: 25%;
+            float: left;
+            font-size: 0.2rem;
+            text-align: center; 
+            a{
+                span{ 
+                    font-size: 0.44rem;
+                    display: block;
+                    width: 100%;
+                    line-height: 0.6rem;
+                    color: #aaa9a9;
+                    text-align: center;
+                    margin-top: 0.1rem;
+                 }
+                 p{
+                      color: #888888;
+                      line-height: 0.1rem;
+                 }
+            }
+            
+        }
+         li.active{
+             a{
+
+                 span{ 
+                    color: #2CB7CA;
+                 }
+                 p{
+                      color: #2CB7CA;
+                 }
+             }
+             
+         }
+    }
+   
+}
+

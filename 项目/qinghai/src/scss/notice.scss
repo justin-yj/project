@@ -1,0 +1,61 @@
+#notice {
+    .notice {
+        border-top: 1px solid #dbdbdb;
+        width: 100%;
+        .noticeNavi {
+             overflow: hidden;
+            width: 1200px;
+            height: 50px;
+            line-height: 50px;
+            background: url(../images/guideAdress.png) no-repeat 10px center;
+            text-align: left;
+            padding-left: 26px;
+            a {
+                color: #3777CB;
+            }
+        }
+        .noticeMain{
+            margin-bottom: 20px;
+           
+            h3{
+                height: 60px;
+                line-height: 60px;
+                               background: #F3F3F3;
+                span{
+                    width: 3px;
+                    height: 18px;
+                    background: #3777cb;
+                    float: left;
+                    margin:22px 8px 0 20px;
+                }
+                strong{
+                    color: #3777cb;
+                    font-size: 18px;
+                }
+            }
+            ul{ border: 1px solid #ddd;
+                    padding: 10px  20px 10px;
+                    font-size: 16px;
+                    li{
+                        line-height: 40px;
+                        height: 40px;
+                        a{
+                            float: left;
+                            color: #000;
+                            i{
+                                color: #3777CB;
+                                font-style: normal;
+                                padding-right: 8px;
+                            }
+                        }
+                        span{
+                            float: right;
+                             font-size: 14px;
+                             color: #999;
+                        }
+                    }
+                }
+                
+        }
+    }
+}

@@ -1,0 +1,642 @@
+@charset "UTF-8";
+#index {
+  /*search*/
+  /*业务分类*/
+}
+
+#index .searchs {
+  width: 100%;
+  height: 234px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#index .searchs img {
+  width: 1920px;
+  position: absolute;
+  left: 50%;
+  margin-left: -920px;
+}
+
+#index .searchs .search {
+  width: 290px;
+  height: 50px;
+  position: absolute;
+  right: 50%;
+  margin-right: -600px;
+  margin-top: 96px;
+}
+
+#index .searchs .search #keyvalue {
+  width: 230px;
+  height: 42px;
+  line-height: 42px;
+  border: none;
+  float: left;
+  text-indent: 1em;
+  background: url(../images/searchBg2.png) repeat-x;
+}
+
+#index .searchs .search #btn {
+  width: 52px;
+  height: 42px;
+  border: none;
+  outline: none;
+  float: left;
+  background: url(../images/searchBg1.png) no-repeat;
+  cursor: pointer;
+}
+
+#index .main {
+  height: 365px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#index .main .main-left {
+  width: 900px;
+  height: 365px;
+  float: left;
+  background: #f3f3f3;
+  margin-top: 15px;
+  /*通知公告*/
+}
+
+#index .main .main-left .slideBox {
+  width: 425px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+#index .main .main-left .slideBox .more {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
+}
+
+#index .main .main-left .slideBox .more a {
+  color: #fff;
+}
+
+#index .main .main-left .slideBox .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 60px;
+  bottom: 7px;
+  z-index: 1;
+}
+
+#index .main .main-left .slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+}
+
+#index .main .main-left .slideBox .hd ul li {
+  float: left;
+  margin-right: 2px;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  text-align: center;
+  background: #95b5df;
+  cursor: pointer;
+}
+
+#index .main .main-left .slideBox .hd ul li.on {
+  background: #fff;
+  color: #fff;
+}
+
+#index .main .main-left .slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#index .main .main-left .slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+
+#index .main .main-left .slideBox .bd li p {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #3777cb;
+  text-indent: 1em;
+}
+
+#index .main .main-left .slideBox .bd img {
+  width: 424px;
+  height: 290px;
+  display: block;
+}
+
+#index .main .main-left .slideTxtBox {
+  width: 440px;
+  text-align: left;
+  float: left;
+  margin-left: 14px;
+}
+
+#index .main .main-left .slideTxtBox .hd {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px 0 20px;
+  border-bottom: 1px solid #d5d5d5;
+  position: relative;
+}
+
+#index .main .main-left .slideTxtBox .hd ul {
+  float: left;
+  position: absolute;
+  left: 20px;
+  top: -1px;
+  height: 32px;
+}
+
+#index .main .main-left .slideTxtBox .hd ul li {
+  float: left;
+  padding: 4px 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+#index .main .main-left .slideTxtBox .hd ul li a {
+  color: #333;
+}
+
+#index .main .main-left .slideTxtBox .hd ul li.on {
+  height: 30px;
+  border-bottom: 2px solid #3777cb;
+  color: #3777cb;
+}
+
+#index .main .main-left .slideTxtBox .hd ul li.on a {
+  color: #3777CB;
+}
+
+#index .main .main-left .slideTxtBox .bd ul {
+  padding-left: 6px;
+  zoom: 1;
+  margin-top: 14px;
+}
+
+#index .main .main-left .slideTxtBox .bd li {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+#index .main .main-left .slideTxtBox .bd li a {
+  color: #333;
+}
+
+#index .main .main-left .slideTxtBox .bd li a i {
+  float: left;
+  height: 3px;
+  width: 3px;
+  background: #3777CB;
+  margin: 16px 6px 0 0;
+}
+
+#index .main .main-left .slideTxtBox .bd li a p {
+  float: left;
+}
+
+#index .main .main-left .slideTxtBox .bd li a:hover {
+  color: #1262BB;
+}
+
+#index .main .main-left .slideTxtBox .bd li .date {
+  float: right;
+  color: #999;
+  font-size: 12px;
+}
+
+#index .main .main-right {
+  width: 290px;
+  height: 365px;
+  float: right;
+  margin-top: 15px;
+  background: #f3f3f3;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#index .main .main-right h4 {
+  font-size: 16px;
+  color: #3777CB;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#index .main .main-right h4 a {
+  display: block;
+  border-bottom: 2px solid #3777CB;
+  width: 68px;
+  position: relative;
+  top: -1px;
+}
+
+#index .main .main-right ul {
+  margin-top: 14px;
+}
+
+#index .main .main-right ul li {
+  height: 36px;
+}
+
+#index .main .main-right ul li a {
+  color: #333333;
+  line-height: 36px;
+  height: 36px;
+  font-size: 14px;
+}
+
+#index .main .main-right ul li a p {
+  width: 190px;
+  float: left;
+}
+
+#index .main .main-right ul li a i {
+  float: left;
+  height: 3px;
+  width: 3px;
+  background: #3777CB;
+  margin: 16px 6px 0 0;
+}
+
+#index .main .main-right ul li a:hover {
+  color: #1262BB;
+}
+
+#index .main .main-right ul span {
+  float: right;
+  width: 60px;
+  height: 34px;
+  font-size: 12px;
+  color: #999;
+  line-height: 34px;
+  text-align: right;
+}
+
+#index .classify {
+  min-width: 100%;
+  height: 710px;
+  margin-top: 15px;
+  background: #F3F3F3;
+}
+
+#index .classify div {
+  /*业务工作平台*/
+  /*文件下载*/
+  /*办事指南*/
+  /*机构设置*/
+  /*局内导航*/
+}
+
+#index .classify div .business {
+  height: 290px;
+  width: 900px;
+  float: left;
+  margin-top: 12px;
+  background: #fff;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
+}
+
+#index .classify div .business h4 {
+  font-size: 16px;
+  color: #3777cb;
+}
+
+#index .classify div .business h4 i {
+  float: left;
+  height: 16px;
+  border-left: 3px solid #3777CB;
+  margin-top: 0px;
+}
+
+#index .classify div .business h4 strong {
+  padding: 0 12px;
+  float: left;
+  line-height: 18px;
+}
+
+#index .classify div .business h4 span {
+  width: 740px;
+  float: left;
+  border-top: 1px solid #d1d1d1;
+  margin-top: 18px;
+}
+
+#index .classify div .business ul {
+  padding-top: 10px;
+}
+
+#index .classify div .business ul li {
+  width: 135px;
+  height: 98px;
+  float: left;
+  padding: 0px;
+  background: url(../images/bg1.png) no-repeat left top;
+  position: relative;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+#index .classify div .business ul li:hover {
+  z-index: 2;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#index .classify div .business ul li img {
+  position: absolute;
+  left: 55px;
+  top: 20px;
+}
+
+#index .classify div .business ul li .bordernone {
+  padding-right: 0px;
+}
+
+#index .classify div .business ul li span {
+  display: table;
+  height: 50px;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+  width: 130px;
+}
+
+#index .classify div .business ul li span span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#index .classify div .download {
+  width: 290px;
+  height: 350px;
+  float: right;
+  background: #fff;
+  margin-top: 12px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#index .classify div .download h4 {
+  font-size: 16px;
+  color: #3777CB;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#index .classify div .download h4 a {
+  display: block;
+  border-bottom: 2px solid #3777CB;
+  width: 68px;
+  position: relative;
+  top: -1px;
+}
+
+#index .classify div .download ul {
+  margin-top: 14px;
+}
+
+#index .classify div .download ul li {
+  height: 36px;
+}
+
+#index .classify div .download ul li a {
+  color: #333333;
+  line-height: 36px;
+  height: 36px;
+  font-size: 14px;
+}
+
+#index .classify div .download ul li a p {
+  width: 190px;
+  float: left;
+}
+
+#index .classify div .download ul li a i {
+  float: left;
+  height: 3px;
+  width: 3px;
+  background: #3777CB;
+  margin: 16px 6px 0 0;
+}
+
+#index .classify div .download ul li a:hover {
+  color: #1262BB;
+}
+
+#index .classify div .download ul span {
+  float: right;
+  width: 60px;
+  height: 34px;
+  font-size: 12px;
+  color: #999;
+  line-height: 34px;
+  text-align: right;
+}
+
+#index .classify div .guideIndex {
+  width: 900px;
+  height: 200px;
+  margin-top: 12px;
+  background: #fff;
+  float: left;
+  padding: 14px 0 14px 14px;
+  box-sizing: border-box;
+}
+
+#index .classify div .guideIndex h4 {
+  font-size: 16px;
+  color: #3777cb;
+}
+
+#index .classify div .guideIndex h4 i {
+  float: left;
+  height: 16px;
+  border-left: 3px solid #3777CB;
+  margin-top: 0px;
+}
+
+#index .classify div .guideIndex h4 strong {
+  padding: 0 12px;
+  float: left;
+  line-height: 18px;
+}
+
+#index .classify div .guideIndex h4 span {
+  width: 775px;
+  float: left;
+  border-top: 1px solid #d1d1d1;
+  margin-top: 18px;
+}
+
+#index .classify div .guideIndex ul {
+  margin-top: 10px;
+}
+
+#index .classify div .guideIndex ul li {
+  width: 136px;
+  height: 50px;
+  background: #3777cb;
+  font-size: 14px;
+  margin-top: 10px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+
+#index .classify div .guideIndex ul li a img {
+  margin: 14px 6px 0 20px;
+  float: left;
+}
+
+#index .classify div .guideIndex ul li a span {
+  width: 70px;
+  display: table;
+  height: 50px;
+}
+
+#index .classify div .guideIndex ul li a span span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  color: #fff;
+}
+
+#index .classify div .install {
+  width: 290px;
+  height: 320px;
+  margin-top: 12px;
+  background: #fff;
+  float: right;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#index .classify div .install h4 {
+  font-size: 16px;
+  color: #3777CB;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#index .classify div .install h4 span {
+  display: block;
+  border-bottom: 2px solid #3777CB;
+  width: 68px;
+  position: relative;
+  top: -1px;
+}
+
+#index .classify div .install ul {
+  padding-top: 10px;
+}
+
+#index .classify div .install ul li {
+  margin-top: 8px;
+  position: relative;
+}
+
+#index .classify div .install ul li img {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#index .classify div .install ul li p {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  color: #fffefe;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#index .classify div .install ul li p:hover {
+  color: #333333;
+}
+
+#index .classify div .jn {
+  width: 900px;
+  height: 170px;
+  margin-top: 12px;
+  background: #fff;
+  float: left;
+  padding: 14px 0 14px 14px;
+  box-sizing: border-box;
+}
+
+#index .classify div .jn h4 {
+  font-size: 16px;
+  color: #3777cb;
+}
+
+#index .classify div .jn h4 i {
+  float: left;
+  height: 16px;
+  border-left: 3px solid #3777CB;
+  margin-top: 0px;
+}
+
+#index .classify div .jn h4 strong {
+  padding: 0 12px;
+  float: left;
+  line-height: 18px;
+}
+
+#index .classify div .jn h4 span {
+  width: 775px;
+  float: left;
+  border-top: 1px solid #d1d1d1;
+  margin-top: 18px;
+}
+
+#index .classify div .jn ul {
+  margin-top: 10px;
+}
+
+#index .classify div .jn ul li {
+  font-size: 14px;
+  margin-right: 50px;
+  float: left;
+  line-height: 36px;
+}
+
+#index .classify div .jn ul li span {
+  width: 3px;
+  height: 3px;
+  float: left;
+  background: #3777CB;
+  margin-top: 16px;
+}
+
+#index .classify div .jn ul li a {
+  color: #333;
+  padding-left: 12px;
+}
+
+#index .classify div .jn ul li a:hover {
+  color: #1262BB;
+}

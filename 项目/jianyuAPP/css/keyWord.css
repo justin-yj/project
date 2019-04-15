@@ -1,0 +1,186 @@
+.keyWord .title {
+  font-size: .26rem;
+  color: #888;
+  padding: .3rem;
+  line-height: .38rem; }
+.keyWord .enter .enterOne {
+  height: 0.94rem;
+  width: 100%;
+  padding: 0 0.3rem;
+  font-size: .3rem;
+  background: #fff; }
+.keyWord .enter .btnChoose {
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden;
+  background: #fff; }
+  .keyWord .enter .btnChoose button {
+    float: left;
+    height: 0.6rem;
+    font-size: .3rem;
+    width: 50%;
+    background: #fff;
+    margin: 0.15rem 0;
+    color: #1D1D1D; }
+  .keyWord .enter .btnChoose button:first-child {
+    border-right: 1px solid #e0e0e0; }
+.keyWord .enter .btn {
+  margin-top: .16rem; }
+  .keyWord .enter .btn button {
+    width: 100%;
+    height: 0.94rem;
+    background: #2cb7ca;
+    color: #fff;
+    font-size: .36rem; }
+.keyWord .showKeyWord ul li {
+  margin-bottom: .16rem;
+  overflow: hidden; }
+  .keyWord .showKeyWord ul li .one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    line-height: .54rem;
+    padding: 0.2rem 0; }
+    .keyWord .showKeyWord ul li .one div {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .keyWord .showKeyWord ul li .one div span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0 .3rem; }
+        .keyWord .showKeyWord ul li .one div span strong {
+          font-size: 0.3rem;
+          color: #1d1d1d;
+          font-weight: normal;
+          display: block;
+          width: 1.2rem; }
+        .keyWord .showKeyWord ul li .one div span p {
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          font-size: 0.3rem;
+          color: #686868; }
+    .keyWord .showKeyWord ul li .one button {
+      width: 1.96rem;
+      background: #fff;
+      color: #2cb7ca;
+      border-left: 1px solid #E0E0E0;
+      font-size: .3rem;
+      position: relative;
+      left: 0; }
+      .keyWord .showKeyWord ul li .one button i {
+        font-size: .4rem;
+        padding-right: 0.1rem; }
+  .keyWord .showKeyWord ul li .modify {
+    display: none;
+    margin-top: .16rem; }
+    .keyWord .showKeyWord ul li .modify span {
+      width: 100%;
+      display: block;
+      line-height: 0.5rem;
+      padding: 0.2rem .3rem;
+      background: #fff;
+      outline: none;
+      font-size: 0.3rem;
+      color: #1d1d1d; }
+    .keyWord .showKeyWord ul li .modify button {
+      width: 50%;
+      height: .88rem;
+      color: #fff;
+      float: left;
+      margin-top: 0.16rem; }
+      .keyWord .showKeyWord ul li .modify .addAdjunctWord ,.keyWord .showKeyWord ul li .modify .addExclusion{
+        background: #fff; color: #1d1d1d;margin-top: 0px;border-top:1px solid #E0E0E0; }
+        .keyWord .showKeyWord ul li .modify .addExclusion{
+          border-left: 1px solid #E0E0E0;
+        }
+    .keyWord .showKeyWord ul li .modify .deleteKey {
+      background: #FE737A; }
+    .keyWord .showKeyWord ul li .modify .ascertainKey {
+      background: #2cb7ca; }
+.keyWord .addKeyWord {
+  width: 100%;
+  position: fixed;
+  bottom: 0.4rem;
+  text-align: center; }
+  .keyWord .addKeyWord i {
+    font-size: 1rem;
+    color: #2cb7ca; }
+.keyWord .problem {
+  margin-top: .4rem;
+  font-size: .3rem;
+  color: #2cb7ca;
+  float: right;
+  margin-right: 0.3rem; }
+  .keyWord .problem i {
+    margin-left: .06rem; }
+.keyWord .problemPop {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .keyWord .problemPop .problemPopContent {
+    width: 5.6rem;
+    min-height: 7.23rem;
+    display: inline-block;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    padding: 0.58rem 0; }
+    .keyWord .problemPop .problemPopContent h3 {
+      font-size: .34rem;
+      text-align: center; }
+    .keyWord .problemPop .problemPopContent ul {
+      padding: 0 .4rem; }
+      .keyWord .problemPop .problemPopContent ul li {
+        margin-top: 0.2rem; }
+        .keyWord .problemPop .problemPopContent ul li h4 {
+          font-size: .3rem;
+          line-height: .5rem;
+          color: #1d1d1d; }
+        .keyWord .problemPop .problemPopContent ul li p {
+          font-size: .28rem;
+          color: #868686;
+          line-height: 0.4rem; }
+    .keyWord .problemPop .problemPopContent button {
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid #E0E0E0;
+      position: absolute;
+      bottom: 5px;
+      height: 1rem;
+      font-size: .36rem;
+      color: #2cb7ca; }
+
+      .fontLength {
+        width: 100%;
+        height: 100%;
+       display: none;
+        color: #fff;
+        font-size: 0.3rem;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+      }
+      .fontLength div{
+        width: 4rem;
+        border-radius: 3px;
+        padding: 0.2rem;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 1.8rem;
+        top: 30%;
+      }

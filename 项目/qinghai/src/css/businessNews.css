@@ -1,0 +1,158 @@
+#businessNews {
+  background: url(../images/bodyBg.jpg) no-repeat center top;
+}
+
+#businessNews .businessNews {
+  background: #fff;
+  overflow: hidden;
+}
+
+#businessNews .businessNews .contactTop {
+  height: 50px;
+  background: url(../images/adress.png) no-repeat 25px center;
+  line-height: 50px;
+  padding-left: 46px;
+  box-sizing: border-box;
+}
+
+#businessNews .businessNews .contactTop a {
+  color: #000;
+}
+
+#businessNews .businessNews .contactTop i {
+  font-style: normal;
+  color: #1e5ca8;
+}
+
+#businessNews .businessNews .businessLeft {
+  width: 236px;
+  height: 630px;
+  margin-left: 20px;
+  float: left;
+}
+
+#businessNews .businessNews .businessLeft h2 {
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+  text-indent: 20px;
+  background: url(../images/dengjiBg.png) no-repeat left bottom;
+  border-bottom: 6px solid #6aadff;
+}
+
+#businessNews .businessNews .businessLeft ul {
+  background: #f8f8f8;
+  height: 570px;
+  border: 1px solid #d8d8d8;
+  border-top: none;
+}
+
+#businessNews .businessNews .businessLeft ul li {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#businessNews .businessNews .businessLeft ul li span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 16px;
+}
+
+#businessNews .businessNews .businessLeft ul li span a {
+  display: block;
+  color: #3f3f3f;
+}
+
+#businessNews .businessNews .businessLeft ul li span a strong {
+  font-weight: normal;
+}
+
+#businessNews .businessNews .businessLeft ul li span a i {
+  font-style: normal;
+  float: right;
+  font-size: 18px;
+  color: #868686;
+  margin-right: 20px;
+}
+
+#businessNews .businessNews .businessLeft ul li:hover {
+  border-top: none;
+}
+
+#businessNews .businessNews .businessLeft ul li:hover span {
+  width: 255px;
+  position: relative;
+  left: -1px;
+  background: url(../images/dengji.png) no-repeat left top;
+}
+
+#businessNews .businessNews .businessLeft ul li:hover span a {
+  color: #fff;
+}
+
+#businessNews .businessNews .businessLeft ul li:hover span a i {
+  display: none;
+}
+
+#businessNews .businessNews .businessLeft ul li.onLight {
+  border-top: none;
+}
+
+#businessNews .businessNews .businessLeft ul li.onLight span {
+  width: 255px;
+  position: relative;
+  left: -1px;
+  background: url(../images/dengji.png) no-repeat left top;
+}
+
+#businessNews .businessNews .businessLeft ul li.onLight span a {
+  color: #fff;
+}
+
+#businessNews .businessNews .businessLeft ul li.onLight span a i {
+  display: none;
+}
+
+#businessNews .businessNews .businessRight {
+  width: 810px;
+  margin-right: 10px;
+  float: right;
+}
+
+#businessNews .businessNews .businessRight ul li {
+  width: 255px;
+  height: 215px;
+  float: left;
+  margin-right: 15px;
+  margin-top: 6px;
+}
+
+#businessNews .businessNews .businessRight ul li a {
+  display: block;
+}
+
+#businessNews .businessNews .businessRight ul li a img {
+  width: 255px;
+  height: 160px;
+}
+
+#businessNews .businessNews .businessRight ul li a p {
+  font-size: 14px;
+  color: #191919;
+  line-height: 26px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#businessNews .businessNews .businessRight ul li a strong {
+  display: block;
+  font-size: 12px;
+  color: #535353;
+  text-align: center;
+  font-weight: normal;
+}

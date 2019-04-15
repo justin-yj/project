@@ -1,0 +1,78 @@
+/* pages/evaluateDetail/evaluateDetail.wxss */
+.info{
+  width: 100%;
+  padding: 44rpx 26rpx 60rpx;
+  background:linear-gradient(#4f70fe, #57A5FF);
+  color: #fff;
+}
+.i-name{
+  font-size: 42rpx;
+}
+.i-address{
+  margin-top: 24rpx;
+  padding-bottom: 40rpx;
+}
+.pj-cont{
+  width: 702rpx;
+  height:380rpx;
+  position: relative;
+  margin: -60rpx auto 0;
+}
+.pj-cont > .bg{
+  width: 100%;
+  height: 100%;
+}
+.pj-all{
+  position: absolute;
+  top: 92rpx;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pj-all>image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.pj-all>text{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 14rpx;
+}
+/* .pj-definite{
+  position: absolute;
+  top: 250rpx;
+  width: 100%;
+  text-align: center;
+  padding: 24rpx 0;
+}
+.definite{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.item{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.item>text:nth-child(1){
+  font-weight: bold;
+}
+.item>text:nth-child(2){
+  color: #a5a5a5;
+} */
+.pj-message{
+  position: absolute;
+  top: 260rpx;
+  width: 100%;
+  text-align: center;
+}
+.pj-message>view:nth-child(2){
+  margin-top: 10rpx;
+  padding: 0 24rpx;
+  font-size: 24rpx;
+}

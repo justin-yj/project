@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="lib/reset.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/install.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<title>设置</title>
+	</head>
+
+	<body>
+		<!--头部start-->
+		<div class="header">
+			<a href="javascript:;">
+				<span class="jy-app zuojiantou"></span>
+			</a>
+			<h3>设置</h3>
+		</div>
+		<!--头部end-->
+
+		<div class="installMain">
+
+			<!--修改密码start-->
+			<a href="modify.html" class="modifyPass">
+				<strong>修改密码</strong>
+				<span class="jy-app youjiantou">
+		</a>
+		<!--修改密码end-->
+		
+		<!--推送消息start-->
+		<a href="messageInstall.html" class="modifyPass message">
+			<strong>推送消息设置</strong>
+			<span class="jy-app youjiantou"> </span>
+				<i class="messageClose">关闭</i>
+			</a>
+			<!--推送消息end-->
+
+			<!--清楚缓存start-->
+			<a class="modifyPass message cache">
+				<strong>清除缓存</strong>
+				<i class="messageClose">12.20M</i>
+			</a>
+			<!--清除缓存end-->
+
+			<div class="installList">
+				<ul>
+					<li class="shareOne">
+						<a class="modifyPass">
+							<strong>分享给好友</strong>
+							<span class="jy-app youjiantou">
+					</a>
+				</li>
+				<li>
+					<a class="modifyPass">
+						<strong>关于剑鱼</strong>
+						<span class="jy-app youjiantou">
+					</a>
+				</li>
+				<li>
+					<a class="modifyPass">
+						<strong>意见反馈</strong>
+						<span class="jy-app youjiantou">
+					</a>
+				</li>
+				<li>
+					<a class="modifyPass">
+						<strong>使用帮助</strong>
+						<span class="jy-app youjiantou">
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!--退出登陆start-->
+		<div class="quit">
+			<a href="javascript:;">退出登录</a>
+		</div>
+	    <!--退出登陆end-->
+	    
+	    <!--清缓存弹窗-->
+		<div class="cacheTc">
+			<div class="cacheMain">
+				<h2>要清空缓存吗？</h2>
+				<span>
+					<a href="javascript:;" class="cancel">取消</a>
+					<a href="javascript:;" class="dump">清除</a>
+				</span>
+			</div>
+		</div>
+
+		<!--分享好友弹窗-->
+		<div class="share">
+			<div class="shareMain">
+				<ul class="clearfix">
+					<li>
+						<a href="javascript:;">
+							<span class="jy-app weixin"></span>
+							<p>微信好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="jy-app qq"></span>
+							<p>QQ好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="jy-app pengyouquan"></span>
+							<p>朋友圈</p>
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="shareQx">取消</a>
+			</div>
+
+		</div>
+
+		</div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			if('addEventListener' in document) {
+				document.addEventListener('DOMContentLoaded', function() {
+					FastClick.attach(document.body);
+				}, false);
+			}
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				//点击返回上一页
+//				$(".header a").click(function() {
+//					history.go(-1);
+//				})
+
+				//点击清空缓存
+				$(".cache").tap(function() {
+					$(".cacheTc").show();
+					$(".cancel").tap(function() {
+						$(this).parent().parent().parent().hide();
+					})
+					$(".dump").tap(function() {
+						$(this).parent().parent().parent().hide();
+					})
+				})
+
+				//分享好友
+//				$(".shareOne").click(function() {
+//					$(".share").show();
+//					$(".shareQx").click(function() {
+//						$(".share").hide();
+//					})
+//				})
+			})
+		</script>
+
+	</body>
+
+</html>

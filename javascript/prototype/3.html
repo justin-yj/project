@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examples</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="" rel="stylesheet">
+        <style type="text/css">
+            a{
+              border: 2px solid red;
+              text-decoration: none;
+              cursor: pointer;
+              font-weight: bold;
+              margin-top: 10px;
+              padding: 20px;
+            }            
+        </style>
+    </head>
+    <body>
+        <a id = "box" href = "javascript:void(0)">点击</a>
+    </body>
+    <script type="text/javascript">
+    	
+    	window.onload = function(){        
+		      var oBox = document.getElementById("box");
+		      function onclick(e){  
+		        e = e || window.event;
+		      //  console.log(e);          
+		        alert("a");
+		      }
+//		      simulation(oBox, "click", onclick);
+//		      function simulation(obj,type,response){
+//		        var isIE=navigator.userAgent.match(/MSIE (\d)/i);
+//		        isIE = isIE ? isIE[1] : undefined;            
+//		            //给obj绑定事件
+//		            //传统浏览器使用attachEvent 现代浏览器使用addEventListner
+//		        isIE < 9 ? obj.attachEvent("on" + type, response):
+//		                  obj.addEventListener(type, response, false);
+//		          // 触发自定义事件
+//		        if(isIE<9){
+//		          //传统浏览器
+//		          var event=document.createEventObject();//创建对象           
+//		          event.msg="我是fireEvent触发的";//给事件对象添加属性              
+//		          obj.fireEvent("on" + type, event);//触发事件
+//		        }else{
+//		          //现代浏览器
+//		          var e=document.createEvent("MouseEvents");//创建事件对象              
+//		          e.initEvent(type,false,false);//初始化事件对象initMouseEvent需要更多参数
+//		          e.msg="我是despatchEvent触发的"; //给事件对象添加属性
+//		          obj.dispatchEvent(e);//触发事件          
+//		      }      
+//		    }
+		  }
+    </script>
+    
+    
+</html>

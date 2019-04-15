@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关键词</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/keyWord.css">
+    <script src="../js/rem.js"></script>
+</head>
+
+<body>
+
+    <div class="keyWord">
+        <p class="title">示例：信息化（关键词）信息化（关键词）；工程（附加词）；排除词：办公</p>
+        <!-- 添加关键词 -->
+        <div class="enter addkeyWord">
+            <input type="text" placeholder="请输入关键词" class="enterOne">
+            <div class="btnChoose" style="display:none;">
+                <button>添加 关键词</button>
+                <button>添加 排除词</button>
+            </div>
+            <div class="btn">
+                <button>确认</button>
+            </div>
+        </div>
+
+        <!-- 添加排除词 -->
+        <div class="enter exclusion" style="display:none;">
+            <input type="text" placeholder="请输入排除词" class="enterOne">
+            <div class="btn">
+                <button>确认</button>
+            </div>
+        </div>
+
+
+        <!-- 添加关键词显示列表 -->
+        <div class="showKeyWord">
+            <ul>
+                <li>
+                    <div class="one">
+                        <div>
+                            <span>
+                                <strong> 关键词：</strong>
+                                <p>信息化</p>
+                            </span>
+                        </div>
+                        <button class="editKeyWord"><i class="iconfont icon-xiugai"></i> 修改</button>
+                    </div>
+                    <div class="modify">
+                        <span contentEditable="true">信息   化</span>
+                        <button class="addAdjunctWord">编辑 附加词</button>
+                        <button class="addExclusion ">添加排除词</button>
+                        <button class="deleteKey">删除</button>
+                        <button class="ascertainKey">确定</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="one">
+                        <div>
+                            <span>
+                                <strong> 关键词：</strong>
+                                <p>信息化二</p>
+                            </span>
+                            <span>
+                                <strong> 附加词：</strong>
+                                <p>工程 招标项目 科技产品 农业 电子产品</p>
+                            </span>
+                            <span>
+                                <strong> 排除词：</strong>
+                                <p>办公 教育</p>
+                            </span>
+                        </div>
+                        <button class="editKeyWord"><i class="iconfont icon-xiugai"></i> 修改</button>
+                    </div>
+                    <div class="modify">
+                        <span contentEditable="true">信息化二</span>
+                        <button class="addAdjunctWord">编辑 附加词</button>
+                        <button class="addExclusion ">添加排除词</button>
+                        <button class="deleteKey">删除</button>
+                        <button class="ascertainKey">确定</button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="addKeyWord">
+                <i class="iconfont icon-tianjia"></i>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="problem">
+            疑问解答 <i class="iconfont icon-wenhao "></i>
+        </div>
+
+        <!-- 疑难问题弹窗 -->
+        <div class="problemPop">
+            <div class="problemPopContent">
+                <h3>疑问解答</h3>
+                <ul>
+                    <li>
+                        <h4>. 关键词</h4>
+                        <p>目标信息中的关键性词语，如:信息化</p>
+                    </li>
+                    <li>
+                        <h4>. 附加词</h4>
+                        <p>与关键词形成一体/组合，便于查找准确信息，如：招标项目</p>
+                    </li>
+                    <li>
+                        <h4>. 排除词</h4>
+                        <p>与关键词形成一体/组合，便于查找准确信息，如：招标项目</p>
+                    </li>
+                </ul>
+                <button class="knowBtn">我知道了</button>
+            </div>
+
+        </div>
+
+        <!-- 字数限制弹窗 -->
+        <div class="fontLength">
+            <div>关键词不能超过100字</div>
+        </div>
+
+    </div>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/keyWord.js"></script>
+</body>
+
+</html>

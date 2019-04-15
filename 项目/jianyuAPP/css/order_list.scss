@@ -1,0 +1,116 @@
+@import 'public.scss';
+#order_list{
+	.main{
+		.buttons-tab>ul{
+			width: 100%;
+			height: 1rem;
+			line-height:1rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 .3rem;
+			background: $white;
+			border-bottom: 1px solid $border_2;
+			box-sizing: border-box;
+			.tab-link{
+				display: block;
+				flex: 1;
+				text-align: center;
+				color: $black;
+				font-size: .34rem;
+				box-sizing: border-box;
+				height:99%;
+			}
+			.active{
+				color: $green_1;
+				border-bottom: 2px solid $green_1;
+				box-sizing: border-box;
+			}
+		}
+		.tabs{
+			.card{
+				background: $white;
+				margin-top: .2rem;
+				.card-header{
+					height: .82rem;
+					line-height: .82rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 0 .3rem;
+					border-bottom: 0.01rem solid $border_2;
+					.time{
+						font-size: .24rem;
+					}
+					.status{
+						font-size: .3rem;
+					}
+					.notpay{
+						color: $yellow;
+					}
+					.finish{
+						color: $gray_1;
+					}
+				}
+				.card-content{
+					border-bottom: 0.01rem solid $border_2;
+					.media{
+						display: flex;
+						background: #F5F4F9;
+						padding: .22rem .2rem;
+						margin: .16rem .3rem;
+						.media-img{
+							width: 1.15rem;
+							height: 1.15rem;
+							margin-right: .2rem;
+						}
+						.item-ifo{
+							font-size: .26rem;
+							color: $black;
+						}
+					}
+					.price{
+						display: flex;
+						justify-content: flex-end;
+						align-items: center;
+						padding: 0 .3rem;
+						margin-bottom: .2rem;
+						.initial{
+							font-size: .26rem;
+							color: $gray_2;
+							text-decoration: line-through;
+							margin-right: 0.08rem;
+						}
+						.current{
+							font-size: .36rem;
+						}
+					}
+				}
+				.card-footer{
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					padding: .2rem .3rem;
+					.btn{
+						width: 2.18rem;
+						height: .72rem;
+						line-height: .72rem;
+						text-align: center;
+						border-radius: 0.05rem;
+						font-size: .28rem;
+					}
+					.cancle{
+						border: 1px solid $green_1;
+						color: $green_1;
+						background: transparent;
+						margin-right: .16rem;
+					}
+					.pay{
+						background: $green_1;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

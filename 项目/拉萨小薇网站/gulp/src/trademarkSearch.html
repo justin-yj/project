@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/trademarkSearch.css">
+</head>
+
+<body id="affairs">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;商标代理机构查询</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <span></span>
+            <h4>商标代理机构查询</h4>
+        </div>
+        <div class="content">
+
+            <div class="top">
+                <label for="">代理机构名称：<input type="text" class="canInput"></label>
+                <label for="">代理机构地址：<input type="text" class="canInput"></label>
+                <label for=""><input type="button" value="查询" class="btn"></label>
+                <label for=""><input type="reset" value="重置" class="reset"></label>
+            </div>
+            <div class="table">
+                <div class="tableTitle">
+                    <span class="serialNumber">序号</span>
+                    <span class="organization">代理机构名称</span>
+                    <span class="addres">代理机构地址</span>
+                    <span class="tels">联系电话</span>
+                </div>
+                <div class="tableContent" id="tableContent">
+                    <ul>
+                        <li>
+                            <span class="serialNumber">1</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li class="activeBg">
+                            <span class="serialNumber">2</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">3</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">4</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">5</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">6</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">7</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">8</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">9</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                        <li>
+                            <span class="serialNumber">10</span>
+                            <span class="organization">洛阳公信知识产权事务所</span>
+                            <span class="addres">河南省洛阳市西工区九都路84号中世商务中心302室</span>
+                            <span class="tels">13645978521</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="paging">分页</div>
+        </div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script>
+        $(function(){
+            $("#tableContent ul li:odd").addClass("activeBg")
+        })
+    </script>
+
+</body>
+
+</html>

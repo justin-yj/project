@@ -1,0 +1,136 @@
+#businessNews{
+     background: url(../images/bodyBg.jpg) no-repeat center top;
+.businessNews{
+    background: #fff;
+    overflow: hidden;
+    .contactTop{
+        height: 50px;
+        background: url(../images/adress.png) no-repeat 25px center;
+        line-height: 50px;
+        padding-left: 46px;
+        box-sizing: border-box;
+        a{
+            color: #000;
+        }
+        i{
+            font-style: normal;
+            color: #1e5ca8;
+        }
+    }
+    .businessLeft {
+            width: 236px;
+            height: 630px;
+            margin-left: 20px;
+            float: left;
+            h2 {
+                height: 48px;
+                line-height: 48px;
+                font-size: 24px;
+                color: #fff;
+                font-weight: normal;
+                text-indent: 20px;
+                background: url(../images/dengjiBg.png) no-repeat left bottom;
+                border-bottom: 6px solid #6aadff;
+            }
+            ul {
+                background: #f8f8f8;
+                height: 570px;
+                border: 1px solid #d8d8d8;
+                border-top: none;
+                li {
+                    border-bottom: 1px solid #d8d8d8;
+                    span {
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        text-indent: 20px;
+                        font-size: 16px;
+                        a {
+                            display: block;
+                            color: #3f3f3f;
+                            strong {
+                                font-weight: normal;
+                            }
+                            i {
+                                font-style: normal;
+                                float: right;
+                                font-size: 18px;
+                                color: #868686;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                     &:hover{
+                         border-top: none;
+                        span {
+                            width: 255px;
+                            position: relative;
+                            left: -1px;
+                            background: url(../images/dengji.png) no-repeat left top;
+                            a {
+                                color: #fff;
+                                i {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+                li.onLight {
+                    border-top: none;
+                    span {
+                        width: 255px;
+                        position: relative;
+                        left: -1px;
+                        background: url(../images/dengji.png) no-repeat left top;
+                        a {
+                            color: #fff;
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .businessRight{
+            width: 810px;
+            margin-right: 10px;
+            float: right;
+            ul{
+                li{
+                    width: 255px;
+                    height: 215px;
+                    float: left;
+                    margin-right: 15px;
+                    margin-top: 6px;
+                    a{
+                        display: block;
+                        img{
+                            width: 255px;
+                            height: 160px;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: #191919;
+                            line-height: 26px;
+                            text-align: center;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
+                        }
+                        strong{
+                            display:block;
+                            font-size: 12px;
+                            color: #535353;
+                            text-align: center;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        
+}
+}

@@ -1,0 +1,105 @@
+body {
+    background: #f4f4f9;
+}
+.header {
+    height: 0.9rem;
+    background: #fff;
+    position: relative;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #cecece;
+    a {
+        position: absolute;
+        left: 0.2rem;
+        top: 0;
+        span {
+            font-size: 0.36rem;
+            color: #444;
+        }
+    }
+    h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 0.36rem;
+    }
+}
+
+.noticeMain{
+    margin-top: 0.2rem;
+    .empty{
+        display: none;
+         img{
+            width: 3rem;
+            margin-left: 2.25rem;
+            margin-top: 2.5rem;
+        }
+        p{  
+            margin-top: 0.6rem;
+            font-size: 0.32rem;
+            text-align: center;
+            color: #1D1D1D;
+        }
+    }
+    /*通知列表*/
+   .noticeList{
+       ul li{
+           background: #fff;
+           margin-bottom: 0.2rem;
+           padding: 0.2rem 0 0.2rem;
+            border-top: 1px solid #CECECE;
+             border-bottom: 1px solid #CECECE;
+           .noticeListLeft{
+               width: 1.3rem;
+               float: left;
+               img{
+                   width: 0.8rem;
+                   margin-left: 0.3rem;
+                   margin-top: 0.12rem;
+               }
+           }
+           .noticeListRight{
+               width: 6.2rem;
+               float: left;
+               h3{
+                   strong{
+                       font-size: 0.32rem;
+                       color: #1d1d1d;
+                       line-height: 0.6rem;
+                       float: left;
+                       width: 4rem;
+                   }
+                   i{
+                      float: right; 
+                      width:2rem;
+                      text-align: right;
+                      font-size: 0.28rem;
+                      font-style: normal;
+                      padding-right: 0.2rem;
+                      line-height: 0.6rem;
+                      color: #686868;
+                   }
+                   
+               }
+               p{
+                   font-size: 0.28rem;
+                   color: #686868;
+                   padding-right: 0.1rem;
+                   line-height: 0.4rem;
+               }
+               a{
+                   display: block;
+                   color: #686868;
+                   font-size: 0.28rem;
+                   margin-top: 0.1rem;
+                   span{
+                       float: right;
+                       margin-right: 0.3rem;
+                       color: #C2C2C2;
+                       position: relative;
+                       top: 0.12rem;
+                   }
+               }
+           }
+       }
+   }
+   
+}

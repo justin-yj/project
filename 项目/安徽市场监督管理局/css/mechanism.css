@@ -1,0 +1,50 @@
+.naviTips{
+    width: 100%;
+    background: #ddd;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+}
+.naviTipsContent{
+    width: 1014px;
+    margin: 0 auto;
+   
+}
+.naviTipsContent i{
+    font-style: normal;
+    color: red;
+    text-decoration: underline;
+}
+.naviTips p a{
+    color: #666;
+}
+
+.mechanism {
+    width: 1014px;
+    margin: 10px auto;
+}
+.mechanism .top {
+        border-bottom: 1px solid #dedede;
+        text-align: center;
+        padding: 10px 0 30px;
+}
+.mechanism .top h4{
+    font-size: 36px;
+    color: #333;
+    font-weight: normal;
+    line-height: 50px;
+}
+.mechanism .top p{
+    color: #999;
+    line-height: 30px;
+}
+.mechanism .center{
+    padding: 20px 50px;
+}
+.mechanism .center p{
+    color: #666;
+    line-height: 26px;
+    text-indent: 2em;
+    margin-top: 10px;
+}

@@ -1,0 +1,289 @@
+/* pages/startOrder/order.wxss */
+
+page {
+  background: #f5f5f5;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+  overflow: hidden;
+}
+
+.order {
+  font-size: 32rpx;
+   overflow: hidden;
+}
+
+.leixing {
+  background: #fff;
+}
+
+.orderTitle {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.order_list {
+  height: 220rpx;
+  width: 100%;
+  border-radius: 6rpx;
+  margin: 30rpx 0 0 0;
+  background: #fff;
+}
+
+.list_item {
+  width: 88% !important;
+  margin: 0 5%;
+  padding: 0 1%;
+  border-radius: 8rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.list_item image {
+  width: 97%;
+  height: 220rpx;
+  border-radius: 12rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.history {
+  background: #fff;
+  border-radius: 0 0 20rpx 20rpx;
+  width: 60%;
+  line-height: 90rpx;
+  position: absolute;
+  left: 20%;
+  top: 136rpx;
+  z-index: 9999;
+  text-indent: 46rpx;
+  color: #000;
+  overflow-y: auto;
+  box-shadow: 10rpx 10rpx 5rpx 5rpx #f5f5f5;
+}
+
+.mengban{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top:0;
+left:0;
+right:0;
+bottom:0;
+background:transparent;
+}
+
+.orderClassfly {
+  color: #fff;
+  padding: 30rpx 0 0 40rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+
+.orderContent {
+  color: #fff;
+  padding: 0rpx 0 0 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+}
+
+/* 日期选择 */
+
+.calendar {
+  line-height: 60rpx;
+  padding: 0rpx 20rpx 40rpx 20rpx;
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+.calendar .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 20rpx 0 0;
+}
+
+.calendar_content {
+  width: 100;
+  height: 150rpx;
+  background: #f4f4f6;
+  border-radius: 12rpx;
+  margin-top: 20rpx;
+}
+
+.calendar_content>image {
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 60rpx;
+  top: 48rpx;
+}
+
+.calendar_content .calendarNum {
+  float: right;
+  margin-right: 10rpx;
+  line-height: 150rpx;
+  display: flex;
+}
+
+.calendar_content .calendarNum image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 60rpx;
+}
+
+.chooseRiqi {
+  position: relative;
+  width: 610rpx;
+  left: 93rpx;
+  top: -4rpx;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.userMessgion {
+  padding-top: 6rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  display: flex;
+  padding-left: 20rpx;
+  border-top: 20rpx solid #f5f5f5;
+}
+
+.userMessgion>view {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  width: 170rpx;
+}
+
+.userMessgion input {
+  border-radius: 10rpx;
+  width: 80%;
+  height: 100rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+
+/* 下拉框选择 */
+
+.select_box {
+  background: #fff;
+  width: 100%;
+  margin: 30rpx auto 0;
+  position: relative;
+  z-index: 999;
+  min-height: 100rpx;
+  font-size: 34rpx;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  position: relative;
+}
+
+.select_text {
+  position: relative;
+  width: 600rpx;
+  left: 154rpx;
+  top: 4rpx;
+  text-align: right;
+  padding-right: 100rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.picker {
+  width: 100%;
+  padding-right: 100rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.leixings {
+  width: 200rpx;
+  line-height: 100rpx;
+}
+
+.select_img {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  left: -10rpx;
+}
+
+.select_img_rotate {
+  transform: rotate(270deg);
+}
+
+.section {
+  position: relative;
+}
+
+.btn {
+  margin-top: 40rpx;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  border-radius: 0;
+  background: #4381ed;
+}
+
+.warning {
+  color: red;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+}
+
+.identifying {
+  width: 100%;
+  height: 127rpx;
+  line-height: 127rpx;
+  display: flex;
+  padding: 0 3%;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+.identifying input {
+  width: 340rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 10rpx 20rpx;
+  margin-top: 18rpx;
+  box-sizing: border-box;
+}
+
+.identifying image {
+  width: 200rpx;
+  height: 60rpx;
+  margin: 30rpx 20rpx 30rpx 20rpx;
+}
+
+.changeOne{
+  width: 120rpx;
+  height: 127rpx;
+  line-height: 127rpx;
+  font-size:34rpx;
+}
+.warnings{
+ float: right;
+ margin-top: 50rpx;
+ margin-right: 80rpx;
+  color: red;
+}
+

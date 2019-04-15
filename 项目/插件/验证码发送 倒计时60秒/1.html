@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>look</title>
+		<style>
+			.ico {
+				height: 30px;
+				width: 34px;
+				background: #FE7200;
+				position: absolute;
+				top: 10px;
+				left: 8.5%;
+				opacity: 0.7;
+			}
+			
+			#in {
+				display: block;
+				height: 30px;
+				width: 10%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" id="btn" value="免费获取验证码" />
+		<script type="text/javascript">
+			
+			var wait = 60;
+			function time(o) {
+				if(wait == 0) {
+					o.removeAttribute("disabled");
+					o.value = "免费获取验证码";
+					wait = 60;
+				} else {
+					o.setAttribute("disabled", true);
+					o.value = "重新发送(" + wait + ")";
+					wait--;
+					setTimeout(function() {
+							time(o)
+						},
+						1000)
+				}
+			}
+			document.getElementById("btn").onclick = function() {
+				time(this);
+			}
+		</script>
+	</body>
+
+</html>

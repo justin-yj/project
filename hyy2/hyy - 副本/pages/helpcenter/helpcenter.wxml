@@ -1,0 +1,24 @@
+<!--pages/helpcenter/helpcenter.wxml-->
+
+<view class='list'>
+  <view class='listOne' bindtap='goOne'>
+    1.如何使用预约功能
+    <image src='../../images/tongyong_jiantou.png'></image>
+  </view>
+  <view class='listOne' bindtap='goTwo'>
+   2.如何查看预约纪录
+    <image src='../../images/tongyong_jiantou.png'></image>
+  </view>
+  <view class='listOne' bindtap='goThree'>
+   3.怎么进行预约取消
+    <image src='../../images/tongyong_jiantou.png'></image>
+  </view>
+  <view class='listOne' bindtap='goFour'>
+    4.怎么添加身份信息
+    <image src='../../images/tongyong_jiantou.png'></image>
+  </view>
+   <!-- <view class='listOne listTwo'  bindtap='gofeedback'>
+    疑难反馈
+    <image src='../../images/tongyong_jiantou.png'></image>
+  </view> -->
+</view>

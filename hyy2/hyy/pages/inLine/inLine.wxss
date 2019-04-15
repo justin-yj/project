@@ -1,0 +1,344 @@
+/* pages/inLine/inLine.wxss */
+
+page {
+  background: #f9f9f9;
+  padding-bottom: 120rpx;
+}
+
+.inlineTitle {
+  height: 210rpx;
+  background: linear-gradient(#4f70fe, #57a5ff);
+  color: #fff;
+  position: relative;
+}
+
+.inlineaddress {
+  width: 100%;
+  padding: 36rpx 0 0 30rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  float: left;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.inlineaddress image {
+  width: 24rpx;
+  height:30rpx;
+  position: relative;
+  top: 6rpx;
+}
+.inlineaddress  text{
+  font-size: 24rpx;
+color: rgba(255,255,255,0.65);
+}
+.comeHere{
+  width: 144rpx;
+  height: 56rpx;
+  background: #fff;
+  border-radius: 28rpx;
+  position:absolute;
+  right: 24rpx;
+  bottom:32rpx;
+  color: #4381ed;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 24rpx;
+  
+}
+.comeHere image{
+  width:20rpx;
+  height:28rpx;
+  margin-right: 6rpx;
+}
+
+.inLineListName {
+  font-size: 44rpx;
+  padding: 0 4%;
+  padding-top: 20rpx;
+  line-height: 70rpx;
+}
+
+.inLineList {
+  font-size: 26rpx;
+  padding: 0 2%;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.listTop {
+  height: 204rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  position: relative;
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx 4%;
+}
+
+.listTop .canOrder {
+  font-size: 36rpx;
+  color: #000;
+  font-weight: bold;
+  line-height: 80rpx;
+}
+
+.detailTime {
+  width: 94%;
+  margin-left: 20rpx;
+}
+
+.timeDuan {
+  position: absolute;
+  z-index: 999;
+  top: 260rpx;
+  right: 100rpx;
+  width: 270rpx;
+  height: auto;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 16rpx;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0rpx 2rpx 10rpx 4rpx rgba(0, 0, 0, 0.16);
+}
+
+.timeContent {
+  display: inline-block;
+}
+
+.workTime {
+  line-height: 70rpx;
+  color: #4381ed;
+  font-size: 24rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  margin-bottom: 20rpx;
+}
+
+.jiantou {
+  width: 65rpx;
+  height: 54rpx;
+  position: absolute;
+  z-index: 9999;
+  top: 274rpx;
+  right: 73rpx;
+}
+
+.jiantou image {
+  width: 65rpx;
+  height: 54rpx;
+}
+
+.classflyTitle {
+  font-size: 36rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 4%;
+  background: #fff;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.inLineFc {
+  height: 280rpx;
+  background: #fff;
+  width: 100%;
+  padding-left: 3%;
+  position: relative;
+  top: 0rpx;
+  border-radius: 14rpx;
+  padding: 30rpx 30rpx 0;
+  box-sizing: border-box;
+}
+
+.inLineFc .inlineContent {
+  text-align: center;
+  height: 140rpx;
+  font-size: 100rpx;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+}
+
+.inlineContent text {
+  font-size: 40rpx;
+  color: #999;
+  font-weight: normal;
+}
+
+.inLineFc .inLineList .inlineName {
+  color: #999;
+  font-size: 30rpx;
+}
+
+.lerixing {
+  width: 100%;
+  margin-top: 20rpx;
+  background: #fff;
+  padding-bottom: 40rpx;
+}
+
+.classfly {
+  width: 97%;
+  height: 128rpx;
+  box-shadow: 0rpx 4rpx 12rpx 4rpx rgba(12, 24, 139, 0.08);
+  background: #fff;
+  padding: 10rpx 30rpx;
+  margin-top: 12rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.classfly navigator {
+  background: #fff;
+}
+
+.classfly text {
+  display: inline-block;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.ziyewu {
+  width: 95%;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.classfly image {
+  width: 25rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 15rpx;
+  top: 50rpx;
+}
+
+button {
+  width: 100%;
+  background: #4381ed;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  border-radius: 0;
+}
+
+.renshu {
+  position: relative;
+  margin-bottom: 30rpx;
+}
+/* 预约须知弹窗 */
+.noticeContent{
+  position: fixed;
+  left: 0;
+  bottom: 0%;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120rpx;
+  box-sizing: border-box;
+}
+ .noticemove{
+   animation: noticemove 0.5s;
+}
+@keyframes noticemove{
+  0%{
+    bottom: -100%;
+  }
+  100%{
+    bottom:0%;
+  }
+}
+.notice{
+  border: 1px solid #8a8a8a;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.banner{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.banner > image{
+  width: 100%;
+  height: 100%;
+}
+.p{
+  padding: 0 24rpx 130rpx;
+   /* padding-bottom: 120rpx; */
+}
+.noticeTitle{
+  text-align: center;
+  line-height: 72rpx;
+  height:72rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.btnClass{
+ 
+  color: #fff;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  border-radius: 0rpx;
+  border: none;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 999999;
+   background: #4381ed;
+}
+.titleNotice{
+  line-height: 120rpx;
+}
+
+/*联系方式*/
+.contact{
+  font-size: 32rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  position: relative;
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx 4%;
+}
+.contact .canOrder{
+  color: #000000 ;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.contact .detailTime image{
+ width: 30rpx;
+ height: 30rpx;
+padding-right: 20rpx;
+position: relative;
+top:8rpx;
+}
+.contact .detailTime text{
+  color: #4381ED;
+  font-size: 28rpx;
+  display: inline-block;
+}
+
+.pageNotes{
+  font-size: 24rpx;
+  color: rgba(0,0,0,0.35);
+  text-align: center;
+  padding: 20rpx 0 0rpx;
+  line-height: 36rpx;
+}
+.pageNotesContent text{
+  color: #4381ED;
+}

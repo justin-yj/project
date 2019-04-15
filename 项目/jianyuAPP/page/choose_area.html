@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>区域选择</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/public.css">
+		<link rel="stylesheet" href="../css/choose_area.css">
+	</head>
+	<body>
+		<div id="choose_area">
+			<!-- <header class="header">
+				<a href="#" class="return pull-left">
+					<i class="icon iconfont">&#xe640;</i>
+				</a>
+				<h1 class="title">区域</h1>
+			</header> -->
+			<main class="main">
+				<div class="form">
+					<div class="result">
+						已选择：
+						<span class="result_name"></span>
+					</div>
+					<div class="select-area-box">
+						<!-- <div class="tab">全国</div> -->
+						<ul> 
+							<!-- <li class="index" id="all"></li> -->
+							<!-- <li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">全国
+									</div>
+								</div> 
+							</li> -->
+							<li class="index" id="A">A</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">安徽
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="B">B</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">北京
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="C">C</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">重庆
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="F">F</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">福建
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="G">G</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">广东
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">广西
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">贵州
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">甘肃
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="H">H</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">河北
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">湖北
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">黑龙江
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">海南
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">河南
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">湖南
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<p class="index" id="J">J</p>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">吉林
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">江苏
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">江西
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="L">L</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">辽宁
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="N">N</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">内蒙古
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">宁夏
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="Q">Q</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">青海
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="S">S</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">山西
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">陕西
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">上海
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">山东
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">四川
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="T">T</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">天津
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="X">X</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">西藏
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">新疆
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="Y">Y</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">云南
+									</div>
+									<span><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+							<li class="index" id="Z">Z</li>
+							<li >
+								<div class="tab">
+									<div class="province">
+										<input type="checkbox" class="checkbox">浙江
+									</div>
+									<span class="down-icon"><i class="icon iconfont">&#xe600;</i></span>
+								</div> 
+								<div class="tab_content clearfix"></div> 
+							</li>
+						</ul>
+						<div class="slide">
+							<a href="#all">#</a>
+							<a href="#A">A</a>
+							<a href="#B">B</a>
+							<a href="#C">C</a>
+							<a href="#F">F</a>
+							<a href="#G">G</a>
+							<a href="#H">H</a>
+							<a href="#J">J</a>
+							<a href="#L">L</a>
+							<a href="#N">N</a>
+							<a href="#Q">Q</a>
+							<a href="#S">S</a>
+							<a href="#T">T</a>
+							<a href="#X">X</a>
+							<a href="#Y">Y</a>
+							<a href="#Z">Z</a>
+						</div>
+					</div>
+				</div>
+				<div class="btn">
+					<button class="reset-btn">重置</button>
+					<button class="save-btn">确认</button>
+				</div>
+			</main>
+			
+		</div>
+		<script src="../js/jquery-2.1.4.js"></script>
+		<script src="../js/mapJSON.js"></script>
+		<script>
+			chinaMapJSON.forEach(function(item,index){
+				// console.log(item,index)
+				
+			})
+			$(".select-area-box ul li:not('.index')").each(function(){
+				var text = $(this).find(".province").text().trim()
+				// console.log(text)
+				var data = null
+				chinaMapJSON.some(function(v){
+					data = v
+					return v.name.indexOf(text) !== -1
+				})
+				// console.log(data)
+				var box = $(this).find('div.tab_content')
+				var html = createMoreCity(data.city)
+				box.html(html)
+			})
+			function createMoreCity(arr){
+				var tempHtml = arr.map(function(v) {
+					return '<div class="city">'+v.name.replace(/市$/g,'')+'</div>'
+				}).join('')
+				return tempHtml
+			}
+			 $(function(){
+				$('.select-area-box .tab').on('click',function(event){
+					/* if ($(this).next(".tab_content").css('display') == "none") {
+						//展开未展开
+						$(this).next(".tab_content").slideDown();
+					} else {
+						//收缩已展开
+						$(this).next(".tab_content").slideUp();
+					} */
+					$(this).toggleClass('selected').next('.tab_content').slideDown(500); 
+					$(this).parent().siblings().children('.tab_content').slideUp(500); 
+					$(this).parent().siblings().children('.tab').removeClass('selected'); 
+					
+				})
+				$('.province .checkbox').on('click',function(){
+					console.log($(this).is(':checked'))
+					var isCheckded = $(this).is(':checked')
+					if(isCheckded){
+						$(this).parents('.tab').siblings('.tab_content').find('.city').addClass('active')
+					}else{
+						$(this).parents('.tab').siblings('.tab_content').find('.city').removeClass('active')
+					}
+				})
+				$('.tab_content').on('click','.city',function(){
+					$(this).toggleClass('active')
+					var isActive = $(this).parent().find('.city.active').length
+					console.log(isActive,$(this).html())
+					if(isActive){
+						var input = $(this).parents('li').find('input.checkbox')
+						window.input = input
+						console.log(input)
+						input.prop('checked', true)
+					}else{
+						$(this).parent('div').siblings('.tab').children().children('.checkbox').prop('checked', false)
+					}
+				})
+				
+				$('.save-btn').click(function(){
+					$('.result_name').empty()
+					var data = []
+					$(".tab_content").find(".city.active").each(function(){
+						data.push($(this).html())
+					})
+					var html='';
+					for(var i = 0;i<data.length;i++){
+						if(i != data.length -1){  
+							 html+='<span>' + data[i]+ '、' + '</span>'
+						}else{
+							html+='<span>' + data[i] + '</span>'
+						}   
+					}
+					$('.result_name').append(html)
+				})
+				$('.reset-btn').click(function(){
+					$('input[type="checkbox"]').attr("checked",false)
+					$('.tab_content .city').removeClass('active')
+					$('.result_name').empty()
+				})
+			})
+		</script>
+	</body>
+</html>

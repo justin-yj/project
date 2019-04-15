@@ -1,0 +1,103 @@
+#investigationDetail{
+    .address{
+      height: 50px;
+      line-height: 50px;  
+      font-size: 14px;
+      background: url(../images/address.png) no-repeat left center;
+      text-indent: 15px;
+      a{
+          color: #0576cd;
+      }
+      i{
+          color: #888;
+          font-style: normal;
+      }
+    }
+    .main{
+        border: 1px solid #e4e4e4;
+        min-height: 700px;
+        background: #fff;
+      .titles{
+          background: #f2f3f4;
+          height: 54px;
+          li{
+              width: 240px;
+              border-right: 1px solid #e4e4e4;
+              border-top: solid #f2f3f4;
+              text-align: center;
+              line-height: 50px;
+              float: left;
+              a{
+                  display: block;
+                  font-size: 16px;
+                  color: #222;
+              } 
+              &:hover{
+                color: #0576cd;
+                border-top: solid #0576cd;
+                box-sizing: border-box;
+                background: #fff;
+                a{
+                    color: #0576cd;
+                }
+              }
+          }
+          .onLight{
+              color: #0576cd;
+              border-top: solid #0576cd;
+              background: #fff;
+              a{
+                  color: #0576cd;
+              }
+          }
+      } 
+       .contents{
+           padding: 30px;
+           .contentsTop{
+               font-size: 16px;
+               line-height: 26px;
+               color: #0576cd;
+               margin-top: 10px;
+           }
+           .list{
+               margin-top: 20px;
+               font-size: 16px;
+               color: #000;
+               ul{
+                   li{
+                       line-height: 40px;
+                       margin-top: 10px;
+                       label{
+                           display: inline-block;
+                           width: 210px;
+                           cursor: pointer;
+                       }
+                       input{
+                           margin-right: 10px;
+                          
+                       }
+                       textarea{
+                           width: 600px;
+                           height: 100px;
+                           resize: none;
+                           outline: none;
+                           padding: 10px;
+                       }
+                   }
+               }
+               .btn{
+                    width: 160px;
+                    height: 50px;
+                    color: #fff;
+                    font-size: 18px;
+                    border: none;
+                    margin-left: 490px;
+                    margin: 20px 490px  30px;
+                    cursor: pointer;
+                    background: url(../images/investigationBtn.png) no-repeat left  top;
+               }
+           }
+       }
+     
+    }
+}    

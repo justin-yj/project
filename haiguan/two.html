@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            float: left;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #d0f;
+            border: 1px solid #aaa;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+    </div>
+
+    <script>
+        
+        // 禁止页面复制
+        document.oncontextmenu = new Function("event.returnValue=false");
+        document.onselectstart = new Function("event.returnValue=false");
+
+
+        
+
+    </script>
+
+</body>
+</html>

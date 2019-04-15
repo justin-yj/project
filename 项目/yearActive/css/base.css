@@ -1,0 +1,97 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, sumary {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    /* max-width: 750px; */
+    -webkit-text-size-adjust: 100%;
+    margin: 0 auto;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: .24rem;
+    background:rgba(245,244,249,1);;
+    color: #3d3d3d;
+    font-family:  "Microsoft YaHei","Helvetica Neue", "Roboto", "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+/*清除输入框内阴影*/
+input,textarea,select,button{
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    appearance:none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d3d;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+/*禁用长按页面时的弹出菜单(iOS下有效) ,img和a标签都要加*/
+img,a{
+    -webkit-touch-callout:none;
+}
+em,i{
+	font-style: normal;
+}
+/*兼容ios调取h5页面的头部*/
+.ios-head {
+    display: none;
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    background: #18974b;
+    width: 100%;
+    z-index: 100;
+}
+/*base*/
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    content: "";
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.ellipsis {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}

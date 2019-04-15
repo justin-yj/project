@@ -1,0 +1,88 @@
+.main {
+  background: #fff;
+}
+
+.main .table {
+  margin: 20px 30px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+}
+
+.main .table .tableTitle {
+  height: 45px;
+  line-height: 45px;
+  background: #f1f8ff;
+}
+
+.main .table .tableTitle span {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main .table .tableTitle .serialNumber {
+  width: 230px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main .table .tableTitle .organization, .main .table .tableTitle .govement {
+  width: 200px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main .table .tableTitle .addres {
+  width: 330px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main .table .tableTitle .timer {
+  width: 150px;
+  border-right: none;
+}
+
+.main .table .tableContent {
+  line-height: 45px;
+  background: #fff;
+}
+
+.main .table .tableContent li {
+  height: 45px;
+  border-top: 1px solid #e4e4e4;
+}
+
+.main .table .tableContent li span {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+}
+
+.main .table .tableContent li .serialNumber {
+  width: 230px;
+}
+
+.main .table .tableContent li .organization, .main .table .tableContent li .govement {
+  width: 200px;
+}
+
+.main .table .tableContent li .addres {
+  width: 330px;
+}
+
+.main .table .tableContent li .timer {
+  width: 150px;
+}
+
+.main .table .tableContent .activeBg {
+  background: #fbfbfb;
+}
+
+.main .paging {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}

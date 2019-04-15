@@ -1,0 +1,18 @@
+<view>
+  <view wx:if="{{list.length == 0}}" class='no-record'>
+    <image src='../../images/norecord.png'></image>
+    <view>暂无评价</view>
+  </view>
+  <view class='listOrder' wx:for="{{ list }}" wx:key="{{ index }}" bindtap='goDetail' data-id="{{ item.id }}">
+    <view class='title'>{{ item.latticeName }}</view>
+    <view class='orderAddres'>{{ item.latticeAddress }}</view>
+    <view class='pingjia'>
+      <block>
+        <image wx:if="{{item.evaluationHierarchycode == '1'}}" src='../../images/good.png' class='pingjiaImage'></image>
+        <image wx:elif="{{item.evaluationHierarchycode == '2'}}" src='../../images/smile.png' class='pingjiaImage'></image>
+        <image wx:elif="{{item.evaluationHierarchycode == '3'}}" src='../../images/no.png' class='pingjiaImage'></image>
+      </block>
+      <text>{{ item.evaluationHierarchy }}</text>
+    </view>
+  </view>
+</view>

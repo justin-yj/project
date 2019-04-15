@@ -1,0 +1,190 @@
+#Interaction .address {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: url(../images/address.png) no-repeat left center;
+  text-indent: 15px;
+}
+
+#Interaction .address a {
+  color: #0576cd;
+}
+
+#Interaction .address i {
+  color: #888;
+  font-style: normal;
+}
+
+#Interaction .main {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  min-height: 700px;
+}
+
+#Interaction .main .title {
+  background: #f2f3f4;
+  height: 54px;
+}
+
+#Interaction .main .title li {
+  width: 240px;
+  border-right: 1px solid #e4e4e4;
+  border-top: solid #f2f3f4;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+
+#Interaction .main .title li a {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+#Interaction .main .title li:hover {
+  color: #0576cd;
+  background: #fff;
+  border-top: solid #0576cd;
+  box-sizing: border-box;
+}
+
+#Interaction .main .title li:hover a {
+  color: #0576cd;
+}
+
+#Interaction .main .title .onLight {
+  color: #0576cd;
+  background: #fff;
+  border-top: solid #0576cd;
+}
+
+#Interaction .main .title .onLight a {
+  color: #0576cd;
+}
+
+#Interaction .main .leavingMessage .btn {
+  width: 306px;
+  height: 52px;
+  background: url(../images/interactionBtn.png) no-repeat left top;
+  text-align: center;
+  margin: 45px auto;
+}
+
+#Interaction .main .leavingMessage .btn a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
+
+#Interaction .main .leavingMessage .contentList {
+  padding: 0 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li {
+  border-top: 1px solid #e4e4e4;
+  padding: 20px 0;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop {
+  overflow: hidden;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop span {
+  float: left;
+  width: 64px;
+  height: 25px;
+  background: #ff9e04;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop .contentListTopRight {
+  width: 1000px;
+  float: left;
+  margin-left: 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop .contentListTopRight h4 {
+  font-size: 18px;
+  color: #1b1b1b;
+  font-weight: normal;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop .contentListTopRight h4 i {
+  color: #0576cd;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop .contentListTopRight p {
+  line-height: 30px;
+  font-size: 12px;
+  color: #888;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListTop .contentListTopRight p b {
+  font-weight: normal;
+  padding-right: 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListCenter {
+  font-size: 14px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListCenter span {
+  width: 64px;
+  float: left;
+  color: #0576cd;
+  line-height: 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListCenter .contentListCenterR {
+  width: 1000px;
+  float: left;
+  margin-left: 30px;
+  color: #333;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListCenter .contentListCenterR p {
+  line-height: 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListBottom {
+  font-size: 14px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListBottom span {
+  width: 80px;
+  float: left;
+  color: #0576cd;
+  line-height: 30px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListBottom .contentListBottomR {
+  width: 1000px;
+  float: left;
+  margin-left: 15px;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListBottom .contentListBottomR p {
+  line-height: 30px;
+  color: #0576cd;
+}
+
+#Interaction .main .leavingMessage .contentList li .contentListBottom .contentListBottomR strong {
+  color: #999;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+#Interaction .main .paging {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}

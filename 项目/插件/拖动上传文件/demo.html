@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+    <title>HTML5拖拽上传</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <style type="text/css">
+    #dropzone {
+        width: 300px;
+        height: 300px;
+        border: 2px dashed gray;
+    }
+
+    #dropzone.over {
+        width: 300px;
+        height: 300px;
+        border: 2px dashed red;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="dropzone" dropEffect="link"></div>
+</body>
+<script type="text/javascript">
+function uploadFile(formData) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:8080/Server/uploadfile', true);
+    xhr.send(formData);
+}
+var dz = document.getElementById('dropzone');
+dz.ondragover = function(ev) {
+    //阻止浏览器默认打开文件的操作
+    ev.preventDefault();
+    this.className = 'over';
+}
+
+dz.ondragleave = function() {
+    this.className = '';
+}
+
+dz.ondrop = function(ev) {
+    this.className = '';
+   
+    //阻止浏览器默认打开文件的操作
+    ev.preventDefault();
+    //表单上传文件
+    var formData = new FormData();
+    console.log(formData)
+    formData.append('file', ev.dataTransfer.files[0]);
+    uploadFile(formData);
+}
+</script>
+
+</html>

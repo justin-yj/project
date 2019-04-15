@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	display: block;
+}
+.clearfix::before,.clearfix::after{
+	content: "";
+	overflow: hidden;
+	clear: both;
+	display: block;
+	height: 0;
+}
+body{
+	font-size: 12px;
+	color: #666666;
+	background-color: #e2f4fe;
+}
+.tree{
+	padding: 0px;
+}
+.treeTop{
+	height: 26px;
+	line-height: 26px;
+}
+.treeList{
+	padding-left: 2px;
+}
+.treeList ul li{
+	
+}
+.treeTop img{
+	float: left;
+	margin-top: 5px;
+}
+.treeTop span{
+	float: left;
+}
+.treeListMain,.treeListOne{
+	width: 100%;
+	float: left;
+}
+.treeListMain .top,.treeListOne .top,.treeListLast .top{
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+	background:  url(../images/folder.gif) no-repeat 19px ,url(../images/plus.gif) no-repeat left;
+}
+.treeListOne,.treeListLast{
+	height: 16px!important;
+	position: relative;
+	top: -2px;
+}
+.treeListMain .top  img,.treeListOne .top img,.treeListLast .top img{
+	float: left;
+	margin-top: 2px;
+}
+.treeListMain .top span,.treeListOne .top span,.treeListLast .top span{
+	margin-left: 40px;
+	float: left;
+	line-height: 20px;
+	color: #333;
+}
+.treeListMain .top span:hover{
+	text-decoration: underline;
+}
+.treeListMain .right{
+	display: none;
+	background: url(../images/line.gif) repeat-y left 20px;
+}
+.treeListMain .right ol li{
+	cursor: pointer;
+	margin-left: 20px;
+}
+.treeListMain .right ol li:last-child .right{
+	background-image:none!important;
+}
+.treeListMain .right ol li span:hover{
+	text-decoration: underline;
+}
+.treeListMain .right ol li .listLine{
+	background: url(../images/join.gif) no-repeat  left center;
+	padding-left: 18px;
+}
+.treeListMain .right ol li:last-child .listLine{
+	background: url(../images/joinbottom.gif) no-repeat  left center;
+}
+.treeListMain .right ol li img{
+	float: left;
+}
+.treeListMain .right ol li span{
+	float: left;
+	color: #666;
+}
+
+.treeListMain .right ol li:last-child .treeListMainIn .top{
+	background:  url(../images/folder.gif) no-repeat 19px ,url(../images/plusbottom.gif) no-repeat left;
+}
+.treeListMain .right .treeListMainIn  ol li .listLine{
+	background: url(../images/join.gif) no-repeat  left center;
+	padding-left: 18px;
+}
+.treeListMain .right .treeListMainIn ol li:last-child  .listLine{
+	background: url(../images/joinbottom.gif) no-repeat  left center;
+}

@@ -1,0 +1,193 @@
+body {
+    background: #f4f4f9;
+}
+
+.header {
+    height: 0.9rem;
+    background: #fff;
+    position: relative;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #cecece;
+    a {
+        position: absolute;
+        left: 0.2rem;
+        top: 0;
+        span {
+            font-size: 0.36rem;
+            color: #444;
+        }
+    }
+    h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 0.36rem;
+    }
+}
+
+.modifyPass {
+    margin-top: 0.2rem;
+    height: 1.1rem;
+    border-top: 1px solid #CECECE;
+    border-bottom: 1px solid #cecece;
+    line-height: 1.1rem;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+    strong {
+        font-size: 0.34rem;
+        color: #1D1D1D;
+        padding-left: 0.36rem;
+    }
+    i {
+        font-size: 0.34rem;
+        float: right;
+        margin-right: 0.2rem;
+        color: #686868;
+    }
+    span {
+        font-size: 0.34rem;
+        color: #C2C2C2;
+        float: right;
+        padding-right: 0.3rem;
+        margin-top: 0.44rem;
+    }
+}
+
+
+/*缓存*/
+
+.cache {
+    border-top: none;
+    margin-top: 0;
+    i {
+        margin-right: 0.3rem;
+    }
+}
+
+.installList {
+    margin-top: 0.2rem;
+    border-top: 1px solid #CECECE;
+    li .modifyPass {
+        display: block;
+        border-top: none;
+        margin-top: 0;
+    }
+}
+
+
+/*退出登录*/
+
+.quit {
+    margin-top: 0.4rem;
+    text-align: center;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    background: #fff;
+    font-size: 0.34rem;
+    border-top: 1px solid #CECECE;
+    border-bottom: 1px solid #cecece;
+    a {
+        display: block;
+        color: #1D1D1D;
+    }
+}
+
+
+/*清空缓存弹窗*/
+
+.cacheTc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 99;
+    display: none;
+    .cacheMain {
+        width: 5.4rem;
+        height: 2.1rem;
+        background: #fff;
+        border-radius: 0.2rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -2.7rem;
+        margin-top: -1rem;
+        h2 {
+            text-align: center;
+            line-height: 1.2rem;
+            height: 1.2rem;
+            font-size: 0.34rem;
+            color: #000;
+            border-bottom: 1px solid #404040;
+        }
+        a {
+            width: 50%;
+            float: left;
+            text-align: center;
+            color: #157efb;
+            line-height: 0.9rem;
+            font-size: 0.34rem;
+        }
+        a.dump {
+            border-left: 1px solid #404040;
+        }
+    }
+}
+
+
+/*分享好友弹窗*/
+
+.share {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 99;
+    display: none;
+    .shareMain {
+        width: 100%;
+        height: 3.4rem;
+        background: #f4f4f9;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        ul {
+            margin-top: 0.6rem;
+            li {
+                width: 25%;
+                float: left;
+                text-align: center;
+                span {
+                    font-size: 1rem;
+                }
+                span.weixin {
+                    color: #0ab70e;
+                }
+                span.qq {
+                    color: #4cafe9;
+                }
+                span.pengyouquan {
+                    color: #a5e537;
+                }
+                p {
+                    font-size: 0.28rem;
+                    color: #1D1D1D;
+                }
+            }
+        }
+        a.shareQx {
+            display: block;
+            height: 1rem;
+            text-align: center;
+            line-height: 1rem;
+            background: #fff;
+            color: #1d1d1d;
+            font-size: 0.34rem;
+            margin-top: 0.3rem;
+        }
+    }
+}

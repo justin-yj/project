@@ -1,0 +1,96 @@
+.main {
+  width: 100%;
+  overflow: scroll; }
+
+.main::-webkit-scrollbar {
+  display: none; }
+
+#order_list .main .buttons-tab > ul {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .3rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box; }
+  #order_list .main .buttons-tab > ul .tab-link {
+    display: block;
+    flex: 1;
+    text-align: center;
+    color: #1d1d1d;
+    font-size: .34rem;
+    box-sizing: border-box;
+    height: 99%; }
+  #order_list .main .buttons-tab > ul .active {
+    color: #2cb7ca;
+    border-bottom: 2px solid #2cb7ca;
+    box-sizing: border-box; }
+#order_list .main .tabs .card {
+  background: #fff;
+  margin-top: .2rem; }
+  #order_list .main .tabs .card .card-header {
+    height: .82rem;
+    line-height: .82rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .3rem;
+    border-bottom: 0.01rem solid #e0e0e0; }
+    #order_list .main .tabs .card .card-header .time {
+      font-size: .24rem; }
+    #order_list .main .tabs .card .card-header .status {
+      font-size: .3rem; }
+    #order_list .main .tabs .card .card-header .notpay {
+      color: #ffb900; }
+    #order_list .main .tabs .card .card-header .finish {
+      color: #686868; }
+  #order_list .main .tabs .card .card-content {
+    border-bottom: 0.01rem solid #e0e0e0; }
+    #order_list .main .tabs .card .card-content .media {
+      display: flex;
+      background: #F5F4F9;
+      padding: .22rem .2rem;
+      margin: .16rem .3rem; }
+      #order_list .main .tabs .card .card-content .media .media-img {
+        width: 1.15rem;
+        height: 1.15rem;
+        margin-right: .2rem; }
+      #order_list .main .tabs .card .card-content .media .item-ifo {
+        font-size: .26rem;
+        color: #1d1d1d; }
+    #order_list .main .tabs .card .card-content .price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 .3rem;
+      margin-bottom: .2rem; }
+      #order_list .main .tabs .card .card-content .price .initial {
+        font-size: .26rem;
+        color: #888;
+        text-decoration: line-through;
+        margin-right: 0.08rem; }
+      #order_list .main .tabs .card .card-content .price .current {
+        font-size: .36rem; }
+  #order_list .main .tabs .card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .2rem .3rem; }
+    #order_list .main .tabs .card .card-footer .btn {
+      width: 2.18rem;
+      height: .72rem;
+      line-height: .72rem;
+      text-align: center;
+      border-radius: 0.05rem;
+      font-size: .28rem; }
+    #order_list .main .tabs .card .card-footer .cancle {
+      border: 1px solid #2cb7ca;
+      color: #2cb7ca;
+      background: transparent;
+      margin-right: .16rem; }
+    #order_list .main .tabs .card .card-footer .pay {
+      background: #2cb7ca;
+      color: #fff; }

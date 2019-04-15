@@ -1,0 +1,32 @@
+.main {
+  width: 100%;
+  overflow: scroll; }
+
+.main::-webkit-scrollbar {
+  display: none; }
+
+#no_result .main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  #no_result .main img {
+    width: 2.8rem;
+    height: 2.8rem; }
+  #no_result .main p {
+    color: #888;
+    font-size: .28rem;
+    margin-top: .2rem; }
+  #no_result .main a {
+    color: #2CB7CA;
+    font-size: .36rem;
+    margin-top: .48rem; }
+  #no_result .main a:hover, #no_result .main a:focus {
+    color: #2CB7CA; }

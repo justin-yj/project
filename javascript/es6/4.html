@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   
+
+    <script>
+        
+      //let arr = [1,2,3,4,5,2,4,1];//去除数组中重复的成员
+      let  arr = 'arsdfssdsdvsds'
+      console.log([...new Set(arr)])
+
+    //   let addArr = ['ding','love','xu']
+
+      let set = new Set();
+      set.add('ding')
+      set.add('sheng')
+      set.add('ding')
+      set.add('chenggong')
+      let isSucess = set.has('ding')
+      
+      set.delete('dcs')
+    //   set.clear()
+      console.log(set,isSucess)
+      let arrSet = Array.from(set);
+      console.log(arrSet)
+
+      console.log(set.entries(),'dcs')
+     for(let x of set){
+         console.log(x)
+     }
+     
+     let set1 =new Set([1,2,3,4,'ding'])
+     let union = new Set([...set,...set1])
+     console.log(union)
+     let intersect = new Set([...set].filter(x=>set1.has(x)))
+     console.log(intersect)
+     let difference = new Set([...set].filter(x => !set1.has(x)))
+     console.log(difference)
+
+     const ws = new WeakSet();
+     ws.add({})
+     console.log(ws.add({}))
+
+
+    
+    </script>
+
+</body>
+</html>

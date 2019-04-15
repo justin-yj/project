@@ -1,0 +1,108 @@
+#searchResult{
+.address{
+    height: 50px;
+    line-height: 50px;  
+    font-size: 14px;
+    background: url(../images/address.png) no-repeat left center;
+    text-indent: 15px;
+    a{
+        color: #0576cd;
+    }
+    i{
+        color: #888;
+        font-style: normal;
+    }
+  }
+  .main{
+      background: #fff;
+      border: 1px solid #e4e4e4;
+      min-height: 900px;
+      .title{
+          height: 50px;
+          background: #f2f3f4;
+          line-height: 50px;
+          border-bottom: 1px solid #e4e4e4;
+          span{
+              display: inline-block;
+              height: 18px;
+              width: 3px;
+              background: #0576cd;
+              margin-left: 25px;
+              position: relative;
+              top: 3px;
+          }
+          h4{
+            display: inline-block;
+              font-size: 16px;
+              color: #0576cd;
+              font-weight: normal;
+              margin-left: 4px;
+          }
+      }
+      .content{
+          padding: 40px 65px;
+            .search{
+                .canWrite{  
+                    width: 580px;
+                    height: 36px;
+                    background: url(../images/resultSearch.png) no-repeat left top;
+                    border: none;
+                    text-indent: 10px;
+                    margin-left: 190px;
+                }
+                .btn{
+                    width: 100px;
+                    height: 36px;
+                    background: url(../images/resultBtn.png) no-repeat left top;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                    position: relative;
+                    left: -5px;
+                    top: 1px;
+                }
+              
+            }
+            .result{
+                font-size: 14px;
+                line-height: 50px;
+                strong{
+                    font-weight: normal;
+                    color: #0576cd;
+                }
+            }
+            ul{
+                border-top: 1px dotted #e4e4e4;
+                li{
+                    padding: 20px 0;
+                    border-bottom: 1px dotted #e4e4e4;
+                    h4{
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: #0576cd;
+                        strong{
+                            color: red;
+                            font-weight: normal;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #252525;
+                        line-height: 26px;
+                        margin-top: 10px;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #888;
+                        line-height: 26px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .paging{
+                margin: 20px 0;
+                text-align: center;
+            }
+          }
+      }
+  }

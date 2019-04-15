@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/medal.css">
+    <script src="../js/remAll.js"></script>
+</head>
+<body id="medal">
+        <div class="medal">
+            <div class="medalBook">
+                <img class="medalImg" src="../images/book.png" alt="">
+                <div class="mdealContent">
+                    <dl>
+                        <dt>刘某某同志：</dt>
+                        <dd>在2018年度工作中表现特别出色，贡献特别突出，被评为“优秀员工”。</dd>
+                    </dl>
+                    <div class="medalTitle">
+                        <img src="../images/medalLeft.png" alt="">
+                        <span>为好友盖章，助力年终奖</span>
+                        <img src="../images/medalRight.png" alt="">
+                    </div>
+                    <div class="addMedalS">
+                        <div class="addMedal">
+                            <ul>
+                                <li></li> <li></li> <li></li>
+                            </ul>
+                        </div>
+                        <div id="addMedal">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                   
+
+                    <div class="medalResult">
+                        <h4>已助力<strong>30000</strong><i>元</i></h4>
+                        <p>
+                            助力越多，年终奖越多
+                        </p>
+                    </div>
+
+
+                </div>
+            </div> 
+            <div class="btn">
+                <a href="getMedalBook.html"><img src="../images/mySelfMedalBtn.png" alt=""></a>
+            </div>
+
+            <!-- 弹窗 -->
+            <div class="medalPop">
+                <div class="medalPopMain">
+                     <h4><i>——</i> <span> 点击下方奖章，为好友 盖章认证 </span> <i>——</i> </h4>
+                    <ul>
+                        <li class="activeOne">
+                            <img src="../images/1Medal-f.png" alt="" class="one"><img src="../images/1Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeOne">
+                            <img src="../images/2Medal-f.png" alt="" class="one"><img src="../images/2Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeOne">
+                            <img src="../images/3Medal-f.png" alt="" class="one"><img src="../images/3Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeOne">
+                            <img src="../images/4Medal-f.png" alt="" class="one"><img src="../images/4Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/5Medal-f.png" alt="" class="one"><img src="../images/5Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/6Medal-f.png" alt="" class="one"><img src="../images/6Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/7Medal-f.png" alt="" class="one"><img src="../images/7Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/8Medal-f.png" alt="" class="one"><img src="../images/8Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/9Medal-f.png" alt="" class="one"><img src="../images/9Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/10Medal-f.png" alt="" class="one"><img src="../images/10Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/11Medal-f.png" alt="" class="one"><img src="../images/11Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeTwo">
+                            <img src="../images/12Medal-f.png" alt="" class="one"><img src="../images/12Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeThree">
+                            <img src="../images/13Medal-f.png" alt="" class="one"><img src="../images/13Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeThree">
+                            <img src="../images/14Medal-f.png" alt="" class="one"><img src="../images/14Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeThree">
+                            <img src="../images/15Medal-f.png" alt="" class="one"><img src="../images/15Medal.png" alt="" class="two">
+                        </li>
+                        <li class="activeThree">
+                            <img src="../images/16Medal-f.png" alt="" class="one"><img src="../images/16Medal.png" alt="" class="two">
+                        </li>
+                    </ul>
+                    <a href="#" class="popBtn"><img src="../images/sure.png" alt=""></a>
+
+                    <div class="dialog">
+                        <div class="dialogContent">
+                            <img src="../images/people.png" alt="">
+                            <span>最多只能为好友盖章三个</span> 
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="../js/zepto.js"></script>
+       <script src="../js/fastlick.js"></script>
+       
+        <script>
+
+            
+                $(function() {
+                    FastClick.attach(document.body);
+                
+                var  arrList = [];//存放选择的数组下标
+                var oldArrList = [];
+                var msgList = ["大佬人美心善","矮油~你最懂我","请收下我的膝盖"];
+                $(".addMedal ul li").click(function(){
+                    oldArrList = JSON.parse(JSON.stringify(arrList)) 
+                    if(oldArrList.length>=3){
+                    }else{
+                        $(".medalPop").show();
+                    }
+                })
+                var timeOut = null
+                function goHide(){
+                    clearTimeout(timeOut)
+                   timeOut =  setTimeout(function(){
+                        $('.dialog').hide();
+                    },1200)
+                }
+                //选择按钮
+                $('.medalPopMain ul li').click(function(){
+                    let oIndex = $(this).index()
+                    var dcs = $('.active').length;
+                    if(dcs >=3){
+                        var hasActive = oldArrList.indexOf(oIndex);
+                        if(hasActive == -1){
+                            if($(this).hasClass('active')){
+                                if(oIndex<4){
+                                    $(this).addClass('activeOne');
+                                    $(this).removeClass('active')
+                                }else if(3<oIndex && oIndex<12){
+                                    $(this).addClass('activeTwo');
+                                    $(this).removeClass('active')
+                                }else if(11<oIndex){
+                                    $(this).addClass('activeThree');
+                                    $(this).removeClass('active')
+                                }
+                            }else{
+                                $('.dialog').show();
+                                $('.dialog span').text('最多只能选择三个')
+                                goHide()
+                            }
+                        }else{
+                            $('.dialog').show();
+                            $('.dialog span').text('已盖章不能取消')
+                            goHide()
+                        }
+                    }else{
+                        var hasActive = oldArrList.indexOf(oIndex);
+                        console.log(oldArrList,hasActive,'dcs')
+                        if(hasActive == -1){
+                            if($(this).hasClass('active')){
+                                if(oIndex<4){
+                                    $(this).addClass('activeOne');
+                                    $(this).removeClass('active')
+                                }else if(3<oIndex && oIndex<12){
+                                    $(this).addClass('activeTwo');
+                                    $(this).removeClass('active')
+                                }else if(11<oIndex){
+                                    $(this).addClass('activeThree');
+                                    $(this).removeClass('active')
+                                }
+                            }
+                            else{
+                                let addOne = [];
+                                $('.medalPopMain ul li').each(function(index,item){
+                                    if(hasClass(item,'active')){
+                                        addOne.push(index) 
+                                    }
+                                })
+                                if(oIndex<4){
+                                    $(this).addClass('active');
+                                    $(this).removeClass('activeOne')
+                                }else if(3<oIndex && oIndex<12){
+                                    $(this).addClass(' active');
+                                    $(this).removeClass('activeTwo')
+                                }else if(11<oIndex){
+                                    $(this).addClass(' active');
+                                    $(this).removeClass('activeThree')
+                                }
+                                $('.dialog').show();
+                                $('.dialog span').text(msgList[addOne.length])
+                                goHide()
+                                } 
+                        }else{
+                            $('.dialog').show();
+                            $('.dialog span').text('已盖章不能取消')
+                            goHide()
+                        }
+                    } 
+                })
+                //关闭按钮
+                $(".popBtn").click(function(){ 
+                    $(".medalPop").hide();
+                    $('.medalPopMain ul li').each(function(index,item){
+                        if(hasClass(item,'active')){
+                            arrList.push(index) 
+                        }
+                    })
+                    arrList = Array.from(new Set(arrList));
+                    arrList = JSON.parse(JSON.stringify(arrList));
+                    let arrOld = new Set(oldArrList);
+                    let arrNew = new Set(arrList);
+                    var  diff=new Set([...arrNew].filter(x=>!arrOld.has(x)));
+                    diff = Array.from(new Set(diff));
+ 
+                    for(let i=0;i<diff.length;i++){
+
+                      
+                        setTimeout(function(){
+                            $("#addMedal ul").append("<li class='addOne'><img src= '../images/"+ (diff[i]+1) +"Medal.png '/></li>")
+                            
+                        },251*i)
+                        
+                    }
+                            
+                        
+                })
+
+                //检查是否含有某个class名称
+                function hasClass(dom, className) {
+                    className = className.replace(/^\s|\s$/g, "")
+                    return (
+                        " " + ((dom || {}).className || "").replace(/\s/g, " ") + " "
+                    ).indexOf(" " + className + " ") >= 0
+                }
+            })
+
+        </script>  
+
+</body>
+</html>

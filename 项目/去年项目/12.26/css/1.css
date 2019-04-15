@@ -1,0 +1,25 @@
+.panel-body {
+    background-color: #e2f4fe;
+    color: #666;
+    font-size: 12px;
+    border: none;
+}
+body{
+	font-size: 12px;
+	color: #666666;
+	background-color: #e2f4fe;
+	padding: 0;
+}
+
+.treeTop{
+	height: 26px;
+	line-height: 26px;
+}
+
+.treeTop img{
+	float: left;
+	margin-top: 5px;
+}
+.treeTop span{
+	float: left;
+}

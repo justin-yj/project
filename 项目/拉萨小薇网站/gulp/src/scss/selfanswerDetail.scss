@@ -1,0 +1,348 @@
+#selfanswerFive{
+    .address{
+      height: 50px;
+      line-height: 50px;  
+      font-size: 14px;
+      background: url(../images/address.png) no-repeat left center;
+      text-indent: 15px;
+      a{
+          color: #0576cd;
+      }
+      i{
+          color: #888;
+          font-style: normal;
+      }
+    }
+    .main{
+        background: #fff;
+        border: 1px solid #e4e4e4;
+        min-height: 700px;
+      .title{
+          background: #f2f3f4;
+          height: 54px;
+          li{
+              width: 240px;
+              border-right: 1px solid #e4e4e4;
+              border-top: solid #f2f3f4;
+              text-align: center;
+              line-height: 50px;
+              float: left;
+              a{
+                  display: block;
+                  font-size: 16px;
+                  color: #222;
+              } 
+              &:hover{
+                color: #0576cd;
+                background: #fff;
+                border-top: solid #0576cd;
+                box-sizing: border-box;
+                a{
+                    color: #0576cd;
+                }
+              }
+          }
+          .onLight{
+                background: #fff;
+              color: #0576cd;
+              border-top: solid #0576cd;
+              a{
+                  color: #0576cd;
+              }
+          }
+      }  
+      .content{
+          padding: 40px 30px;
+        .top{
+            background: #f2f3f4;
+            height: 44px;
+            border: 1px solid #e4e4e4;
+            li{
+                width: 20%;
+                border-right: 1px solid #e4e4e4;
+                border-top: solid #f2f3f4;
+                text-align: center;
+                line-height: 40px;
+                float: left;
+                a{
+                    display: block;
+                    font-size: 16px;
+                    color: #222;
+                } 
+                &:hover{
+                  background: #0576cd;
+                  border-top: solid #0576cd;
+                  box-sizing: border-box;
+                  a{
+                      color: #fff;
+                  }
+                }
+            }
+            .onActive{
+                  background: #0576cd;
+                border-top: solid #0576cd;
+                a{
+                    color: #fff;
+                }
+            }
+        } 
+        .contentSom{
+            font-size: 16px;
+            margin-top: 30px;
+            .wenti{
+                border-bottom: 1px solid #e4e4e4;
+                h4{
+                    font-weight: normal;
+                    color: #0576cd;
+                    line-height: 36px;
+                }
+                p{
+                    line-height: 26px;
+                    color: #333;
+                    font-size: 14px;
+                }
+                .answer{
+                    display: inline-block;
+                    width: 120px;
+                    height: 40px;
+                    background: url(../images/checkmore.png) no-repeat left top;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #fff;
+                    margin: 20px 0 30px;
+                }
+            }
+            .wentiList{
+                ul{
+                    li:first-child{
+                        border-top: none;
+                    }
+                    li{
+                        border-top: 1px dotted #e4e4e4;
+                        margin-top: 20px;
+                        padding-top: 20px;
+                        .best{
+                            margin-top: 30px;
+                            display: block;
+                            width: 85px;
+                            height: 32px;
+                            background: url(../images/tiwen.png) no-repeat left top;
+                            color: #fff;
+                            text-indent: 10px;
+                            line-height: 30px;
+                            font-size: 14px;
+                        }
+                        .user{
+                            overflow: hidden;
+                            padding: 15px 0;
+                            img{
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 100%;
+                                float: left;
+                            }
+                            .user-right{
+                                float: left;
+                                margin-left:24px;
+                                h5{
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    line-height: 20px;
+                                }
+                                span{
+                                    font-size: 12px;
+                                    color: #888;
+                                }
+                            }
+                        }
+                        .listContent{
+                            .contentTitle{
+                                font-size: 14px;
+                                line-height: 26px;
+                                margin-bottom: 20px;
+                            }
+                            .zuiween{
+                                overflow: hidden;
+                                font-size: 14px;
+                                span{
+                                   float: left;
+                                   width: 60px;
+                                   height: 26px;
+                                   background: url(../images/zhuiwenOne.png) no-repeat left top;
+                                   text-align: center;
+                                   line-height: 26px; 
+                                   color: #888;
+                                }
+                                p{
+                                    float: left;
+                                    margin-left: 20px;
+                                    line-height: 26px; 
+                                }
+                            }
+                            .hxian{
+                                height: 20px;
+                                img{
+                                    height: 20px;
+                                    margin-left: 30px;
+                                }
+                            }
+                            .zuida{
+                                overflow: hidden;
+                                font-size: 14px;
+                                span{
+                                   float: left;
+                                   width: 60px;
+                                   height: 26px;
+                                   background: url(../images/zhuiwenOne.png) no-repeat left top;
+                                   text-align: center;
+                                   line-height: 26px; 
+                                   color: #0576cd;
+                                }
+                                p{
+                                    float: left;
+                                    margin-left: 20px;
+                                    line-height: 26px; 
+                                }
+                            }
+                        }
+                       
+                        .resets{
+                            overflow: hidden;
+                            margin-top: 20px;
+                             .zan{
+                                width: 120px;
+                                height: 36px;
+                                float: left;
+                                background: url(../images/tuoyuan.png) no-repeat left top;
+                                span{
+                                    float: left;
+                                    width: 50%;
+                                    text-align: center;
+                                    line-height: 40px;
+                                    cursor: pointer;
+                                    img{
+                                        position: relative;
+                                        top: 2px;
+                                    }
+                                    i{
+                                        font-style: normal;
+                                        padding-left: 4px;
+                                    }
+                                }
+                            }
+                            .pinglun{
+                                width: 100px;
+                                float: left;
+                                height: 36px;
+                                background: url(../images/pinglun.png) no-repeat left 3px;
+                                text-indent: 24px;
+                                font-size: 14px;
+                                margin-left:40px;
+                                margin-top: 10px;
+                            }
+                            .choose{
+                                width: 300px;
+                                height: 36px;
+                                float: right;
+                                color: #0576cd;
+                                font-size: 14px;
+                                cursor: pointer;
+                                .bestanswer{
+                                    float: right;
+                                    width: 112px;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    text-align: center;
+                                    background: url(../images/best.png) no-repeat left top;
+                                }
+                                .zhuiwen{
+                                    width: 80px;
+                                    float: right;
+                                    margin-left: 15px;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    text-align: center;
+                                    background: url(../images/zhuiwenBtn.png) no-repeat left top;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .answerList{
+                background: #fbfbfb;
+                padding: 20px 30px;
+                margin-bottom: 30px;
+                overflow: hidden;
+                .answerListTop{
+                    margin-top: 10px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    img{
+                        float: left;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100%;
+                    }
+                    .canwrite{
+                           width: 870px;
+                           height: 38px;
+                           border:1px solid #e4e4e4;
+                           background: #fff; 
+                           float: left;
+                           margin-left: 20px;
+                           text-indent: 10px;
+                    }
+                    .btn{
+                        width: 120px;
+                        height: 40px;
+                        background: url(../images/checkmore.png) no-repeat left top;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: #fff;
+                        float: left;
+                        margin-left: 20px;
+                    }
+                }
+                ul{
+                    border-top: 1px solid #e4e4e4;
+                    li:first-child{
+                        border-top: none;
+                    }
+                    li{
+                        overflow: hidden;
+                        margin-top: 10px;
+                        padding-top: 20px;
+                        border-top: 1px dotted #e4e4e4;
+                        img{
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 100%;
+                            float: left;
+                            margin-top: 10px;
+                        }
+                        .right{
+                            float: left;
+                            margin-left: 20px;
+                            span{
+                                line-height: 30px;
+                                i{
+                                    font-style: normal;
+                                    font-size: 12px;
+                                    color: #888;
+                                    margin-left: 20px;
+                                }
+                            }
+                            p{
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
+    }
+}

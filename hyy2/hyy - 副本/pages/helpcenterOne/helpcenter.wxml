@@ -1,0 +1,6 @@
+<!--pages/helpcenterOne/helpcenter.wxml-->
+<view>
+
+<image src='../../images/evalaOne.png'></image>
+</view>
+

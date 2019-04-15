@@ -1,0 +1,147 @@
+#guide .guide {
+  border-top: 1px solid #dbdbdb;
+  width: 100%;
+}
+
+#guide .guide .guideNavi {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  background: url(../images/guideAdress.png) no-repeat 10px center;
+  text-align: left !important;
+  padding-left: 26px;
+  overflow: hidden;
+}
+
+#guide .guide .guideNavi a {
+  color: #3777CB;
+  float: left;
+}
+
+#guide .guide .guideNavi span {
+  display: block;
+  float: left;
+}
+
+#guide .guide .guideNavi i {
+  font-style: normal;
+}
+
+#guide .guide .guideMain {
+  overflow: hidden;
+}
+
+#guide .guide .guideMain .guideLeft {
+  width: 286px;
+  min-height: 500px;
+  float: left;
+}
+
+#guide .guide .guideMain .guideLeft h4 {
+  height: 70px;
+  background: url(../images/guideBg.png) no-repeat left top;
+  line-height: 70px;
+  font-weight: 600;
+}
+
+#guide .guide .guideMain .guideLeft h4 i {
+  height: 20px;
+  width: 4px;
+  background: #fff;
+  float: left;
+  margin: 26px 6px 0 20px;
+}
+
+#guide .guide .guideMain .guideLeft h4 span {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+}
+
+#guide .guide .guideMain .guideLeft ul {
+  border: 1px solid #ddd;
+}
+
+#guide .guide .guideMain .guideLeft ul li {
+  height: 53px;
+  line-height: 53px;
+  border-top: 1px solid #ddd;
+  text-indent: 30px;
+  font-weight: 600;
+}
+
+#guide .guide .guideMain .guideLeft ul li a {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+#guide .guide .guideMain .guideLeft ul li:hover {
+  background: #ececec url(../images/guideArrow.png) no-repeat 95% center;
+}
+
+#guide .guide .guideMain .guideLeft ul li:hover a {
+  color: #3777CB;
+}
+
+#guide .guide .guideMain .guideLeft ul .onLight {
+  background: #ececec url(../images/guideArrow.png) no-repeat 95% center;
+}
+
+#guide .guide .guideMain .guideLeft ul .onLight a {
+  color: #3777CB;
+}
+
+#guide .guide .guideMain .guideRight {
+  width: 890px;
+  float: right;
+  padding-bottom: 40px;
+}
+
+#guide .guide .guideMain .guideRight h4 {
+  font-size: 18px;
+  color: #3777CB;
+  height: 38px;
+  line-height: 38px;
+  font-weight: 600;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#guide .guide .guideMain .guideRight h4 span {
+  display: inline-block;
+  border-bottom: 2px solid #3777CB;
+  position: relative;
+  top: -1px;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain {
+  margin-bottom: 20px;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain ul {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain ul li {
+  line-height: 40px;
+  height: 40px;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain ul li a {
+  float: left;
+  color: #000;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain ul li a i {
+  color: #3777CB;
+  font-style: normal;
+  padding-right: 8px;
+}
+
+#guide .guide .guideMain .guideRight .guideRightMain ul li span {
+  float: right;
+  font-size: 14px;
+  color: #999;
+}

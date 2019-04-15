@@ -1,0 +1,20 @@
+<view>
+  <!-- <view class='banner'>
+  <image src='../../images/notes.png' ></image>
+</view> -->
+<view class='p'>
+  <text wx:for="{{ contenta }}" wx:key="{{ index }}">
+  {{ item }}
+  </text>
+  
+</view>
+ <!-- <checkbox-group bindchange='finishReading'>
+      <label class="check">
+        <checkbox class='checkbox' checked='{{ checkeds }}' ></checkbox>已完成阅读
+      </label>
+    </checkbox-group> -->
+  <form class='finishReading'>
+   
+    <button bindtap='returnHandle' class='btnClass'>我知道了</button>
+  </form>
+</view>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			
+			background: #f0f;
+		}
+		h2{
+			text-align: center;
+		}
+		.dcs{
+			height: 2000px;
+		}
+		.detail{
+			width: 100%;
+			height: 2000px;
+			padding-top: 30px;
+			background: #FF0000;
+			display: none;
+		}
+		.detail h2{
+			width: 100%;
+			position: fixed;
+			top: 0;
+			height: 30px;
+			background: #fff;
+		}
+		.class{
+			height: 30px;
+		}
+		.commonOne{
+			width: 100%;
+			height: 40px;
+			background: #eee;
+		}
+		.commonOne p{
+			line-height: 40px;
+			text-align: center;
+		}
+	</style>
+
+	<body>
+		<div class="dcs">
+			<div class="dcsTop"></div>
+		</div>
+		<div class="commonOne">
+			<p>继续拖动进入下一屏</p>
+		</div>
+		
+		<div class="detail">
+		
+			<div>主要内容</div>
+		</div>
+		<script src="zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("body").on("touchstart", function(e) {　　　　
+				startX = e.changedTouches[0].pageX ;
+				startY = e.changedTouches[0].pageY;　　
+			});　　
+			 window.addEventListener("touchmove", function(e) {　　　　　　　
+				moveEndX = e.changedTouches[0].pageX;　　　　
+				moveEndY = e.changedTouches[0].pageY;　　　　
+				X = moveEndX - startX;　　　　
+				Y = moveEndY - startY;
+				scrollTop  = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+       			 if(scrollTop==0&&Y>0){
+       			 	$(".commonOne").show();
+       			 }
+			
+			});
+			
+			window.addEventListener("touchend",function(e){
+				var viewHeight = document.documentElement.clientHeight;
+	           
+	           if(document.documentElement.scrollHeight >= viewHeight + scrollTop&&Y < 0 ){
+	            	if( Y<-viewHeight*0.2){
+	            		console.log(scrollTop)　　　　　
+						$(".detail").show();
+						$(".dcs").hide();
+						$(".commonOne").hide();
+					    $(".detail").scrollTop = 0;
+					}
+	            	
+	           }
+	           if(scrollTop==0&&Y>0){
+	           		
+		           	if( Y>viewHeight*0.2){
+		           		$(".detail").hide();
+						$(".dcs").show();
+		           	}		
+	           }
+       		})
+			
+			
+		</script>
+		
+		
+		
+	</body>
+
+</html>

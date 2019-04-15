@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dcs" style="width:1200px;height: 600px;">ddd</div>
+
+
+    <script>
+
+
+
+        var arr = [1, 2, 3, 4, 2, 12, 3, 4, 2]
+        //es6 
+        console.log(new Set(arr))
+
+        let unique = function (arr) {
+            let hashTable = {};
+            let data = [];
+            for (let i = 0, l = arr.length; i < l; i++) {
+                if (!hashTable[arr[i]]) {
+                    hashTable[arr[i]] = true;
+                    data.push(arr[i]);
+                }
+            }
+            return data;
+        }
+        console.log(unique(arr))
+
+        //charAt()方法返回指定位置的字符串。
+
+
+        var str = 'hello,world everyOneaaaaaaaaaaaaaaa'
+
+        // 查找一个字符串中出现次数最多的字符
+        function findMaxDuplicateChar(str) {
+
+            if (str.length == 1) {
+                return str;
+            }
+
+            let charObj = {};
+
+            for (let i = 0; i < str.length; i++) {
+                console.log(!charObj[str.charAt(i)])
+                if (!charObj[str.charAt(i)]) {
+                    charObj[str.charAt(i)] = 1;
+                } else {
+                    charObj[str.charAt(i)] += 1;
+                }
+            }
+            console.log(charObj, "对象")
+
+            let maxChar = '',
+                maxValue = 1;
+            for (var k in charObj) {
+                if (charObj[k] >= maxValue) {
+                    maxChar = k;
+                    maxValue = charObj[k];
+                }
+            }
+            return { maxChar, maxValue }
+
+        }
+        console.log(findMaxDuplicateChar(str))
+
+
+        //创建一个名为shape的对象，并未该对象设置一个type属性和一个getType()的方法。
+        function Shape() {
+
+        }
+        Shape.prototype.type = 'Object';
+        Shape.prototype.getType = function (even) {
+            return '我是一个方法对象' + even
+        }
+
+        var shapes = new Shape();
+        console.log(shapes.type)
+
+        Shape.prototype.getPerimeter = function () {
+            console.log('我是定义的新方法')
+        }
+        shapes.getPerimeter()
+        shapes.dcs = function () {
+
+        }
+        console.log(shapes.constructor === Shape)
+
+        for (var s in shapes) {
+            if (shapes.hasOwnProperty(s)) {
+                console.log(s + 'ss方法')
+            }
+
+        }
+
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        //随机生成下标;
+        //把随机生成的下标赋值给新的数组
+        //判断下标是否相同，若相同再随机生成新的下标，直到所有的下标不再相同；
+
+
+        shapes.shuffle = function (arr) {
+
+            for (var x = arr.length-1; x>=0;x--) {
+                var i = Math.floor(Math.random() * (x+1));
+                console.log(Math.floor(i))
+                var item = arr[i];
+                arr[i] = arr[x];
+                arr[x] = item;
+
+                console.log(item,"哈哈我是"+x,arr)
+            }
+           
+
+            return arr;
+        }
+        console.log(shapes.shuffle(arr))
+
+
+        //对象的方法是靠函数来实现的，而函数本身就是对象。
+        //javascrpt是一种动态的程序设计语言，因而他对于同一个任务往往会同时存在几种不同的解决方案。
+
+        //将共享属性迁移到原型中去
+        
+        function Shape (){
+            this.name = "shape";
+        }
+        //这种实现意味着我们用new Shape()创建的每个尸体都会拥有一个全新的name属性，
+        // 并在内存中拥有自己独立的存储空间，而事实上，我们也可以选择将name属性添加到
+        // 原型上去，这样一来所有的实体都可以共享这个属性了 。
+        function Shape(){}
+        Shape.prototype.name = 'shape';
+        //这样通常会更有效率，但这只是针对对象实体中的不可变属性而言，对象的共有方法尤其适合这种共享形式
+
+
+        //不要单独为继承关系创建新对象。
+        //尽量减少运行时方法搜索‘
+        function Shape(){
+
+            Shape.prototype.name = 'Shape';
+            Shape.prototype.toString = function(){
+
+                return this.name;
+
+            }
+
+        }
+
+        //如果所偶的prototype属性都指向了一个相同的对象，父对象就会受到子对象的影响，要解决这种问题，就必须利用某种中介来打破这种连锁关系。
+        //我们可以利用一个临时构造器函数来充当中介，创建一个空函数F(),并将其原型设置为父级构造器
+
+
+        //不鼓励将对象的自身属性纳入继承关系，因为自身属性往往虽对象的不同而差别甚大，无法重用。
+        
+        function Shape(){};
+        Shape.prototype.name = 'shape';
+        
+        function extend(child,Parent){
+
+            var F = function(){};
+            F.prototype = Parent.prototype;
+            Child.prototype = new F();
+            Child.prototype.constructor = Child;
+            Child.uber = Parents.prototype;
+
+        }
+
+        //在构建可重用的继承代码时，我们可以简单地将父对象拷贝给子对象，
+        
+        //建议直接创建新对象
+        var shape = {
+            name:'shape',
+            toString:function (){
+                return this.name;                                                                                                                
+            }
+        }
+        
+        
+        // hasAttyi
+
+    </script>
+
+</body>
+
+</html>

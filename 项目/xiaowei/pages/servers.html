@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>洛阳小微</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/servers.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerTop"></div>
+        <div class="header_content w1200">
+            <img src="../images/head.png" alt="">
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="native">
+        <div class="native_content w1200">
+            <ul>
+                <li class="active">
+                    <a href="index.html"> 首页</a>
+                </li>
+                <li>要闻</li>
+                <li>政务</li>
+                <li>服务</li>
+                <li>互动</li>
+            </ul>
+        </div>
+    </div>
+    <div class="online w1200">
+        <p>当前位置：
+            <span>
+                <a href="index.html">首页</a>
+            </span> > 平台服务</p>
+    </div>
+    <div class="tabList w1200">
+        <div class="title">
+            <ul>
+                <li class="onlight">服务列表</li>
+                <li>服务评价 </li>
+                <li>服务预约</li>
+            </ul>
+        </div>
+        <ul class="content">
+            <li style="display: block">
+                <img src="../images/serversOne.png" alt="">
+            </li>
+            <li>
+                <img src="../images/serversTwo.png" alt="">
+            </li>
+            <li>
+                <img src="../images/serversThree.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="footer_content w1200">
+            <img src="../images/footer.png" alt="">
+        </div>
+    </div>
+    <script src="../js/jquery1.42.min.js"></script>
+    <script>
+
+        $('.title li').click(function () {
+            $('.content li').eq($(this).index()).show().siblings().hide();
+
+            $(this).addClass("onlight").siblings().removeClass("onlight")
+        });
+
+
+    </script>
+</body>
+
+</html>

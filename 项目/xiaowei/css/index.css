@@ -1,0 +1,119 @@
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 210px;
+    position: relative;
+}
+.headerTop{
+    width: 100%;
+	height: 40px;
+	background-color: #f5f5f5;
+}
+.header_content img{
+    position: absolute;
+    top: 10px;
+}
+.native{
+    width:100%;
+    height: 50px;
+	background-image: linear-gradient(0deg, #CF3B3B 0%, #CF3B3B 100%);
+}
+.native_content{
+    background-image: linear-gradient(0deg, #CF3B3B 0%, #CF3B3B 100%);
+}
+
+.native_content ul li{
+    width: 239px;
+    height: 50px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.native_content ul li a{
+    display: block;
+}
+.native_content ul li:hover{
+    width: 239px;
+	height: 50px;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.32) 100%);
+}
+.active{
+    width: 239px;
+	height: 50px;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.32) 100%);
+}
+
+.banner{
+    height: 404px;
+    margin-top: 16px;
+    background-color: #ffffff;
+    padding: 14px;
+}
+.banner_left{
+    width: 764px;
+    height: 384px;
+    float: left;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 136px;
+    height: 90px;
+    float: left;
+}
+.swiper-container img{
+    width: 136px;
+	height: 90px;
+}
+.gallery-thumbs{
+    width: 616px;
+    height: 384px;
+    float: right;
+}
+.gallery-thumbs ul{
+    height: 1536px;
+    position: relative;
+    top: 0;
+}
+.gallery-thumbs img{
+    width: 616px;
+	height: 382px;
+}
+.banner_right{
+    width: 408px;
+    height: 373px;
+    float: right;
+}
+.nitice{
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+.fw{
+    width: 408px;
+	height: 64px;
+    opacity: 0;
+    filter:alpha(opacity=0);   
+    -moz-opacity:0;   
+    -khtml-opacity: 0;  
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.fw a{
+    display: block;
+    width: 408px;
+	height: 64px;
+}
+.footer{
+    height: 176px;
+	background-color: #e5e5e5;
+}
+.footer_content{
+    text-align: center;
+    padding-top: 50px;
+}

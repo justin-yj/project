@@ -1,0 +1,51 @@
+<!--pages/inLine/inLine.wxml-->
+<view class='inline'>
+  <view class='inlineTitle'>
+    <view class='inLineListName'>{{listValue[0].latticename}}</view>
+    <view class='inlineaddress'>地址：{{ listValue[0].latticeaddress }}</view>
+    <view class='inlineaddress'>距离：{{ juli }}km</view>
+  </view>
+  <view class='inLineFc'>
+    <view class="renshu">
+      <view class='inlineContent'>
+        {{ numberPerson.appointmentSum }}
+        <text>/{{ numberPerson.canappointmentSum }}人 </text>
+      </view>
+      <view class='inLineList'>
+        <text class='inlineName'>当前已预约人数</text>
+      </view>
+    </view>
+  </view>
+  <view class=' listTop'>
+    <view class='canOrder'> 可预约时间</view>
+    <view class='detailTime'>
+      <text>周一至周五,每天 </text>
+      <view wx:for="{{timeDuan}}" wx:key="{{ index }}" class='timeContent'>
+
+        <text wx:if="{{ index == timeDuanLength }}">{{ item.startime }}~{{ item.endtime }}</text>
+        <text wx:else>{{ item.startime }}~{{ item.endtime }},</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='lerixing'>
+    <view class='classflyTitle'>业务类型</view>
+    <view class='classflys' style='margin-left:20rpx;'>
+
+      <view class='classfly' wx:for="{{ classfiy }}" wx:key='{{ index }}'>
+        <navigator url='../classfiy/classfiy?dcs={{indexNum}}&id={{ item.id }}&classfly={{index}}&details={{item.businessname}}'>
+          <text>{{item.businessname}}</text>
+          <view class='ziyewu'>业务包含：业务1</view>
+          <image src="../../images/arrowRight.png"></image>
+        </navigator>
+      </view>
+
+    </view>
+
+  </view>
+  <form bindsubmit="submit" report-submit='true'>
+    <button bindtap='startOrder' form-type="submit">开始预约</button>
+  </form>
+</view>

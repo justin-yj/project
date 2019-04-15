@@ -1,0 +1,29 @@
+/* pages/helpcenter/helpcenter.wxss */
+page{
+  background: #f9f9f9;
+}
+.list{
+  margin-top: 4 0rpx;
+  padding: 0 3%;
+  border-radius: 8rpx;
+ 
+}
+.listOne{
+  height: 100rpx;
+  background: #fff;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+   margin-bottom: 20rpx;
+}
+.listOne image{
+  width: 28rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 20rpx;
+  position: relative;
+  top: 36rpx;
+}
+.listTwo{
+  margin-top: 50rpx;
+}

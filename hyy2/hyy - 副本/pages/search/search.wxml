@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索框  -->
+<view class='header'>
+  <view class='search'>
+    <image src='../../../images/search.png'></image>
+    <input type='text' placeholder='搜索' value="{{inputValue}}" bindinput="bindInput"></input>
+    <icon wx:if="{{iconShowed}}" type='clear' size='14' bindtap='clearInput'></icon>
+  </view>
+  <view class='cancel' bindtap='cancelHandle'>取消</view>
+</view>
+<!-- 历史记录 -->
+<view class='history' wx:if="{{historyShowed}}">
+  <view class='history-nav'>
+    <view>历史记录</view>
+    <view class='del' bindtap='clearStorage' hidden>
+      <image src='../../images/delete.png'></image>
+      <text>删除全部</text> </view>
+  </view>
+  <view class='history-info'>
+    <view class='history-list' wx:for="{{historyList}}" wx:key="{{item.id}}" bindtap='currentStorage'>
+      <text class='ellipsis'>{{item.name}}</text>
+      <image src='../../images/wrong.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 数据列表 -->
+<view class='search-info' wx:elif="{{searchShowed}}">
+  <!-- <view wx:if="{{searchList.length == 0}}">暂时没有找到相关信息！</view>  -->
+  <view  class='search-list' wx:for="{{searchList}}" wx:key="{{item.id}}" data-sid="{{item.id}}" data-name="{{item.latticename}}"    bindtap='setSearchStorage'>
+    <image src='../../images/search.png'></image>
+    <text class='ellipsis'>{{item.latticename}}</text>
+  </view>
+</view>

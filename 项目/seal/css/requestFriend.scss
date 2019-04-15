@@ -1,0 +1,104 @@
+#medal{
+    background: url(../images/bg.png) no-repeat left top;
+    background-size: 100% 100%;
+    .medal{
+        width: 100%;
+        height: auto;
+        .medalBook{
+            text-align: center;
+            background: url(../images/medalBookBorder.png) no-repeat 0.2rem bottom;
+            background-size: 7.1rem 100%;
+            margin-top: 0.5rem;
+            position: relative;
+            z-index: 0;
+            .mdealContent{
+                width: 5.9rem;
+                margin-left: 0.8rem;
+                .zhengshu{
+                    width: 3.6rem;
+                    margin-top: 0.7rem
+                }
+                dl{
+                    padding-top: 0.4rem;
+                    text-align: left;
+                    dt{
+                        font-size: 0.36rem;
+                        color: #333;
+                        font-weight: bold;
+                        line-height: 0.6rem;
+                        margin-bottom: 0.1rem;
+                    }
+                    dd{
+                        font-size: 0.3rem;
+                        line-height: 0.5rem;
+                    }
+                }
+                .medalTitle{
+                    color: #ce9f1f;
+                    font-size: 0.3rem;
+                    margin-top: 0.3rem;
+                    img{
+                        width: 0.3rem;
+                        margin: 0 0.1rem;
+                    }
+                }
+                .addMedalS{
+                    position: relative;
+                    .addMedal{
+                        max-width: 5.8rem;
+                        margin: 0.2rem auto;
+                        ul{
+                            width: 100%;
+                            overflow: hidden;
+                        }
+                        li{
+                           width: 1.68rem;
+                           height: 1.68rem; 
+                           float: left;
+                           margin: 0 0.1rem;
+                           display: flex;
+                           align-items: center;
+                        }
+                    }
+                  
+                }
+               
+                .medalResult{
+                    margin-top: 0.6rem;
+                    position: relative;
+                    padding-bottom: 1.3rem;
+                    p{
+                        color: #333;
+                        line-height: 0.5rem;
+                        font-size: 0.3rem;
+                        text-align: right;
+                    }
+                    img{
+                        width: 1.84rem;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        .btn{
+           
+            width: 100%;
+            text-align: center;
+            p{
+                color: #fff;
+                font-size: 0.28rem;
+                margin-top: 0.4rem;
+            }
+            a{
+                img{
+                    width: 5.03rem;
+                }
+            }
+        }
+        
+    }
+   
+}

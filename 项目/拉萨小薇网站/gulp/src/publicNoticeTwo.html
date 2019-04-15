@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/affairs.css">
+    <link rel="stylesheet" href="./css/publicNoticeTwo.css">
+</head>
+
+<body id="affairs">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;公告公示</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <ul>
+                <li class="onLight"> <a href="publicNotice.html">扶持政策集中公示</a></li>
+                <li> <a href="publicNoticeTwo.html">企业享受扶持信息公示</a></li>
+                <li> <a href="#">申请扶持导航</a></li>
+            </ul>
+        </div>
+        <div class="table">
+            <div class="tableTitle">
+                <span class="serialNumber">企业名称</span>
+                <span class="organization">统一社会信用代码/注册号</span>
+                <span class="addres">享受扶持内容</span>
+                <span class="govement">实施扶持政策部门</span>
+                <span class="timer">实施扶持政策日期</span>
+            </div>
+            <div class="tableContent" id="tableContent">
+                <ul>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    <li>
+                        <span class="serialNumber">兰坪县米罗零养殖场</span>
+                        <span class="organization">12131318376128k</span>
+                        <span class="addres">河南省洛阳市sssss西工区九都路84号中世商务中心302室</span>
+                        <span class="govement">妇联</span>
+                        <span class="timer">2018-1-1</span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="paging">分页</div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/publicNotice.js"></script>
+    <script>
+     $(function(){
+        $("#tableContent ul li:odd").addClass("activeBg")
+     })
+    </script>
+</body>
+
+</html>

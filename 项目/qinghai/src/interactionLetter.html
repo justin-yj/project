@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="lib/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/publickHeaderFooter.css" />
+		<link rel="stylesheet" type="text/css" href="css/interactionLetter.css" />
+		<title>公众来信</title>
+	</head>
+
+	<body id="interaction">
+		@@include('include/header.html')
+
+		<div class="onInternet w1200 clearfix">
+			<div class="contactTop">
+				<span>您现在所在的位置:</span>
+				<a href="index.html">首页</a> <i>>> 公众来信</i>
+			</div>
+			<!--公众来信左侧导航栏-->
+			<div class="onInternetLeft">
+				<h2>政民互动</h2>
+				<ul>
+					<li  class="onLight">
+						<span><a href="javascript:;"><strong>政民互动</strong><i>></i></a></span>
+					</li>
+					<li><span><a href="javascript:;"><strong>公众来信</strong><i>></i></a></span></li>
+					<li><span><a href="javascript:;"><strong>意见征集</strong><i>></i></a></span></li>
+					<li><span><a href="javascript:;"><strong>在线访谈</strong><i>></i></a></span></li>
+					<li><span><a href="javascript:;"><strong>政风行风热线</strong><i>></i></a></span></li>
+					<li><span><a href="javascript:;"><strong>局长信箱</strong><i>></i></a></span></li>
+				</ul>
+			</div>
+			
+			<!--公众来信右侧内容-->
+			<div class="onInternetRight">
+				<!--查询搜索-->
+				<div class="onInternetRightTop">
+					<label for="">查询码 :</label>
+					<input type="text" name="" class="search" value="" />
+					<input type="submit" name="" class="searchBtn" value="查询" />
+				</div>
+				
+				<table border="" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>部门</th>
+						<td>
+							<select name="">
+								<option value="">办公室</option>
+								<option value="">办公室</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>姓名</th>
+						<td>
+							<input type="text" name="" id="" value="" />
+						</td>
+					</tr>
+					<tr>
+						<th>手机</th>
+						<td>
+							<input type="num" name="" id="" value="" />
+						</td>
+					</tr>
+					<tr>
+						<th>EMAIL</th>
+						<td>
+							<input type="email" name="" id="" value="" />
+						</td>
+					</tr>
+					<tr>
+						<th>附件</th>
+						<td>
+							<input type="file" name="" class="btnFile" value="" />
+						</td>
+					</tr>
+					<tr>
+						<th>标题</th>
+						<td>
+							<input type="text" name="" id="" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<!--文本编辑框-->
+							<div class="bianjikuang">
+								
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="onInternetRightBottom">
+					<label for="">请输入验证码 : </label>
+					<input type="text" name="" id="" value="" />
+					<span><img src="images/yanzhengma.png"/></span>
+					<input type="submit" name="" class="searchBtn" value="提交" />
+				</div>
+				
+			</div>
+		
+			
+
+		</div>
+
+		@@include('include/footer.html')
+
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/onInternet.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
+
+

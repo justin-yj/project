@@ -1,0 +1,187 @@
+.address {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: url(../images/address.png) no-repeat left center;
+  text-indent: 15px;
+}
+
+.address a {
+  color: #0576cd;
+}
+
+.address i {
+  color: #888;
+  font-style: normal;
+}
+
+.main {
+  background: #fff;
+  min-height: 720px;
+  border: 1px solid #e4e4e4;
+}
+
+.main .title {
+  height: 50px;
+  background: #f2f3f4;
+  line-height: 50px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.main .title span {
+  display: inline-block;
+  height: 18px;
+  width: 3px;
+  background: #0576cd;
+  margin-left: 25px;
+  position: relative;
+  top: 3px;
+}
+
+.main .title h4 {
+  display: inline-block;
+  font-size: 16px;
+  color: #0576cd;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.main .content {
+  padding: 40px 50px;
+}
+
+.main .content h4 {
+  font-size: 16px;
+  color: #0576cd;
+  line-height: 40px;
+  height: 40px;
+  font-weight: normal;
+}
+
+.main .content .top {
+  width: 100%;
+  height: 240px;
+  line-height: 30px;
+  background: #f1f8ff;
+  border: 1px solid #e4e4e4;
+  padding: 30px 30px;
+  margin-bottom: 20px;
+}
+
+.main .content .top span {
+  display: inline-block;
+  width: 250px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.main .content .top span label {
+  font-size: 14px;
+  color: #333;
+  float: right;
+}
+
+.main .content .top span label .canInput {
+  width: 170px;
+  height: 30px;
+  border: 1px solid #e4e4e4;
+  text-indent: 10px;
+}
+
+.main .content .top span .alignLeft {
+  float: left;
+  margin-left: 33px;
+}
+
+.main .content .top span .alignLeft .canInput {
+  margin-left: 15px;
+}
+
+.main .content .top .topBtn label {
+  display: inline-block;
+  width: 120px;
+  font-size: 16px;
+  margin: 5px auto;
+}
+
+.main .content .top .topBtn label .btn {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  background: url(../images/checkmore.png) no-repeat left top;
+  cursor: pointer;
+  margin-left: 335px;
+}
+
+.main .content .top .topBtn label .reset {
+  width: 120px;
+  height: 40px;
+  color: #333;
+  border: none;
+  margin-left: 355px;
+  background: url(../images/resetTwo.png) no-repeat left top;
+  cursor: pointer;
+}
+
+.main .content .table {
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+}
+
+.main .content .table .tableTitle {
+  height: 45px;
+  line-height: 45px;
+  background: #f1f8ff;
+}
+
+.main .content .table .tableTitle span {
+  display: inline-block;
+  text-align: center;
+}
+
+.main .content .table .tableTitle .serialNumber {
+  width: 150px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main .content .table .tableTitle .organization, .main .content .table .tableTitle .addres {
+  width: 460px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main .content .table .tableTitle .addres {
+  border-right: none;
+}
+
+.main .content .table .tableContent {
+  line-height: 45px;
+  background: #fff;
+}
+
+.main .content .table .tableContent li {
+  border-top: 1px solid #e4e4e4;
+}
+
+.main .content .table .tableContent li span {
+  display: inline-block;
+  text-align: center;
+}
+
+.main .content .table .tableContent li .serialNumber {
+  width: 150px;
+}
+
+.main .content .table .tableContent li .organization, .main .content .table .tableContent li .addres {
+  width: 460px;
+}
+
+.main .content .table .tableContent .activeBg {
+  background: #fbfbfb;
+}
+
+.main .paging {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}

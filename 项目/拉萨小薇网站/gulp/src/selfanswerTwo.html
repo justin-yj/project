@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerPublic.css">
+    <link rel="stylesheet" href="./css/footerPublic.css">
+    <link rel="stylesheet" href="./css/selfanswerTwo.css">
+</head>
+
+<body id="selfanswer">
+    @@include('include/headerPublic.html')
+
+    <div class="address w1200">
+        <span>当前位置：<a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;办事指南</i></span>
+    </div>
+
+    <div class="main w1200">
+        <div class="title">
+            <ul>
+                <li class="onLight"> <a href="#">公众留言</a></li>
+                <li> <a href="#">合理化建议</a></li>
+                <li> <a href="#">问卷调查</a></li>
+                <li> <a href="#">问卷自答</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="top">
+                <ul>
+                    <li class="onActive"> <a href="#">列表</a></li>
+                    <li> <a href="#">我要提问</a></li>
+                    <li> <a href="#">我的提问</a></li>
+                    <li> <a href="#">我的积分</a></li>
+                    <li> <a href="#">知道达人榜</a></li>
+                </ul>
+            </div>
+            <div class="contentSom">
+                <label for=""><strong><i>*</i>标题：</strong><input type="text" placeholder="写下你的问题" class="texttitle"></label>
+                <label for=""><strong><i>&nbsp;</i>内容：</strong><textarea name="" id="textarea">选填，详细说明你的问题，以便获得更好的答案</textarea></label>
+                <label for="">
+                    <strong>答题悬赏：</strong>
+                    <img src="./images/money.png" alt="">
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                    </select>
+                </label>
+                <input type="button" class="btn" value="提交">
+                <input type="reset" class="reset" value="重置">
+            </div>
+
+           
+        </div>
+    </div>
+
+    @@include('include/footerPublic.html')
+
+    <script src="./js/jq.js"></script>
+    <script>
+        $(function(){
+            $("#textarea").focus(function(){
+                $(this).text("");
+            })
+        })
+    </script>
+   
+</body>
+
+</html>

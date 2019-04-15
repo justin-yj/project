@@ -1,0 +1,33 @@
+/**app.wxss**/
+page{
+  width: 100%;
+  height: auto;
+  background: #f9f9f9;
+  color: #000;
+  font: 28rpx "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, STHeiti;
+  overflow-x: hidden;
+  box-sizing: border-box
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    color: transparent;
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}

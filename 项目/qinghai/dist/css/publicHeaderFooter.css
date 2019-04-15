@@ -1,0 +1,89 @@
+.header {
+  height: 120px;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header ul {
+  float: right;
+}
+
+.header ul li {
+  font-size: 18px;
+  margin: 0 5px;
+  float: left;
+  text-align: center;
+  line-height: 120px;
+}
+
+.header ul li a {
+  display: block;
+  height: 42px;
+  padding: 0px 21px;
+  border-radius: 5px;
+  color: #333;
+  margin-top: 39px;
+  line-height: 42px;
+}
+
+.header ul li a:hover {
+  height: 42px;
+  padding: 0px 21px;
+  border-radius: 5px;
+  background: #3777cb;
+  color: #fff;
+  margin-top: 39px;
+  line-height: 42px;
+}
+
+.header ul li.light a {
+  height: 42px;
+  padding: 0px 21px;
+  border-radius: 5px;
+  background: #3777cb;
+  color: #fff;
+  margin-top: 39px;
+  line-height: 42px;
+}
+
+.header ul li.lastNone {
+  margin-right: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 142px;
+  background: #1262bb;
+}
+
+.footer .footerConter {
+  width: 1200px;
+  height: 142px;
+  background: #1262bb;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.footer .footerConter .imgOne {
+  float: left;
+  margin-left: 350px;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+
+.footer .footerConter .mains {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #f3f3f3;
+  display: block;
+}
+
+.footer .footerConter .imgTwo {
+  float: left;
+  margin-left: 40px;
+  margin-top: 12px;
+}

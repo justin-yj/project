@@ -1,0 +1,31 @@
+<view class='person'>
+  <!-- <view class='images'>
+    <open-data type="userAvatarUrl" class="headPortrait" mode="cover"></open-data>
+    <open-data type="userNickName" class="nickName"></open-data>
+  </view> -->
+ <view class="userinfo">
+    <button class='user-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- 常用信息，我的评价 -->
+  <view class='evaluate'>
+    <!-- <view class='moreUserMessage' bindtap='goInformation'>
+        <image src='../../images/wode_xinxi.png' class='tibiao'></image>
+        <text>常用信息</text>
+         <image src='../../images/tongyong_jiantou.png' class='jiantou'></image>
+      </view> -->
+    <view class='evaluateMessage moreUserMessage' bindtap='goMyvaluate'>
+      <image src='../../images/wode_pingjia.png' class='tibiao'></image>
+      <text>我的评价</text>
+      <image src='../../images/tongyong_jiantou.png' class='jiantou'></image>
+    </view>
+    <!-- <view class='evaluateMessage moreUserMessage' bindtap='gohelpcenter'>
+        <image src='../../images/wode_bangzhu.png' class='tibiao'></image>
+        <text>帮助中心</text>
+        <image src='../../images/tongyong_jiantou.png' class='jiantou'></image>
+      </view> -->
+  </view>
+</view>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据导出</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/dataExport.css">
+    <script src="../js/rem.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header class="bar bar-nav">
+            <ul>
+                <li class="one active">
+                    <div>
+                        <span><i class="iconfont icon-shaixuan"></i></span>
+                        <strong> 条件筛选</strong>
+                    </div>
+                </li>
+                <li class="active">
+                    <b class="border-right"></b>
+                    <div>
+                    <span><i class="iconfont icon-dingdan"></i></span>
+                    <strong> 订单确认</strong>
+                </div>
+                </li>
+                <li>
+                    <b class="border-right"></b>
+                    <div>
+                    <span><i class="iconfont icon-daochu"></i></span>
+                    <strong>数据导出</strong>
+                </div>
+                </li>
+            </ul>
+        </header>
+        <!-- dateChooseStart -->
+        <div class="chooseTime">
+            <ul>
+                <li class="active"><a href="javascript:;">2018全年</a></li>
+                <li><a href="javascript:;">2017全年</a></li>
+                <li><a href="javascript:;">2017至今</a></li>
+                <li><a href="javascript:;">2016至今</a></li>
+            </ul>
+            <div class="dateMake">
+                <span><i class="iconfont icon-rili"></i>开始日期</span>—<span><i class="iconfont icon-rili"></i>结束日期</span>
+            </div>
+        </div>
+        <!-- dateChooseEnd -->
+
+        <!-- elseChooseStart -->
+           <div class="elseChoose">
+               <p>*以下为非必选项</p>
+               <div class="elseChooseList">
+                   <ul>
+                       <li><a href="#">
+                           <strong>区域</strong>   
+                           <span>合肥 郑州</span>
+                           <i class="iconfont icon-arrow"></i>
+                        </a></li>
+                       <li><a href="industry.html">
+                        <strong>行业</strong>
+                               <span>合肥 郑州合肥 郑州合肥 郑州合肥郑州合肥 </span>
+                               <i class="iconfont icon-arrow"></i>
+                        </a></li>
+                       <li><a href="keyWord.html">
+                        <strong>关键词</strong>
+                           <span>合肥 郑州</span>
+                           <i class="iconfont icon-arrow"></i>
+                        </a></li>
+                        
+                        <li><a href="keyWord.html">
+                            <strong>金额</strong>
+                            <span>100万 - 2000万</span>
+                            <i class="iconfont icon-arrow"></i>
+                        </a></li>
+
+                        <li><a href="keyWord.html">
+                            <strong>信息类型</strong>
+                            <span>竞价 招标结果 中标 成交 废标 流标</span>
+                            <i class="iconfont icon-arrow"></i>
+                        </a></li>
+
+                       <li><a href="#">
+                            <strong>采购单位</strong>
+                           <span>合肥 郑州</span>
+                           <i class="iconfont icon-arrow"></i>
+                        </a></li>
+                       <li><a href="#">
+                            <strong>中标单位</strong>
+                           <span>合肥 郑州</span>
+                           <i class="iconfont icon-arrow"></i>
+                        </a></li>
+                   </ul>
+               </div>
+           </div> 
+
+        <!-- elseChooseEnd -->
+
+        <!-- btn -->
+        <button>确认</button>
+
+    </div>
+    
+    <script src="../js/zepto.js"></script>
+    <script>
+        $(function(){
+            $(".chooseTime ul li").click(function(){
+                console.log('ddd')
+                $(".chooseTime ul li").removeClass('active')
+                $(this).addClass('active');
+            })
+        })
+    </script>
+    
+</body>
+
+</html>

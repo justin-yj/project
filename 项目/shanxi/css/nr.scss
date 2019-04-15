@@ -1,0 +1,50 @@
+#nr{
+    .content {
+    width: 100%;
+    height: 100%;
+    .content_con {
+    width: 792px;
+    padding: 0 110px;
+    height: auto;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    img{
+        display:block;
+        margin:0 auto;
+    }
+   .con_title {
+    width:800px;
+    margin:0 auto;
+    margin-top: 55px;
+    font-size: 34px;
+    color: #333333;
+    text-align: center;
+}
+    .zhushi {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    }
+    .line{
+        width:100%;
+        height: 1px;
+        margin-bottom:40px;
+        background-color: #D1D1D1 ;
+    }
+    .con {
+//   padding:0 60px 65px 60px;
+     padding-bottom:65px;
+    p {
+    margin-bottom: 24px;
+    font-size: 15px;
+    color: #333333;
+    text-align: left;
+    line-height: 1.5;
+    text-indent: 2em;
+}
+}
+}
+}
+}

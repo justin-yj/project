@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 30px;
+        }
+        body div{
+            filter: drop-shadow(2px 2px 3px rgba(0,0,0,.7));
+        }
+        .box{
+            height: 130px;
+            width: 200px;
+            background: radial-gradient(circle at top left,
+                  transparent 15px, #6fbef3 0) top left,
+                  radial-gradient(circle at top right,
+                  transparent 15px, #6fbef3 0) top right,
+                  radial-gradient(circle at bottom right,
+                  transparent 15px, #6fbef3 0) bottom right,
+                  radial-gradient(circle at bottom left,
+                  transparent 15px, #6fbef3 0) bottom left;
+                background-size:50% 50%;
+                background-repeat: no-repeat;
+        }
+        .box1{
+            height: 130px;
+            margin-top: 20px;
+                width: 200px;
+                background: linear-gradient(135deg,transparent 15px, #6fbef3  0) top left,
+linear-gradient(-135deg,transparent 15px, #6fbef3  0) top right,
+linear-gradient(-45deg,transparent 15px, #6fbef3  0) bottom right,
+linear-gradient(45deg,transparent 15px, #6fbef3  0) bottom left;
+                background-size: 50% 50%;
+                background-repeat: no-repeat;  
+        }
+        .box2{
+            height: 50px;
+            width: 200px;
+            margin-top: 30px;
+            border:8px dotted #6fbef3;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+        }
+        .box3{
+            height: 50px;
+            width: 200px;
+            margin-top: 30px;
+            background: rgb(165, 96, 165);
+            position: relative;
+        }
+        .box3::before{
+            content: "";
+            position: absolute;
+            padding:10px;
+            right:-10px;
+            border-radius: 50%;
+            top:15px;
+            background: inherit;
+            /* border-right: 0; */
+            /* border-bottom: 0; */
+            transform: rotate(10deg);
+        }
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            width: 100px;
+            height: 40px;
+            /* background: #2175BC; */
+            position: relative;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px 40px;
+          
+        }
+        li::after{
+            content: '';
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     top: 0;
+     border-radius: 5px;
+     z-index: -1;
+     background: #2175BC;
+     transform: skewX(-25deg);
+        }
+        img{
+            width: 100px;
+            margin-top: 20px;
+            filter: sepia(50%) saturate(70%) hue-rotate(10deg);
+        }
+        img:hover,img:focus{
+            filter:none;
+        }
+    
+    </style>
+
+</head>
+<body>
+        <p>dcs</p>
+
+        <ul>
+            <li>微信</li>
+            <li>QQ</li>
+            <li>支付宝</li>
+        </ul>
+
+        <div class="box">
+
+        </div>
+        <div class="box1">
+
+        </div>
+        <div class="box2">dcs</div>
+        <div class="box3"></div>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539001356127&di=62340f5a5b53bdbf5cc675c9ebf4b597&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F05%2F20140705164448_UtTtU.jpeg" alt="">
+</body>
+</html>

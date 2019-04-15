@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>中标单位</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/win_bid.css">
+	</head>
+	<body>
+		<div class="win_bid" id="win_bid_edit">
+			<!-- <header class="header">
+				<a href="#" class="return pull-left">
+					<i class="icon iconfont">&#xe640;</i>
+				</a>
+				<h1 class="title">中标单位</h1>
+			</header> -->
+			<main class="main">
+				<form action="#" class="form-edit">
+					<div class="form-item">
+						<div class="item-control">
+							<input type="text" placeholder="中标单位名称" disabled="disabled" value="郑州市工商局">
+							<span class="edit">
+								<i class="icon iconfont">&#xe60e;</i>
+								修改
+							</span>
+						</div>
+						<div class="item-btn">
+							<button class="btn del">删除</button>
+							<button class="btn enter">确认</button>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="item-control">
+							<input type="text" placeholder="中标单位名称" disabled="disabled" value="郑州市工商局">
+							<span class="edit">
+								<i class="icon iconfont">&#xe60e;</i>
+								修改
+							</span>
+						</div>
+						<div class="item-btn">
+							<button class="btn del">删除</button>
+							<button class="btn enter">确认</button>
+						</div>
+					</div>
+				</form>
+				<a href="#" class="query">
+					疑问解答
+					<i class="icon iconfont">&#xe63b;</i>
+				</a>
+				<a href="win_bid.html" class="add">
+					<img src="../image/icon_add.png" >
+				</a>
+			</main>
+			<!-- weui toast -->
+			<div id="toast" style="display: none;">
+				<div class="weui-mask_transparent"></div>
+				<div class="weui-toast" style="min-height: .4rem;line-height: 1.4;">
+					<p class="weui-toast__content" style="margin: .2rem auto;">中标单位超过15个字</p>
+				</div>
+			</div>
+			<!-- 引用weui Dialog组件 -->
+			<div class="js_dialog" id="tipDialog" style="display: none;">
+				<div class="weui-mask"></div>
+				<div class="weui-dialog">
+					<div class="weui-dialog__bd">
+						<h1 class="dialog-title">疑问解答</h1>
+						<ul class="info">
+							<li>
+								<label>·关键词</label>
+								<p>目标信息中的关键性词语，如：信息化</p>
+							</li>
+							<li>
+								<label>·附加词</label>
+								<p>与关键词形成一体/组合，便于查找准确信息，如：招标项目</p>
+							</li>
+							<li>
+								<label>·排除词</label>
+								<p>与关键词互斥，为了便于查找目标信息需要去除某一部分非目标信息，如：办公用品</p>
+							</li>
+						</ul>
+					</div>
+					<div class="weui-dialog__ft">
+						<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">我知道了</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script>
+			$(function(){
+				// 疑问解答
+				$('.query').click(function(){
+					$('#tipDialog').show(200);
+					$('.weui-dialog__btn_primary').click(function() {
+						$('#tipDialog').hide(200);
+					})
+				})
+				// 修改
+				$('.edit').click(function(event){
+					$(this).siblings('input').removeAttr("disabled").parent().siblings('.item-btn').show(400);
+				})
+				// 删除
+				$('.del').click(function(){
+					$(this).parent().parent().remove(); 
+				})
+				// 输入内容确认
+				$('.enter').click(function(){
+					var $toast = $('#toast');
+					console.log($(this).parent().siblings().children().val().length)
+					if($(this).parent().siblings().children().val().length > 15){
+						if ($toast.css('display') != 'none'){
+							return;
+						}
+						$toast.show(100);
+						setTimeout(function () {
+							$toast.hide(100);
+						}, 2000);
+					}else{
+						$(this).parent().hide(600);
+					}
+				})
+				/* $('.add').click(function(){
+					$('.form-edit').append('<div class="form-item">\
+												<div class="item-control">\
+													<input type="text" placeholder="中标单位名称" disabled="disabled" value="郑州市工商局">\
+													<span class="edit"><i class="icon iconfont">&#xe60e;</i>修改</span>\
+												</div>\
+												<div class="item-btn">\
+													<button class="btn del">删除</button>\
+													<button class="btn enter">确认</button>\
+												</div>\
+											</div>')
+				}) */
+			})
+		</script>
+	</body>
+</html>

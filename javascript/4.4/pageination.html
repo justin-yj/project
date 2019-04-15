@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>翻页</title>
+
+</head>
+<body>
+
+
+<style>
+    .pagination-box {
+        user-select: none;
+    }
+    .pagination-box button {
+        padding: 0 4px;
+        vertical-align: top;
+        display: inline-block;
+        font-size: 13px;
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 5px;
+        background-color: #f4f4f5;
+        color: #606266;
+        min-width: 30px;
+        border-radius: 2px;
+        border:none;
+        outline: none;
+        font-weight: bold;
+    }
+    .pagination-box button.now {
+        background-color: #409EFF;
+        color: #fff;
+    }
+    .pagination-box button.stop {
+        background-color: #f4f4f5;
+        color: #c0c4cc;
+        cursor: not-allowed;
+    }
+</style>
+
+<div class="pagination-box">
+    <button name="back">上一页</button>
+    <button name="min">1</button>
+    <button name="prev">...</button>
+    <button name="next">...</button>
+    <button name="max">100</button>
+    <button name="cont">下一页</button>
+</div>
+<script src="./pageination.ie.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+ #interaction {
+     background: url(../images/bodyBg.jpg) no-repeat center top;
+     .onInternet {
+         background: #fff;
+         overflow: hidden;
+         .contactTop {
+             height: 50px;
+             background: url(../images/adress.png) no-repeat 25px center;
+             line-height: 50px;
+             padding-left: 46px;
+             box-sizing: border-box;
+             a {
+                 color: #000;
+             }
+             i {
+                 font-style: normal;
+                 color: #1e5ca8;
+             }
+         }
+         .onInternetLeft {
+             width: 236px;
+             height: 630px;
+             margin-left: 20px;
+             float: left;
+             h2 {
+                 height: 48px;
+                 line-height: 48px;
+                 font-size: 24px;
+                 color: #fff;
+                 font-weight: normal;
+                 text-indent: 20px;
+                 background: url(../images/dengjiBg.png) no-repeat left bottom;
+                 border-bottom: 6px solid #6aadff;
+             }
+             ul {
+                 background: #f8f8f8;
+                 height: 570px;
+                 border: 1px solid #d8d8d8;
+                 border-top: none;
+                 li {
+                     border-bottom: 1px solid #d8d8d8;
+                     span {
+                         display: block;
+                         height: 40px;
+                         line-height: 40px;
+                         text-indent: 20px;
+                         font-size: 16px;
+                         a {
+                             display: block;
+                             color: #3f3f3f;
+                             strong {
+                                 font-weight: normal;
+                             }
+                             i {
+                                 font-style: normal;
+                                 float: right;
+                                 font-size: 18px;
+                                 color: #868686;
+                                 margin-right: 20px;
+                             }
+                         }
+                     }
+                     ol {
+                         border-bottom: none;
+                         border-top: 1px solid #d8d8d8;
+                         li {
+                             border-bottom: none;
+                             height: 36px;
+                             line-height: 36px;
+                             background: url(../images/nullu.png) no-repeat 22px center;
+                             font-size: 14px;
+                             text-indent: 44px;
+                             a {
+                                 color: #000000;
+                                 display: block;
+                                 &:hover {
+                                     color: #1e5ca8;
+                                 }
+                             }
+                         }
+                         .changeColor {
+                             a {
+                                 color: #1e5ca8;
+                             }
+                         }
+                     }
+                     &:hover {
+                         border-top: none;
+                         span {
+                             width: 255px;
+                             position: relative;
+                             left: -1px;
+                             background: url(../images/dengji.png) no-repeat left top;
+                             a {
+                                 color: #fff;
+                                 i {
+                                     display: none;
+                                 }
+                             }
+                         }
+                     }
+                 }
+                 li.onLight {
+                     border-top: none;
+                     span {
+                         width: 255px;
+                         position: relative;
+                         left: -1px;
+                         background: url(../images/dengji.png) no-repeat left top;
+                         a {
+                             color: #fff;
+                             i {
+                                 display: none;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+         .onInternetRight {
+             margin-right: 20px;
+             width: 790px;
+             float: right;
+             .onInternetRightTop {
+                 overflow: hidden;
+                 label{
+                     float: left;
+                     position: relative;
+                     top: 5px;
+                 }
+                 .search {
+                     width: 380px;
+                     height: 28px;
+                     line-height: 28px;
+                     border: 1px solid #b8d8ff;
+                     margin: 0 15px;
+                     float: left;
+                 }
+                 .searchBtn {
+                     width: 70px;
+                     height: 30px;
+                     background: url(../images/letterBtn.png) no-repeat left top;
+                     border: none;
+                     color: #fff;
+                     line-height: 20px;
+                    float: left;
+                    position: relative;
+                    top: -1px;
+                 }
+             }
+             table {
+                 width: 790px;
+                 margin-top: 10px;
+                 border: none;
+                 border-top: 1px solid #a9caff;
+                 border-right: 1px solid #9cafff;
+                 tr {
+                     line-height: 34px;
+                     box-sizing: border-box;
+                     th {
+                         min-height: 36px;
+                         line-height: 34px;
+                         width: 118px;
+                         border: 1px solid #a9caff;
+                         border-top: none;
+                         border-right: none;
+                         background: #dfefff;
+                         color: #1e5ca8;
+                         box-sizing: border-box;
+                     }
+                     td {
+                         text-align: left;
+                         padding-left: 24px;
+                         border: 1px solid #a9caff;
+                         border-top: none;
+                         border-right: none;
+                         line-height: 30px;
+                         select{
+                             padding: 4px 0;
+                             width: 190px;
+                             color: #1e5ca8;
+                             position: relative;
+                             top: 1px;
+                              border: 1px solid #b8d8ff;
+                             option{
+                                 color: #000;
+                             }
+                         }
+                         input{
+                              width: 190px;
+                              height: 25px;
+                                 color: #1e5ca8;
+                                position: relative;
+                                top: 1px;
+                              border: 1px solid #b8d8ff;
+                              position: relative;
+                              top: -1px;
+                         }
+                         .btnFile{
+                             border: none;
+                         }
+                         .bianjikuang{
+                             min-height: 200px;
+                         }
+                         
+                     }
+                    
+                 }
+             }
+             .onInternetRightBottom{
+                 height: 38px;
+                 padding-left: 20px;
+                 border: 1px solid #a9caff;
+                 border-top: none;
+                 line-height: 38px;
+                 label{
+                     font-size: 14px;
+                     color: #1e5ca8;
+                     float: left;
+                     position: relative;
+                     top: 2px;
+                 }
+                 input{
+                     width: 90px;
+                     height: 26px;
+                     line-height: 26px;
+                     border: 1px solid #a9caff;
+                     margin: 0 10px;
+                     float: left;
+                     position: relative;
+                     top: 6px;
+                 }
+                 .searchBtn {
+                     width: 70px;
+                     height: 30px;
+                     background: url(../images/letterBtn.png) no-repeat left top;
+                     border: none;
+                     color: #fff;
+                     line-height: 20px;
+                      position: relative;
+                     top: 4px;
+                      float: left;
+                 }
+                 span{
+                     img{
+                         float: left;
+                        position: relative;
+                        top: 8px;
+                     }
+                 }
+             }
+         }
+     }
+ }

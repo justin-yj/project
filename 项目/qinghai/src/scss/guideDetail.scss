@@ -1,0 +1,116 @@
+#guideDetail {
+    .guide {
+        border-top: 1px solid #dbdbdb;
+       width: 100%;
+        .guideNavi {
+            width: 1200px;
+            height: 50px;
+            overflow: hidden;
+            line-height: 50px;
+            background: url(../images/guideAdress.png) no-repeat 10px center;
+            text-align: left;
+            padding-left: 26px;
+            a{
+                color: #3777CB;
+            }
+        }
+        .guideMain{
+            overflow: hidden;
+        
+        .guideLeft {
+            width: 286px;
+            height: 350px;
+            float: left;
+            h4 {
+                height: 70px;
+                background: url(../images/guideBg.png) no-repeat left top;
+                line-height: 70px;
+                font-weight: 600;
+                i {
+                    height: 20px;
+                    width: 4px;
+                    background: #fff;
+                    float: left;
+                    margin: 26px 6px 0 20px;
+                }
+                span {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            ul {
+                border: 1px solid #ddd;
+                li {
+                    height: 56px;
+                    line-height: 56px;
+                    border-top: 1px solid #ddd;
+                    text-indent: 30px;
+                    font-weight: 600;
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        color: #333;
+                    }
+                    &:hover {
+                        background: #ececec url(../images/guideArrow.png) no-repeat 95% center;
+                        a {
+                            color: #3777CB;
+                        }
+                    }
+                }
+                .onLight {
+                    background: #ececec url(../images/guideArrow.png) no-repeat 95% center;
+                    a {
+                        color: #3777CB;
+                    }
+                }
+            }
+        }
+        .guideRight {
+            width: 890px;
+            float: left;
+            margin-left:20px;
+            h4 {
+                font-size: 18px;
+                color: #3777CB;
+                height: 38px;
+                line-height: 38px;
+                font-weight: 600;
+                border-bottom: 1px solid #d5d5d5;
+                span {
+                    display: block;
+                    border-bottom: 2px solid #3777CB;
+                    width: 74px;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+            .guideRightMain{
+                text-align: center;
+               
+                h2{
+                    margin-top: 30px;
+                }
+                p{
+                    margin: 20px 0;
+                    font-size: 12px;
+                    color: #999;
+                    span{
+                        margin-right: 20px;
+                    }
+                    strong{
+                        font-weight: normal;
+                        margin-left: 20px;
+                    }
+                }
+                .guideBottom{
+                    border-top: 1px solid #ddd;                    
+                    text-align: left;
+                    padding: 40px 0 10px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        }
+    }
+}

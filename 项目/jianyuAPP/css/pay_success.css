@@ -1,0 +1,93 @@
+.main {
+  width: 100%;
+  overflow: scroll; }
+
+.main::-webkit-scrollbar {
+  display: none; }
+
+#pay_success {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+  #pay_success .main {
+    padding-bottom: .94rem; }
+    #pay_success .main .progress {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: .24rem 0; }
+      #pay_success .main .progress .p-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; }
+        #pay_success .main .progress .p-item .line {
+          position: absolute;
+          top: .2rem;
+          right: -0.92rem;
+          height: 0.04rem;
+          width: 1.86rem;
+          background: #2CB7CA; }
+        #pay_success .main .progress .p-item .p-item-icon {
+          width: .48rem;
+          height: .48rem;
+          line-height: .48rem;
+          text-align: center;
+          border-radius: 50%;
+          background: #2CB7CA; }
+          #pay_success .main .progress .p-item .p-item-icon i {
+            color: #fff;
+            font-size: .11rem; }
+        #pay_success .main .progress .p-item span {
+          margin-top: 0.06rem; }
+    #pay_success .main .space {
+      width: 100%;
+      height: .2rem;
+      background: #f5f4f9; }
+    #pay_success .main .result {
+      width: 100%; }
+      #pay_success .main .result .success {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: .56rem 0; }
+      #pay_success .main .result i {
+        font-size: 1.6rem;
+        color: #2CB7CA; }
+      #pay_success .main .result h2 {
+        color: #2CB7CA;
+        font-size: .48rem;
+        margin: .24rem 0 .16rem; }
+      #pay_success .main .result p {
+        font-size: .28rem;
+        color: #888; }
+    #pay_success .main .order_lists {
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0 .4rem; }
+      #pay_success .main .order_lists .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .24rem 0;
+        border-bottom: 1px solid #e0e0e0;
+        color: #666; }
+      #pay_success .main .order_lists .item:last-child {
+        border: 0; }
+  #pay_success .main::-webkit-scrollbar {
+    display: none; }
+  #pay_success .go_detail {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+    background: #2CB7CA;
+    color: #fff;
+    width: 100%;
+    height: .94rem;
+    line-height: .94rem;
+    text-align: center;
+    font-size: .36rem; }

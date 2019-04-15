@@ -1,0 +1,400 @@
+#selfanswerFive .address {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: url(../images/address.png) no-repeat left center;
+  text-indent: 15px;
+}
+
+#selfanswerFive .address a {
+  color: #0576cd;
+}
+
+#selfanswerFive .address i {
+  color: #888;
+  font-style: normal;
+}
+
+#selfanswerFive .main {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  min-height: 700px;
+}
+
+#selfanswerFive .main .title {
+  background: #f2f3f4;
+  height: 54px;
+}
+
+#selfanswerFive .main .title li {
+  width: 240px;
+  border-right: 1px solid #e4e4e4;
+  border-top: solid #f2f3f4;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+
+#selfanswerFive .main .title li a {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+#selfanswerFive .main .title li:hover {
+  color: #0576cd;
+  background: #fff;
+  border-top: solid #0576cd;
+  box-sizing: border-box;
+}
+
+#selfanswerFive .main .title li:hover a {
+  color: #0576cd;
+}
+
+#selfanswerFive .main .title .onLight {
+  background: #fff;
+  color: #0576cd;
+  border-top: solid #0576cd;
+}
+
+#selfanswerFive .main .title .onLight a {
+  color: #0576cd;
+}
+
+#selfanswerFive .main .content {
+  padding: 40px 30px;
+}
+
+#selfanswerFive .main .content .top {
+  background: #f2f3f4;
+  height: 44px;
+  border: 1px solid #e4e4e4;
+}
+
+#selfanswerFive .main .content .top li {
+  width: 20%;
+  border-right: 1px solid #e4e4e4;
+  border-top: solid #f2f3f4;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+}
+
+#selfanswerFive .main .content .top li a {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+
+#selfanswerFive .main .content .top li:hover {
+  background: #0576cd;
+  border-top: solid #0576cd;
+  box-sizing: border-box;
+}
+
+#selfanswerFive .main .content .top li:hover a {
+  color: #fff;
+}
+
+#selfanswerFive .main .content .top .onActive {
+  background: #0576cd;
+  border-top: solid #0576cd;
+}
+
+#selfanswerFive .main .content .top .onActive a {
+  color: #fff;
+}
+
+#selfanswerFive .main .content .contentSom {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+#selfanswerFive .main .content .contentSom .wenti {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+#selfanswerFive .main .content .contentSom .wenti h4 {
+  font-weight: normal;
+  color: #0576cd;
+  line-height: 36px;
+}
+
+#selfanswerFive .main .content .contentSom .wenti p {
+  line-height: 26px;
+  color: #333;
+  font-size: 14px;
+}
+
+#selfanswerFive .main .content .contentSom .wenti .answer {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: url(../images/checkmore.png) no-repeat left top;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  margin: 20px 0 30px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li:first-child {
+  border-top: none;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li {
+  border-top: 1px dotted #e4e4e4;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .best {
+  margin-top: 30px;
+  display: block;
+  width: 85px;
+  height: 32px;
+  background: url(../images/tiwen.png) no-repeat left top;
+  color: #fff;
+  text-indent: 10px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .user {
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  float: left;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .user .user-right {
+  float: left;
+  margin-left: 24px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .user .user-right h5 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .user .user-right span {
+  font-size: 12px;
+  color: #888;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .contentTitle {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuiween {
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuiween span {
+  float: left;
+  width: 60px;
+  height: 26px;
+  background: url(../images/zhuiwenOne.png) no-repeat left top;
+  text-align: center;
+  line-height: 26px;
+  color: #888;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuiween p {
+  float: left;
+  margin-left: 20px;
+  line-height: 26px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .hxian {
+  height: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .hxian img {
+  height: 20px;
+  margin-left: 30px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuida {
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuida span {
+  float: left;
+  width: 60px;
+  height: 26px;
+  background: url(../images/zhuiwenOne.png) no-repeat left top;
+  text-align: center;
+  line-height: 26px;
+  color: #0576cd;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .listContent .zuida p {
+  float: left;
+  margin-left: 20px;
+  line-height: 26px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .zan {
+  width: 120px;
+  height: 36px;
+  float: left;
+  background: url(../images/tuoyuan.png) no-repeat left top;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .zan span {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .zan span img {
+  position: relative;
+  top: 2px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .zan span i {
+  font-style: normal;
+  padding-left: 4px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .pinglun {
+  width: 100px;
+  float: left;
+  height: 36px;
+  background: url(../images/pinglun.png) no-repeat left 3px;
+  text-indent: 24px;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .choose {
+  width: 300px;
+  height: 36px;
+  float: right;
+  color: #0576cd;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .choose .bestanswer {
+  float: right;
+  width: 112px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: url(../images/best.png) no-repeat left top;
+}
+
+#selfanswerFive .main .content .contentSom .wentiList ul li .resets .choose .zhuiwen {
+  width: 80px;
+  float: right;
+  margin-left: 15px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: url(../images/zhuiwenBtn.png) no-repeat left top;
+}
+
+#selfanswerFive .main .content .contentSom .answerList {
+  background: #fbfbfb;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#selfanswerFive .main .content .contentSom .answerList .answerListTop {
+  margin-top: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList .answerListTop img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+#selfanswerFive .main .content .contentSom .answerList .answerListTop .canwrite {
+  width: 870px;
+  height: 38px;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  float: left;
+  margin-left: 20px;
+  text-indent: 10px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList .answerListTop .btn {
+  width: 120px;
+  height: 40px;
+  background: url(../images/checkmore.png) no-repeat left top;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  margin-left: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul {
+  border-top: 1px solid #e4e4e4;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li:first-child {
+  border-top: none;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li {
+  overflow: hidden;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px dotted #e4e4e4;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li .right {
+  float: left;
+  margin-left: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li .right span {
+  line-height: 30px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li .right span i {
+  font-style: normal;
+  font-size: 12px;
+  color: #888;
+  margin-left: 20px;
+}
+
+#selfanswerFive .main .content .contentSom .answerList ul li .right p {
+  line-height: 30px;
+}

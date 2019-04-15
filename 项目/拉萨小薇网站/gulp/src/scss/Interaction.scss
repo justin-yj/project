@@ -1,0 +1,166 @@
+#Interaction{
+    .address{
+      height: 50px;
+      line-height: 50px;  
+      font-size: 14px;
+      background: url(../images/address.png) no-repeat left center;
+      text-indent: 15px;
+      a{
+          color: #0576cd;
+      }
+      i{
+          color: #888;
+          font-style: normal;
+      }
+    }
+    .main{
+        background: #fff;
+        border: 1px solid #e4e4e4;
+        min-height: 700px;
+      .title{
+          background: #f2f3f4;
+          height: 54px;
+          li{
+              width: 240px;
+              border-right: 1px solid #e4e4e4;
+              border-top: solid #f2f3f4;
+              text-align: center;
+              line-height: 50px;
+              float: left;
+              a{
+                  display: block;
+                  font-size: 16px;
+                  color: #222;
+              } 
+              &:hover{
+                color: #0576cd;
+                background: #fff;
+                border-top: solid #0576cd;
+                box-sizing: border-box;
+                a{
+                    color: #0576cd;
+                }
+              }
+          }
+          .onLight{
+              color: #0576cd;
+              background: #fff;
+              border-top: solid #0576cd;
+              a{
+                  color: #0576cd;
+              }
+          }
+      }  
+      .leavingMessage{
+        
+            .btn{
+                width: 306px;
+                height: 52px;
+                background: url(../images/interactionBtn.png) no-repeat left top;
+                text-align: center;
+                margin: 45px auto;
+                a{
+                    font-size: 18px;
+                    color: #fff;        
+                    line-height: 50px;
+                }
+            }
+            .contentList{
+                padding: 0 30px;
+                li{
+                    border-top: 1px solid #e4e4e4;
+                    padding:20px 0;
+                    .contentListTop{
+                        overflow: hidden;
+                        span{
+                           float: left;
+                            width: 64px;
+                            height:25px;
+                            background: #ff9e04;
+                            font-size: 16px;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 25px;
+                        }
+                        .contentListTopRight{
+                            width: 1000px;
+                            float: left;
+                            margin-left: 30px;
+                            h4{
+                                font-size: 18px;
+                                color: #1b1b1b;
+                                font-weight: normal;
+                                i{
+                                    color: #0576cd;
+                                    font-weight: normal;
+                                    font-style: normal;
+                                }
+                            }
+                            p{  
+                                line-height: 30px;
+                                font-size: 12px;
+                                color: #888;
+                                b{
+                                    font-weight: normal;
+                                    padding-right:30px;
+                                }
+                            }
+                        }
+                    }
+                    .contentListCenter{
+                        font-size: 14px;
+                        overflow: hidden;
+                        margin-top: 10px;
+                        span{
+                            width: 64px;
+                            float: left;
+                            color: #0576cd;
+                            line-height: 30px;
+                        }
+                        .contentListCenterR{
+                            width: 1000px;
+                            float: left;
+                            margin-left: 30px;
+                            color: #333;
+                            p{
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .contentListBottom{
+                        font-size: 14px;
+                        overflow: hidden;
+                        margin-top: 10px;
+                        span{
+                            width: 80px;
+                            float: left;
+                            color: #0576cd;
+                            line-height: 30px;
+                        }
+                        .contentListBottomR{
+                            width: 1000px;
+                            float: left;
+                            margin-left: 15px;
+                            p{
+                                line-height: 30px;
+                                color: #0576cd;
+                            }
+                            strong{
+                                color: #999;
+                                line-height: 30px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+     
+    }
+    .paging{
+        margin-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+    }
+}
